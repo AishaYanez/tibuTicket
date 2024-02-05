@@ -1,13 +1,10 @@
 require "active_support/core_ext/integer/time"
 
-Rails.application.routes.default_url_options[:host] = "localhost:4000"
+# Rails.application.routes.default_url_options[:host] = "localhost:4000"
 Rails.application.configure do
   config.action_mailer.default_url_options = { host: "localhost", port: 4000 }
-  # Settings specified here will take precedence over those in config/application.rb.
+  config.navigational_formats = []
 
-  # In the development environment your application's code is reloaded any time
-  # it changes. This slows down response time but is perfect for development
-  # since you don't have to restart the web server when you make code changes.
   config.enable_reloading = true
 
   # Do not eager load code on boot.
