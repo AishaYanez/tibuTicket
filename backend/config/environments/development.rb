@@ -1,13 +1,12 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.routes.default_url_options[:host] = "localhost:4000"
+
 Rails.application.configure do
   config.action_mailer.default_url_options = { host: "localhost", port: 4000 }
-  # Settings specified here will take precedence over those in config/application.rb.
 
-  # In the development environment your application's code is reloaded any time
-  # it changes. This slows down response time but is perfect for development
-  # since you don't have to restart the web server when you make code changes.
+  config.navigational_formats = []
+
   config.enable_reloading = true
 
   # Do not eager load code on boot.
@@ -19,8 +18,6 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
-  # Enable/disable caching. By default caching is disabled.
-  # Run rails dev:cache to toggle caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?
     config.cache_store = :memory_store
     config.public_file_server.headers = {
