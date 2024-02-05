@@ -11,7 +11,6 @@ Rails.application.routes.draw do
                        registrations: "api/v1/users/registrations",
                      }
 
-  /Pruebas/
   namespace :api do
     namespace :v1 do
       namespace :users do

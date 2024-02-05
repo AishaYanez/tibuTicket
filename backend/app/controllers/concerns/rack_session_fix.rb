@@ -1,4 +1,3 @@
-# app/controllers/concerns/rack_session_fix.rb
 module RackSessionFix
   extend ActiveSupport::Concern
 
