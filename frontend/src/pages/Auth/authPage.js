@@ -15,8 +15,8 @@ function Authpage() {
   useEffect(() => {
     anime({
       targets: '.triangles',
-      rotateX: isSignIn ? '0' : '180deg',
       translateY: isSignIn ? 0 : 285,
+      rotateX: isSignIn ? '0' : '180deg',      
       duration: 800,
       easing: 'easeInSine'
     });
@@ -40,7 +40,7 @@ function Authpage() {
     <div className='auth-container'>
       <div className='back-container'>
         <div className='changeButton'>
-          <Button onClick={toggleForm} type="primary" ghost>
+          <Button onClick={toggleForm} type="primary" ghost style={{ borderColor: 'white', backgroundColor: '#BBC0BA', color:'white' }} size='large'>
             {isSignIn ? 'Sign Up' : 'Sign In'}
           </Button>
         </div>

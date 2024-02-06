@@ -22,7 +22,7 @@ function SignUp() {
             listType="picture-circle"
             className="avatar-uploader"
             maxCount={1}
-            onChange={handleChange}
+            onChange={handleChange}        
           >
             {imageUploaded ? null : (
               <img alt=""/>
@@ -31,7 +31,7 @@ function SignUp() {
           <Input placeholder="Pon tu nombre y apellidos" />
           <Input placeholder="Escribe aqui tu correo" />
           <Input placeholder="Escribe aqui tu contraseña" />
-          <Button type="primary">Enter</Button>
+          <Button type="primary" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color:'white' }} >Enter</Button>
         </div>
       </div>
     </>

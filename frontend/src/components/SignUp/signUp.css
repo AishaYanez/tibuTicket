@@ -1,6 +1,11 @@
 .avatar img {
     width: '100%';
 }
+
 .form>input{
     margin: 3px;
+}
+
+.form>img{
+    border: 1px black;
 }

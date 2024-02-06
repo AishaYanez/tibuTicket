@@ -11,7 +11,7 @@ function SignIn() {
           <h2>Iniciar sesion</h2>
           <Input placeholder="Escribe aqui tu correo" />
           <Input placeholder="Escribe aqui tu contraseña" />
-          <Button type="primary">Enter</Button>
+          <Button type="primary" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color:'white' }} >Enter</Button>
         </div>
       </div>
     </>
