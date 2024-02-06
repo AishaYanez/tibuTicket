@@ -1,12 +1,12 @@
 class UserSerializer
   include JSONAPI::Serializer
   attributes :id, :email, :created_at
+  # , :user_image
 
-  # ,:user_image
   # def user_image
   #   if object.user_image.attached?
   #     {
-  #       url: rails_blob_url(object.user_image)
+  #       url: rails_blob_url(object.user_image),
   #     }
   #   end
   # end

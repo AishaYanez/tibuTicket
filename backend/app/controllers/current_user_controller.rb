@@ -1,4 +1,5 @@
 class CurrentUserController < ApplicationController
+  include RackSessionFix
   before_action :authenticate_user!
 
   def index

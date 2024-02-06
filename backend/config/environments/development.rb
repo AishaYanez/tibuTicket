@@ -1,6 +1,4 @@
 require "active_support/core_ext/integer/time"
-
-# Rails.application.routes.default_url_options[:host] = "localhost:4000"
 Rails.application.configure do
   config.action_mailer.default_url_options = { host: "localhost", port: 4000 }
   config.navigational_formats = []
@@ -67,3 +65,5 @@ Rails.application.configure do
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
 end
+
+Rails.application.routes.default_url_options[:host] = "localhost:4000"

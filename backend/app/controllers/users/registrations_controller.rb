@@ -10,17 +10,25 @@ class Users::RegistrationsController < Devise::RegistrationsController
       encoded_credentials = request.headers["Authorization"].split(" ").last
       decoded_credentials = Base64.decode64(encoded_credentials)
       email, password = decoded_credentials.split(":")
-      params[:user] = { email: email, password: password, password_confirmation: password }
+      user_params = { email: email, password: password, password_confirmation: password }
+
+      # Acceder a la imagen del usuario desde los parámetros de la solicitud
+      user_params[:user_image] = params[:user_image] if params[:user_image].present?
+
+      params[:user] = user_params
     end
 
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:email, :password, :password_confirmation, :other_required_fields])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:email, :password, :password_confirmation, :user_image, :other_required_fields])
   end
 
   def respond_with(resource, _opts = {})
     if request.method == "POST" && resource.persisted?
       render json: {
         status: { code: 200, message: "Signed up sucessfully." },
-        data: UserSerializer.new(resource).serializable_hash[:data][:attributes],
+        data: {
+          user: UserSerializer.new(resource).serializable_hash[:data][:attributes],
+          user_image: UserImageSerializer.new(resource).user_image,
+        },
       }, status: :ok
     elsif request.method == "DELETE"
       render json: {
