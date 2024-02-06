@@ -3,6 +3,12 @@ class CurrentUserController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    render json: UserSerializer.new(current_user).serializable_hash[:data][:attributes], status: :ok
+    render json: {
+             data: {
+               user: UserSerializer.new(current_user).serializable_hash[:data][:attributes],
+               user_image: UserImageSerializer.new(current_user).user_image,
+             },
+             status: :ok,
+           }
   end
 end

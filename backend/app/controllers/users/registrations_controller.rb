@@ -12,7 +12,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
       email, password = decoded_credentials.split(":")
       user_params = { email: email, password: password, password_confirmation: password }
 
-      # Acceder a la imagen del usuario desde los parámetros de la solicitud
       user_params[:user_image] = params[:user_image] if params[:user_image].present?
 
       params[:user] = user_params
@@ -25,10 +24,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if request.method == "POST" && resource.persisted?
       render json: {
         status: { code: 200, message: "Signed up sucessfully." },
-        data: {
-          user: UserSerializer.new(resource).serializable_hash[:data][:attributes],
-          user_image: UserImageSerializer.new(resource).user_image,
-        },
+      # data: {
+      #   user: UserSerializer.new(resource).serializable_hash[:data][:attributes],
+      #   user_image: UserImageSerializer.new(resource).user_image,
+      # },
       }, status: :ok
     elsif request.method == "DELETE"
       render json: {
