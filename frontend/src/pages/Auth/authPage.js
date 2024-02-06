@@ -12,18 +12,28 @@ function Authpage() {
     setIsSignIn(prevState => !prevState);
   };
 
-  const animatePositionChange = (target, translateY) => {
-    anime({
-      targets: target,
-      translateY: translateY,
-      duration: 1000,
-      easing: 'easeInOutQuad'
-    });
-  };
-
   useEffect(() => {
-    animatePositionChange('.form-container', isSignIn ? 0 : -350);
-    animatePositionChange('.back-container', isSignIn ? 0 : 560);
+    anime({
+      targets: '.triangles',
+      rotateX: isSignIn ? '0' : '180deg',
+      translateY: isSignIn ? 0 : 285,
+      duration: 800,
+      easing: 'easeInSine'
+    });
+
+    anime({
+      targets: '.form-container',
+      translateY: isSignIn ? 0 : -350,
+      duration: 800,
+      easing: 'easeInSine'
+    });
+
+    anime({
+      targets: '.back-container',
+      translateY: isSignIn ? 0 : 560,
+      duration: 800,
+      easing: 'easeInSine'
+    });
   }, [isSignIn]);
 
   return (
@@ -36,8 +46,8 @@ function Authpage() {
         </div>
         <svg className='svg'>
           <rect id='rect1' width={'100%'} height={'100%'} fill='#E6DED3' strokeWidth='1' stroke='black' />
-          <polygon id='tri1' points="0 0, 150 0, 0 100" fill='#FDF0E7' strokeWidth='1' stroke='black' />
-          <polygon id='tri2' points="400 0, 250 0, 400 100" fill='#BBC0BA' strokeWidth='1' stroke='black' />
+          <polygon id='tri1' points="0 0, 150 0, 0 100" fill='#FDF0E7' strokeWidth='1' stroke='black' className='triangles'/>
+          <polygon id='tri2' points="400 0, 250 0, 400 100" fill='#BBC0BA' strokeWidth='1' stroke='black'className='triangles' />
         </svg>
       </div>
       <div className='form-container'>{isSignIn ? <SignIn /> : <SignUp />}</div>

@@ -8,6 +8,7 @@ function SignIn() {
     <>
       <div className="container">
         <div className='form'>
+          <h2>Iniciar sesion</h2>
           <Input placeholder="Escribe aqui tu correo" />
           <Input placeholder="Escribe aqui tu contraseña" />
           <Button type="primary">Enter</Button>

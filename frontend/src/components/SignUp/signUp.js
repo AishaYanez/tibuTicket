@@ -15,7 +15,7 @@ function SignUp() {
   return (
     <>
       <div className="container">
-        <div className="icon"></div>
+        <h2>Registrarse</h2>
         <div className='form'>
           <Upload
             name="avatar"
@@ -33,7 +33,6 @@ function SignUp() {
           <Input placeholder="Escribe aqui tu contraseña" />
           <Button type="primary">Enter</Button>
         </div>
-        <div className="footer"></div>
       </div>
     </>
   );
