@@ -1,4 +1,4 @@
-class Users::RegistrationsController < Devise::RegistrationsController
+class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
   include RackSessionFix
   respond_to :json
   before_action :configure_sign_up_params, only: [:create]

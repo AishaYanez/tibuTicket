@@ -1,4 +1,4 @@
-class CurrentUserController < ApplicationController
+class Api::V1::Users::CurrentUserController < ApplicationController
   include RackSessionFix
   before_action :authenticate_user!
 

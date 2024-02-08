@@ -1,12 +1,22 @@
 Rails.application.routes.draw do
-  get "/current_user", to: "current_user#index"
+  resources :lists
+
+  get "api/v1/current_user", to: "api/v1/users/current_user#index"
+
   devise_for :users, path: "", path_names: {
-                       sign_in: "login",
-                       sign_out: "logout",
-                       registration: "signup",
+                       sign_in: "api/v1/login",
+                       sign_out: "api/v1/logout",
+                       registration: "api/v1/signup",
                      },
                      controllers: {
-                       sessions: "users/sessions",
-                       registrations: "users/registrations",
+                       sessions: "api/v1/users/sessions",
+                       registrations: "api/v1/users/registrations",
                      }
+
+  namespace :api do
+    namespace :v1 do
+      resources :lists
+      # resources :users
+    end
+  end
 end
