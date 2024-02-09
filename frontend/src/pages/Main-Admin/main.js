@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './main.css';
 import Menu from '../../components/Menu/menu';
-import ListCard from '../../components/ListCard/ListCard';
+import AdminListCard from '../../components/AdminListCard/ListCard';
 import { Button } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
 
@@ -30,8 +30,8 @@ function Main() {
     <>
       <div className="main-container">
         <Menu />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
         <div className="Group4">
           <Button 
             className="Add" 

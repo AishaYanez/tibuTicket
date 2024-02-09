@@ -1,7 +1,6 @@
 import React from 'react';
 import './ListCard.css';
 import { Button } from 'antd';
-import DelIcon from '../../assets/images/delete.jpg';
 import PlusIcon from '../../assets/images/Add.png';
 import Meat from '../../assets/images/meat.png';
 
@@ -21,10 +20,7 @@ function ListCard() {
         </Button>
         <Button className="StepperMinus">
             <div className="Vector2"></div>
-        </Button>
-        <Button className="Delete">
-          <img src={DelIcon} alt="Delete" />
-        </Button>
+        </Button> 
       </div>
     </>
   );
