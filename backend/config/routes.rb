@@ -1,3 +1,4 @@
+require "webpush"
 Rails.application.routes.draw do
   resources :lists
 
