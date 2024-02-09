@@ -18,12 +18,11 @@ class Api::V1::ListsController < ApplicationController
   # GET /api/v1/lists/1
   def show
     render json: {
-             status: { code: 200, message: "Created list sucessfully." },
              data: {
                list: ListSerializer.new(@list).serializable_hash[:data][:attributes],
                list_image: ListImageSerializer.new(@list).list_image,
              },
-           }, status: :ok
+           }
   end
 
   # POST /api/v1/lists
@@ -47,7 +46,12 @@ class Api::V1::ListsController < ApplicationController
   # PATCH/PUT /api/v1/lists/1
   def update
     if @list.update(list_params)
-      render json: @list
+      render json: {
+        data: {
+          list: ListSerializer.new(@list).serializable_hash[:data][:attributes],
+          list_image: ListImageSerializer.new(@list).list_image,
+        },
+      }
     else
       render json: @list.errors, status: :unprocessable_entity
     end
