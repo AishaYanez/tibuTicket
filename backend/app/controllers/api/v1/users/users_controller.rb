@@ -1,5 +1,26 @@
+require 'webpush'
 class Api::V1::Users::UsersController < ApplicationController
   before_action :set_user, only: %i[ show update destroy ]
+
+  # Webpush method
+  def send_message
+    @message = params[:message]
+    @user = User.find(params[:user_id])
+    subscription = @user[:subscription]
+    Webpush.payload_send(
+        endpoint: subscription[:endpoint],
+        message: @message,
+        p256dh: subscription[:keys][:p256dh],
+        auth: subscription[:keys][:auth],
+        vapid: {
+            subject: ENV['SUBJECT'],
+            public_key: ENV['VAPID_PUBLIC_KEY'],
+            private_key: ENV['VAPID_PRIVATE_KEY'],
+            expiration: 12 * 60 * 60
+        }
+    )
+    render json: { success: true }
+  end
 
   # GET api/v1/users
   def index
@@ -46,7 +67,8 @@ class Api::V1::Users::UsersController < ApplicationController
   end
 
   # Only allow a list of trusted parameters through.
+
   def user_params
-    params.require(:user).permit(:user_image, :is_admin, :created_at, :updated_at)
+    params.require(:user).permit(:user_image, :is_admin, :created_at, :updated_at, :name, :email, subscription: [:endpoint, :expirationTime, keys: [:p256dh, :auth]])
   end
 end

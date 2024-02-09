@@ -113,6 +113,7 @@ GEM
       thor (>= 0.14.0, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    hkdf (0.3.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
@@ -214,6 +215,9 @@ GEM
       dry-configurable (>= 0.13, < 2)
       jwt (~> 2.1)
       warden (~> 1.2)
+    webpush (1.1.0)
+      hkdf (~> 0.2)
+      jwt (~> 2.0)
     webrick (1.8.1)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
@@ -235,6 +239,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.1.2)
   tzinfo-data
+  webpush
 
 RUBY VERSION
    ruby 3.2.2p53

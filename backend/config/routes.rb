@@ -1,5 +1,8 @@
+require 'webpush'
 Rails.application.routes.draw do
   get "/current_user", to: "current_user#index"
+
+  post 'sendMessage', to: 'users#send_message'
 
   devise_for :users, path: "", path_names: {
                        sign_in: "api/v1/login",
