@@ -9,12 +9,12 @@ default: &default
 
 development:
   <<: *default
-  database: backend_development_tibu_ticket
+  database: backend_development_tibuTicket
   
 test:
   <<: *default
-  database: backend_test_tibu_ticket
+  database: backend_test_tibuTicket
 
 production:
   <<: *default
-  database: backend_production_tibu_ticket
+  database: backend_production_tibuTicket
