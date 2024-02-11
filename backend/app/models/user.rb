@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
   has_one_attached :user_image
 
-  has_many :list, dependent: :destroy
+  has_many :lists, foreign_key: "list_creator_id", dependent: :destroy
 
   devise :database_authenticatable, :registerable, :validatable,
          :jwt_authenticatable, jwt_revocation_strategy: self
