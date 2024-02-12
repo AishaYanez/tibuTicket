@@ -1,0 +1,116 @@
+.AdminItemlistcomponent {
+  display: flex;
+  margin-left: 3%;
+  margin-top: 5%;
+  width: 366px;
+  height: 210px;
+  position: relative;
+  background: #E6DED3;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px black solid;
+}
+
+.Group1 {
+  width: 85px;
+  height: 77px;
+  left: 29px;
+  top: 27px;
+  position: absolute;
+}
+
+.ContentBlock {
+  width: 85px;
+  height: 77px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: #C5C5C5;
+  border-radius: 8px;
+}
+
+.CardImg {
+  width: 85px;
+  height: 77px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.CardText {
+  width: 189px;
+  height: 38px;
+  left: 80px;
+  top: 152px;
+  position: absolute;
+  color: black;
+  font-size: 32px;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+.Number {
+  width: 144px;
+  height: 70px;
+  left: 132px;
+  top: 30px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 55px;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+.StepperAdd {
+  width: 80px;
+  height: 136px;
+  left: 285px;
+  top: 0;
+  position: absolute;
+  background: #B2E5A0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px black solid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+.StepperMinus {
+  width: 80px;
+  height: 73px;
+  left: 285px;
+  top: 136px;
+  position: absolute;
+  background: #FF9D9D;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px black solid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.Vector2 {
+  width: 11.67px;
+  height: 1px;
+  background: #1677FF;
+}
+
+.Delete {
+  width: 59px;
+  height: 56px;
+  left: 11px;
+  top: 144px;
+  position: absolute;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px black solid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  display: inline-flex;
+}
