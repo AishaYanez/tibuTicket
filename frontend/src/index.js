@@ -3,14 +3,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Authpage from './pages/Auth/authPage';
-import MainPage from './pages/Main/main.js';
+import AdminMainPage from './pages/Main-Admin/main.js';
+import UserMainPage from './pages/Main-User/main.js';
+import ClientMainPage from './pages/Main-Client/main.js';
 import reportWebVitals from './reportWebVitals';
 
 const RootComponent = () => (
   <React.StrictMode>
     <Routes>
     <Route path='/' element={<Authpage/>} />
-    <Route path='/MainPage' element={<MainPage/>} />
+    <Route path='/AdminPage' element={<AdminMainPage/>} />
+    <Route path='/UserPage' element={<UserMainPage/>} />
+    <Route path='/ClientPage' element={<ClientMainPage/>} />
     </Routes>
   </React.StrictMode>
 );
