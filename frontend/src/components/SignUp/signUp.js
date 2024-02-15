@@ -22,7 +22,7 @@ function SignUp() {
             listType="picture-circle"
             className="avatar-uploader"
             maxCount={1}
-            onChange={handleChange}        
+            onChange={handleChange}
           >
             {imageUploaded ? null : (
               <img alt=""/>
