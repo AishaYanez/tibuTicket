@@ -32,6 +32,31 @@ function Main() {
         <Menu />
         <AdminListCard className="Items" />
         <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
+        <AdminListCard className="Items" />
         <div className="Group4">
           <Button 
             className="Add" 

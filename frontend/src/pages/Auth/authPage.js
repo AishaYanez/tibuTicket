@@ -14,29 +14,36 @@ function Authpage() {
 
   useEffect(() => {
     const resizeTriangles = () => {
+      const rect = document.getElementById('rect1');
       const screenWidth = window.innerWidth;
       const tri1 = document.getElementById('tri1');
       const tri2 = document.getElementById('tri2');
 
 
       if (screenWidth <= 500) {
-        const tri1Points = `${0},${0} ${screenWidth * 0.35},${0} ${0},${screenWidth * 0.65}`;
-        const tri2Points = `${screenWidth},${0} ${screenWidth * 0.6},${0} ${screenWidth},${screenWidth * 0.65}`;
+        rect.setAttribute('width', '100%');
+        rect.setAttribute('height', '100%');
+        const tri1Points = `${0},${0} ${screenWidth * 0.30},${0} ${0},${screenWidth * 0.25}`;
+        const tri2Points = `${screenWidth},${0} ${screenWidth * 0.7},${0} ${screenWidth},${screenWidth * 0.25}`;
         tri1.setAttribute('points', tri1Points);
         tri2.setAttribute('points', tri2Points);
       } else if (screenWidth <= 760) {
-        const tri1Points = `${0},${0} ${screenWidth * 0.7},${0} ${0},${screenWidth * 0.7}`;
-        const tri2Points = `${screenWidth * 0.95},${0} ${screenWidth * 0.6},${0} ${screenWidth * 0.95},${screenWidth * 0.7}`;
+        rect.setAttribute('width', '100%');
+        rect.setAttribute('height', '100%');
+        const tri1Points = `${0},${0} ${screenWidth * 0.30},${0} ${0},${screenWidth * 0.25}`;
+        const tri2Points = `${screenWidth},${0} ${screenWidth * 0.7},${0} ${screenWidth},${screenWidth * 0.25}`;
         tri1.setAttribute('points', tri1Points);
         tri2.setAttribute('points', tri2Points);
-      } else if (screenWidth >= 800 && screenWidth <= 1023) {
+      } else if (screenWidth >= 761 && screenWidth <= 800) {
         const tri1Points = `${0},${0} ${screenWidth * 0.03},${0} ${0},${screenWidth * 0.1}`;
         const tri2Points = `${screenWidth * 0.07},${0} ${screenWidth * 0.05},${0} ${screenWidth * 0.07},${screenWidth * 0.1}`;
         tri1.setAttribute('points', tri1Points);
         tri2.setAttribute('points', tri2Points);
       } else {
-        const tri1Points = `${0},${0} ${screenWidth * 0.35},${0} ${0},${screenWidth * 0.65}`;
-        const tri2Points = `${screenWidth},${0} ${screenWidth * 0.6},${0} ${screenWidth},${screenWidth * 0.65}`;
+        rect.setAttribute('width', '100%');
+        rect.setAttribute('height', '100%');
+        const tri1Points = `${0},${0} ${screenWidth * 0.30},${0} ${0},${screenWidth * 0.15}`;
+        const tri2Points = `${screenWidth},${0} ${screenWidth * 0.7},${0} ${screenWidth},${screenWidth * 0.15}`;
         tri1.setAttribute('points', tri1Points);
         tri2.setAttribute('points', tri2Points);
       }
@@ -53,17 +60,19 @@ function Authpage() {
 
     anime({
       targets: '.form-container',
-      translateY: isSignIn ? 0 : '-100%',
+      translateY: isSignIn ? 0 : '-20%',
       duration: 800,
       easing: 'easeInSine'
     });
 
     anime({
       targets: '.back-container',
-      translateY: isSignIn ? 0 : '136%',
+      translateY: isSignIn ? 0 : (window.innerHeight * 0.8),
       duration: 800,
       easing: 'easeInSine'
     });
+
+
 
     window.addEventListener('resize', resizeTriangles);
     resizeTriangles();
@@ -74,22 +83,24 @@ function Authpage() {
   }, [isSignIn]);
 
   return (
-    <div className='auth-container'>
-      <div className='back-container'>
-        <div className='changeButton'>
-          <Button onClick={toggleForm} type="primary" ghost style={{ borderColor: 'white', backgroundColor: '#BBC0BA', color: 'white' }} size='large'>
-            {isSignIn ? 'Sign Up' : 'Sign In'}
-          </Button>
+    <div className="prin-container">
+      <div className='auth-container'>
+        <div className='back-container'>
+          <div className='changeButton'>
+            <Button onClick={toggleForm} type="primary" ghost style={{ borderColor: 'white', backgroundColor: '#BBC0BA', color: 'white' }} size='large'>
+              {isSignIn ? 'Sign Up' : 'Sign In'}
+            </Button>
+          </div>
+          <svg className='svg'>
+            <rect id='rect1' fill='#E6DED3' strokeWidth='1' stroke='black' />
+            <polygon id='tri1' fill='#FDF0E7' strokeWidth='1' stroke='black' className='triangles' />
+            <polygon id='tri2' fill='#BBC0BA' strokeWidth='1' stroke='black' className='triangles' />
+          </svg>
         </div>
-        <svg className='svg'>
-          <rect id='rect1' width={'100%'} height={'100%'} fill='#E6DED3' strokeWidth='1' stroke='black' />
-          <polygon id='tri1' fill='#FDF0E7' strokeWidth='1' stroke='black' className='triangles' />
-          <polygon id='tri2' fill='#BBC0BA' strokeWidth='1' stroke='black' className='triangles' />
-        </svg>
+        <div className='form-container'>{isSignIn ? <SignIn /> : <SignUp />}</div>
       </div>
-      <div className='form-container'>{isSignIn ? <SignIn /> : <SignUp />}</div>
     </div>
-  );
+  );  
 }
 
 export default Authpage;

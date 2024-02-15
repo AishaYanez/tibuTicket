@@ -1,4 +1,5 @@
 .main-container {
+  overflow-y: scroll;
     display: flex;
     flex-direction: column;
     width: 100%;
