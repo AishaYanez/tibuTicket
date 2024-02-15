@@ -38,10 +38,11 @@
 
 .changeButton{
     position: absolute;
-    top: 20%;
-    left: 40%;
+    top: 30%;
+    left: 45%;
 }
 
 Button {
     fill: #BBC0BA;
 }
+
