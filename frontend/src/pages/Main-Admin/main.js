@@ -1,12 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './main.css';
 import Menu from '../../components/Menu/menu';
 import AdminListCard from '../../components/AdminListCard/ListCard';
 import { Button } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
+import ListService from '../../services/ListService/list.service';
 
 function Main() {
   const [buttonPressed, setButtonPressed] = useState(false);
+  const [queues, setQueues] = useState([]);
+
+  async function fetchQueues() {
+    try {
+      const fetchedQueues = (await ListService.getLists()).data;
+      setQueues(fetchedQueues);
+      console.log(fetchedQueues);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  useEffect(() => {
+    fetchQueues();
+  }, []);
 
   const handleMouseDown = () => {
     setButtonPressed(true);
@@ -30,8 +46,12 @@ function Main() {
     <>
       <div className="main-container">
         <Menu />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
+        {/* <AdminListCard className="Items" />
+        <AdminListCard className="Items" /> */}
+        {queues.map((q) => (
+          <AdminListCard key={q.list_description.id} queue={q} fetchQueus={fetchQueues} className="Items" />
+          // <h2>{q.list_description.list_name}</h2>
+        ))}
         <div className="Group4">
           <Button 
             className="Add" 

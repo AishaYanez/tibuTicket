@@ -22,7 +22,9 @@ const deleteList = (id) => {
 };
 
 const ListService = {
-
+  getLists,
+  createList,
+  deleteList
 };
 
-export default ActivityService;
+export default ListService;
