@@ -1,4 +1,7 @@
 .ClienItemlistcomponent {
+  margin: 1%;
+  margin-top: 5%;
+  width: 90%;
   display: flex;
   margin-left: 3%;
   margin-top: 5%;
@@ -67,7 +70,7 @@
 .ClientNumberText {
   width: 198px;
   height: 41px;
-  left: 168px;
+  left: 30%;
   top: 2px;
   position: absolute;
   text-align: center;
@@ -85,7 +88,7 @@
   padding-right: 15px;
   padding-top: 4px;
   padding-bottom: 4px;
-  left: 265px;
+  left: 70%;
   top: 134px;
   position: absolute;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.04);

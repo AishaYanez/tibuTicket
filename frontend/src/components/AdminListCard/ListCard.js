@@ -12,15 +12,15 @@ function AdminListCard() {
       <div className="AdminItemlistcomponent">
         <div className="Group1">
           <div className="ContentBlock" />
-          <img className="CardImg" src={Meat} alt=''/>
+          <img className="CardImg" src={Meat} alt='' />
         </div>
         <div className="CardText">Charcutería </div>
         <div className="Number">00</div>
         <Button className="StepperAdd">
-            <img src={PlusIcon} alt="Plus"/>
+          <img src={PlusIcon} alt="Plus" />
         </Button>
         <Button className="StepperMinus">
-            <div className="Vector2"></div>
+          <div className="Vector2"></div>
         </Button>
         <Button className="Delete">
           <img src={DelIcon} alt="Delete" />

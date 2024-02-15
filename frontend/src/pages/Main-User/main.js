@@ -9,8 +9,22 @@ function Main() {
     <>
       <div className="main-container">
         <Menu />
+        <div className='Usercardcontainer'>
         <ListCard className="Items" />
         <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        <ListCard className="Items" />
+        </div>
       </div>
     </>
   );

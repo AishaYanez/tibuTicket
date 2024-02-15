@@ -1,42 +1,70 @@
 .main-container {
   overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #EEEDE9;
+  display: flex;  
+  width: 100%;
+  height: 100%;
+  background-color: #EEEDE9;
+}
+
+.Admincardcontainer {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Group4 {
-    align-items: flex-end;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 98%;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.Add {
+  width: 10%;
+  max-width: 100px;
+  height: 10%;
+  max-height: 100px;
+  padding: 1.5%;
+  background: #BBC0BA;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Title {
+  text-align: center;
+  color: white;
+  font-size: 3vw;
+  font-family: Arial;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.Items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.AdminListCard {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .Items {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .Add {
-    width: 78px;
-    height: 78px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background: #BBC0BA;
-    border-radius: 38px;
-    overflow: hidden;
-    border: 1px black solid;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
+  .AdminListCard {
+      width: 100%;
   }
-  
-  .Title {
-    text-align: center;
-    color: white;
-    font-size: 48px;
-    font-family: Arial;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
+}

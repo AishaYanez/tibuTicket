@@ -1,8 +1,8 @@
 .Itemlistcomponent {
-  display: flex;
-  margin-left: 3%;
+  margin: 1%;
   margin-top: 5%;
-  width: 366px;
+  width: 90%;
+  max-width: 350px;
   height: 210px;
   position: relative;
   background: #E6DED3;
@@ -63,7 +63,8 @@
 }
 
 .StepperAdd {
-  width: 80px;
+  max-width: 80px;
+  width: 18%;
   height: 136px;
   left: 285px;
   top: 0;
@@ -78,7 +79,8 @@
   display: inline-flex;
 }
 .StepperMinus {
-  width: 80px;
+  max-width: 80px;
+  width: 18%;
   height: 73px;
   left: 285px;
   top: 136px;

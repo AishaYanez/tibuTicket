@@ -30,39 +30,41 @@ function Main() {
     <>
       <div className="main-container">
         <Menu />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
-        <AdminListCard className="Items" />
+        <div className='Admincardcontainer'>
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+          <AdminListCard className="Items" />
+        </div>
         <div className="Group4">
-          <Button 
-            className="Add" 
-            style={{ 
-              backgroundColor: buttonPressed ? '#E6DED3' : '#BBC0BA', 
-              color: buttonPressed ? 'black' : 'white' 
+          <Button
+            className="Add"
+            style={{
+              backgroundColor: buttonPressed ? '#E6DED3' : '#BBC0BA',
+              color: buttonPressed ? 'black' : 'white'
             }}
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
