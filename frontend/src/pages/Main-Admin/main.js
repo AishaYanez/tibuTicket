@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './main.css';
-import Menu from '../../components/Menu/menu';
+import MainMenu from '../../components/Menu/MainMenu';
 import AdminListCard from '../../components/AdminListCard/ListCard';
 import { Button } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
@@ -29,7 +29,7 @@ function Main() {
   return (
     <>
       <div className="main-container">
-        <Menu />
+        <MainMenu />
         <div className='Admincardcontainer'>
           <AdminListCard className="Items" />
           <AdminListCard className="Items" />
