@@ -14,14 +14,20 @@ function SignUp() {
     setImageUploaded(info.fileList.length > 0);
   };
 
+  const updateData = () => {
+    setNewUser({
+      newNickname: document.getElementById('newNickname').value || "",
+      newEmail: document.getElementById('newEmail').value || "",
+      newPassword: document.getElementById('newPassword').value || ""
+    });
+  }
+
   const submitUser = (event) => {
     event.preventDefault(); 
     console.log('hola');
     
     let userData = {
-      user: {
         nickname: newUser.newNickname
-      }
     };
 
     let credentials = btoa(`${newUser.newEmail}:${newUser.newPassword}`);
@@ -51,9 +57,9 @@ function SignUp() {
               <img alt=""/>
             )}
           </Upload>
-          <Input type="text" placeholder="Pon tu nombre y apellidos" required/>
-          <Input type="email" placeholder="Escribe aqui tu correo" required/>
-          <Input minLength="6" type="password" placeholder="Escribe aqui tu contraseña" pattern="^\S.*\S$" required/>
+          <Input id='newNickname' value={newUser.newNickname} onChange={updateData} type="text" placeholder="Pon tu nombre y apellidos" required/>
+          <Input id='newEmail' value={newUser.newEmail} onChange={updateData} type="email" placeholder="Escribe aqui tu correo" required/>
+          <Input id='newPassword' value={newUser.newPassword} onChange={updateData} minLength="6" type="password" placeholder="Escribe aqui tu contraseña" pattern="^\S.*\S$" required/>
           <Button type="primary" htmlType="submit" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color:'white' }}>Enter</Button>
         </form>
       </div>
