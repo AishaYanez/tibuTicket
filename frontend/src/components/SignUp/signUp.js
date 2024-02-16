@@ -14,7 +14,7 @@ function SignUp() {
     setImageUploaded(info.fileList.length > 0);
   };
 
-  const updateData = () => {
+  const changeData = () => {
     setNewUser({
       newNickname: document.getElementById('newNickname').value || "",
       newEmail: document.getElementById('newEmail').value || "",
@@ -23,8 +23,7 @@ function SignUp() {
   }
 
   const submitUser = (event) => {
-    event.preventDefault(); 
-    console.log('hola');
+    event.preventDefault();
     
     let userData = {
         nickname: newUser.newNickname
@@ -57,9 +56,9 @@ function SignUp() {
               <img alt=""/>
             )}
           </Upload>
-          <Input id='newNickname' value={newUser.newNickname} onChange={updateData} type="text" placeholder="Pon tu nombre y apellidos" required/>
-          <Input id='newEmail' value={newUser.newEmail} onChange={updateData} type="email" placeholder="Escribe aqui tu correo" required/>
-          <Input id='newPassword' value={newUser.newPassword} onChange={updateData} minLength="6" type="password" placeholder="Escribe aqui tu contraseña" pattern="^\S.*\S$" required/>
+          <Input id='newNickname' value={newUser.newNickname} onChange={changeData} type="text" placeholder="Pon tu nombre y apellidos" required/>
+          <Input id='newEmail' value={newUser.newEmail} onChange={changeData} type="email" placeholder="Escribe aqui tu correo" required/>
+          <Input id='newPassword' value={newUser.newPassword} onChange={changeData} minLength="6" type="password" placeholder="Escribe aqui tu contraseña" pattern="^\S.*\S$" required/>
           <Button type="primary" htmlType="submit" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color:'white' }}>Enter</Button>
         </form>
       </div>

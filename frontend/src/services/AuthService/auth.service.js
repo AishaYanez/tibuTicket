@@ -22,7 +22,7 @@ const checkAuth = () => {
   return http.get('/current_user', {
     headers: {
       ...http.defaults.headers.common,
-      Authorization: `Bearer ${getToken()}`
+      Authorization: getToken()
     }
   }).then(res => {
     return res.data;
@@ -36,7 +36,7 @@ const loginUser = (credentials) => {
       Authorization: `Basic ${credentials}`
     }
   }).then(res => {
-    setToken(res.data.token)
+    setToken(res.headers.authorization)
     return res.data;
   }).catch(error => {
     throw error
@@ -47,7 +47,8 @@ const logoutUser = () => {
   return http.delete('/logout', {
     headers: {
       ...http.defaults.headers.common,
-      Authorization: `Bearer ${getToken()}`
+      // Authorization: `Bearer ${getToken()}`
+      Authorization: getToken()
     }
   });
 };
@@ -65,7 +66,7 @@ const deleteAccount = () => {
   return http.delete('/signup', {
     headers: {
       ...http.defaults.headers.common,
-      Authorization: `Bearer ${getToken()}`
+      Authorization: getToken()
     }
   })
 };
