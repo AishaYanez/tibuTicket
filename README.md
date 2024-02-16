@@ -57,7 +57,6 @@
 - ### PC:
  ![PC](readme_assets/PCInterface.png)
 
-
 ## Usability and Accesibility:
 
 ## Technological Stack:
