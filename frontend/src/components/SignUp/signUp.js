@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './signUp.css';
-import { Button, Input, Upload } from 'antd';
+import { Button, Input, Upload, message } from 'antd';
+import AuthService from '../../services/AuthService/auth.service';
 
 function SignUp() {
   const [imageUploaded, setImageUploaded] = useState(false);
@@ -16,24 +17,22 @@ function SignUp() {
   const submitUser = (event) => {
     event.preventDefault(); 
     console.log('hola');
-  //   let discriminator = newUser.newEmail.includes('@stillhigher.es') ? 'Employee' : 'Client';
     
-  //   let userData = {
-  //     user: {
-  //       nickname: newUser.newNickname,
-  //       discriminator: discriminator
-  //     }
-  //   };
+    let userData = {
+      user: {
+        nickname: newUser.newNickname
+      }
+    };
 
-  //   let credentials = btoa(`${newUser.newEmail}:${newUser.newPassword}`);
-
-  //   AuthService.createAccount(credentials, userData)
-  //     .then(r => {
-  //       changeForm()
-  //       message.success('Nuevo usuario creado correctamente')
-  //     }).catch(e => {
-  //       message.error('Email o nickname ya en uso')
-  //     });
+    let credentials = btoa(`${newUser.newEmail}:${newUser.newPassword}`);
+    
+    AuthService.createAccount(credentials, userData)
+      .then(r => {
+        console.log(r);
+        message.success('Nuevo usuario creado correctamente')
+      }).catch(e => {
+        message.error(e)
+      });
   }
 
   return (
