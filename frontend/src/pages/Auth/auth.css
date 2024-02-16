@@ -9,7 +9,7 @@
   }
 
   .form-container {
-    min-height: 80vh;
+    min-height: 50vh;
   }
 
   .svg{
@@ -60,7 +60,7 @@
 
   @media screen and (max-width: 768px) {
     .changeButton {
-      left: 47%;
+      left: 40%;
     }
     .back-container{
       background-color: #E6DED3;
@@ -72,7 +72,7 @@
 
   @media screen and (min-width: 800px) {
     .changeButton {
-      left: 47%;
+      left: 50%;
     }
     .back-container{
       height: 100vh;

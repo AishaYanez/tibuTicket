@@ -70,7 +70,7 @@ function Authpage() {
 
     anime({
       targets: '.back-container',
-      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : (window.innerWidth * 0.8)),
+      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : (window.innerWidth * 1.35)),
       translateX: isScreenWide() ? (isSignIn ? 0 : (window.innerWidth * 0.5)) : 0,
       duration: 800,
       easing: 'easeInSine'
