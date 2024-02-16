@@ -29,8 +29,7 @@
 - [Helpfull Links](#helpfull-links)
 
 ## Introduction:
-- This project is a colaboration of three people to give an  application for
-the supermarkets in order to make the  process of buying products more efficient. The idea was born from the necessity that many customers have when the management of tickets scanning the Qr with the phone camera. It was developed using HTML, CSS and JavaScript in the Frontend and RubyOnRails in the backend.
+- This is a colaboration of three people to give an  application for the supermarkets in order to make the  process of buying products more efficient. The idea was born from the necessity that many customers have when the management of tickets scanning the Qr with the phone camera. It was developed using HTML, CSS and JavaScript in the Frontend and RubyOnRails in the backend.
 
 ## Diagrams:
 
@@ -51,6 +50,13 @@ the supermarkets in order to make the  process of buying products more efficient
 - ### Clients/customers:
 
 ## Interfaces:
+- https://www.figma.com/file/tg48KKDbrZ6F4992hykPjz/ProjectUsabi?type=design&node-id=0%3A1&mode=design&t=zH6fmTraTgpfshuf-1
+- ### Mobile:
+ ![Mobile](readme_assets/MobileInterface.png)
+
+- ### PC:
+ ![PC](readme_assets/PCInterface.png)
+
 
 ## Usability and Accesibility:
 
@@ -61,8 +67,6 @@ the supermarkets in order to make the  process of buying products more efficient
 - ### BackEnd:
 
 ## Comparison:
-
-## Project Setup:
 
 ### Installation Steps:
 
