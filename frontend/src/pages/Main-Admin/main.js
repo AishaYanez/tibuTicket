@@ -46,11 +46,8 @@ function Main() {
     <>
       <div className="main-container">
         <Menu />
-        {/* <AdminListCard className="Items" />
-        <AdminListCard className="Items" /> */}
         {queues.map((q) => (
           <AdminListCard key={q.list_description.id} queue={q} fetchQueus={fetchQueues} className="Items" />
-          // <h2>{q.list_description.list_name}</h2>
         ))}
         <div className="Group4">
           <Button 
