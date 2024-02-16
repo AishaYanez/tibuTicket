@@ -44,11 +44,11 @@ the supermarkets in order to make the  process of buying products more efficient
 
 ## User Types:
 
-### Admin:
+- ### Admin:
 
-### Employee:
+- ### Employee:
 
-### Clients/customers:
+- ### Clients/customers:
 
 ## Interfaces:
 
@@ -56,9 +56,9 @@ the supermarkets in order to make the  process of buying products more efficient
 
 ## Technological Stack:
 
-### FrontEnd:
+- ### FrontEnd:
 
-### BackEnd:
+- ### BackEnd:
 
 ## Comparison:
 
@@ -66,9 +66,9 @@ the supermarkets in order to make the  process of buying products more efficient
 
 ### Installation Steps:
 
-### BackEnd Setup:
+- ### BackEnd Setup:
 
-### FrontEnd Setup:
+- ### FrontEnd Setup:
 
 ## Test:
 
