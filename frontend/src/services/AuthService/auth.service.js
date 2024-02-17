@@ -37,7 +37,7 @@ const loginUser = (credentials) => {
     }
   }).then(res => {
     setToken(res.headers.authorization)
-    return res.data;
+    return res.data.data;
   }).catch(error => {
     throw error
   });
