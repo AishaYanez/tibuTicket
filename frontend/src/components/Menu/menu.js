@@ -21,9 +21,7 @@ function Main() {
     const deleteAccount = () => {
         AuthService.deleteAccount().then(res => {
             localStorage.removeItem('token');
-            message.warning('Cuenta borrada')
-            console.log(res.data);
-            console.log('hola');
+            message.warning('Cuenta borrada');
             nav('/');
         }
         ).catch(err => console.error(err))
@@ -32,7 +30,7 @@ function Main() {
     const logoutActions = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('lastLoginTime');
-        message.warning('Logout exitoso');
+        message.success('Logout exitoso');
         nav('/');
     };
 
