@@ -2,7 +2,7 @@ import http from '../http-common';
 
 const getToken = () => {
   const now = new Date(Date.now()).getTime();
-  const thirtyMinutes = 1000 * 60 * 1440;
+  const thirtyMinutes = 1000 * 60 * 60;
   const timeSinceLastLogin = now - localStorage.getItem("lastLoginTime");
   if (timeSinceLastLogin < thirtyMinutes) {
     return localStorage.getItem("token");

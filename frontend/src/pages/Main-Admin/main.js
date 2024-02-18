@@ -7,7 +7,7 @@ import anime from 'animejs/lib/anime.es.js';
 import ListService from '../../services/ListService/list.service';
 
 function Main() {
-  const [buttonPressed, setButtonPressed] = useState(false);
+  // const [buttonPressed, setButtonPressed] = useState(false);
   const [queues, setQueues] = useState([]);
 
   async function fetchQueues() {
@@ -24,29 +24,29 @@ function Main() {
     fetchQueues();
   }, []);
 
-  const handleMouseDown = () => {
-    setButtonPressed(true);
-    anime({
-      targets: '.Add .ant-btn',
-      backgroundColor: '#E6DED3',
-      duration: 300,
-    });
-  };
+  // const handleMouseDown = () => {
+  //   setButtonPressed(true);
+  //   anime({
+  //     targets: '.Add .ant-btn',
+  //     backgroundColor: '#E6DED3',
+  //     duration: 300,
+  //   });
+  // };
 
-  const handleMouseUp = () => {
-    setButtonPressed(false);
-    anime({
-      targets: '.Add .ant-btn',
-      backgroundColor: '#BBC0BA',
-      duration: 300,
-    });
-  };
+  // const handleMouseUp = () => {
+  //   setButtonPressed(false);
+  //   anime({
+  //     targets: '.Add .ant-btn',
+  //     backgroundColor: '#BBC0BA',
+  //     duration: 300,
+  //   });
+  // };
 
   return (
     <>
       <div className="main-container">
         <Menu />
-        {queues.map((q) => (
+        {/* {queues.map((q) => (
           <AdminListCard key={q.list_description.id} queue={q} fetchQueus={fetchQueues} className="Items" />
         ))}
         <div className="Group4">
@@ -61,7 +61,7 @@ function Main() {
           >
             <div className="Title">+</div>
           </Button>
-        </div>
+        </div> */}
       </div>
     </>
   );
