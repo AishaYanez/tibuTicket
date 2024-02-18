@@ -5,15 +5,25 @@ import AuthService from '../../services/AuthService/auth.service';
 
 function SignUp() {
   const [imageUploaded, setImageUploaded] = useState(false);
+  const [imageFile, setImageFile] = useState();
   const [newUser, setNewUser] = useState({ newNickname: "", newEmail: "", newPassword: "" });
 
   const handleChange = info => {
-    console.log(info);
     if (info.fileList.length > 1) {
       info.fileList.shift();
     }
+  
+    const file = info.file.originFileObj;
+    
+    if (file) {
+        setImageFile(file);
+    } else {
+      setImageFile(null);
+    }
+
     setImageUploaded(info.fileList.length > 0);
   };
+  
 
   const changeData = () => {
     setNewUser({
@@ -23,8 +33,8 @@ function SignUp() {
     });
   }
 
-  const submitUser = (credentials, userData) => {
-    AuthService.createAccount(credentials, userData)
+  const submitUser = (credentials) => {
+    AuthService.createAccount(credentials, formattedUser())
       .then(r => {
         message.success(r.data.status.message)
       }).catch(e => {
@@ -33,16 +43,19 @@ function SignUp() {
   }
 
   const formattedUser = () => {
-    const formData = new FormData();
-    formData.append('nickname', newUser.newNickname);
-    // imageUploaded && formData.append('user_image', imageUploaded);
-    return formData;
+    const userData = new FormData();
+
+    userData.append('nickname', newUser.newNickname);
+    
+    imageUploaded && userData.append('user_image', imageFile);
+
+    return userData;
   }
 
   const encodeUser = (event) => {
     event.preventDefault();
     let credentials = btoa(`${newUser.newEmail}:${newUser.newPassword}`);
-    submitUser(credentials, formattedUser());
+    submitUser(credentials);
   }
 
   return (

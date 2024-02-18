@@ -74,7 +74,7 @@ function Main() {
         <>
             <div className="menu-container">
                 <div className='avatar'>
-                    <Avatar size={64} type="picture-circle" />
+                    <Avatar src={localStorage.getItem('user_image')} size={64} type="picture-circle" />
                 </div>
                 <Menu
                     className="menuItem"
