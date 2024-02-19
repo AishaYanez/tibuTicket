@@ -47,7 +47,6 @@ const logoutUser = () => {
   return http.delete('/logout', {
     headers: {
       ...http.defaults.headers.common,
-      // Authorization: `Bearer ${getToken()}`
       Authorization: getToken()
     }
   });

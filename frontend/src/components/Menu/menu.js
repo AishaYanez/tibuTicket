@@ -17,27 +17,26 @@ function Main() {
             type,
         };
     }
-
+    
+    const logoutActions = () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user_image');
+        localStorage.removeItem('lastLoginTime');
+        nav('/');
+    };
+    
     const deleteAccount = () => {
         AuthService.deleteAccount().then(res => {
-            localStorage.removeItem('token');
             message.warning('Cuenta borrada');
-            nav('/');
+            logoutActions();
         }
         ).catch(err => console.error(err))
     }
 
-    const logoutActions = () => {
-        localStorage.removeItem('token');
-        localStorage.removeItem('lastLoginTime');
-        message.success('Logout exitoso');
-        nav('/');
-    };
-
     const logOut = () => {
         if (localStorage.getItem('token') != null) {
             AuthService.logoutUser().then(r => {
-                console.log(r);
+                message.success('Logout exitoso');
                 logoutActions();
             }).catch(e => console.error(e))
         } else {
@@ -46,7 +45,7 @@ function Main() {
     }
 
     const items = [
-        getItem('', 'sub1', <img src={MenuIcon} alt='' className='iconMenu' />, [
+        getItem('', 'sub1', <img src={MenuIcon} alt='Icono de menu' className='iconMenu' />, [
             getItem('Cuenta', null, null, [getItem('Cerrar sesión', '1'), getItem('Borrar cuenta', '2')], 'group'),
             getItem('Ayuda', null, null, [getItem('Helper', '3'), getItem('Report', '4')], 'group'),
         ]),
