@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './main.css';
-import MainMenu from '../../components/Menu/MainMenu';
+import Menu from '../../components/Menu/menu';
 import AdminListCard from '../../components/AdminListCard/ListCard';
 import { Button, List, Input, Upload, message } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
