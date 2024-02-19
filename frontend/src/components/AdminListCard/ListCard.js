@@ -5,17 +5,17 @@ import DelIcon from '../../assets/images/delete.jpg';
 import PlusIcon from '../../assets/images/Add.png';
 import Meat from '../../assets/images/meat.png';
 
-function AdminListCard() {
+function AdminListCard({queue, fetchQueues}) {
 
   return (
     <>
       <div className="AdminItemlistcomponent">
         <div className="Group1">
           <div className="ContentBlock" />
-          <img className="CardImg" src={Meat} alt='' />
+          <img className="CardImg" src={Meat} alt='Icono de la lista' />
         </div>
-        <div className="CardText">Charcutería </div>
-        <div className="Number">00</div>
+        <div className="CardText">{queue.list_description.list_name}</div>
+        <div className="Number">{queue.list_description.list_current_number}</div>
         <Button className="StepperAdd">
           <img src={PlusIcon} alt="Plus" />
         </Button>
