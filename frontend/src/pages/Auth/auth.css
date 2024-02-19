@@ -9,17 +9,19 @@
   }
 
   .form-container {
-    min-height: 80vh;
+    min-height: 50vh;
   }
 
   .svg{
       z-index: 100;
       justify-content: center;
-      display: flex;
+      display: none;
       height: 100%;
       width: 100%;
   }
+
   .back-container{
+      background-color: #E6DED3;
       position: relative;
       z-index: 100;
       border: 1px black;
@@ -58,11 +60,12 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     .changeButton {
-      left: 47%;
+      left: 40%;
     }
     .back-container{
+      height: 100vh;
       background-color: #E6DED3;
     }
     .svg{
@@ -72,7 +75,7 @@
 
   @media screen and (min-width: 800px) {
     .changeButton {
-      left: 47%;
+      left: 50%;
     }
     .back-container{
       height: 100vh;

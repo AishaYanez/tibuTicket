@@ -12,7 +12,7 @@ function Authpage() {
     setIsSignIn(prevState => !prevState);
   };
   function isScreenWide() {
-    return window.innerWidth > 778;
+    return window.innerWidth >= 768;
   }
   useEffect(() => {
     const resizeTriangles = () => {
@@ -62,7 +62,7 @@ function Authpage() {
 
     anime({
       targets: '.form-container',
-      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : '-20%'),
+      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : '-40%'),
       translateX: isScreenWide() ? (isSignIn ? 0 : '-100%') : 0,
       duration: 800,
       easing: 'easeInSine'
@@ -70,7 +70,7 @@ function Authpage() {
 
     anime({
       targets: '.back-container',
-      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : (window.innerWidth * 0.8)),
+      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : '400%'),
       translateX: isScreenWide() ? (isSignIn ? 0 : (window.innerWidth * 0.5)) : 0,
       duration: 800,
       easing: 'easeInSine'
