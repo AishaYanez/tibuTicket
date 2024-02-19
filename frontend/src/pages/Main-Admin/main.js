@@ -9,7 +9,7 @@ import ListService from '../../services/ListService/list.service';
 function Main() {
   const [buttonPressed, setButtonPressed] = useState(false);
   const [queues, setQueues] = useState([]);
-  const [newQueue, setNewQueue] = useState({name: ""});
+  const [newQueue, setNewQueue] = useState({ name: "" });
   const [formVisible, setFormVisible] = useState(false);
 
   async function fetchQueues() {
@@ -57,16 +57,21 @@ function Main() {
     <>
       <div className="main-container">
         <Menu />
-        {queues.map((q) => (
-          <AdminListCard key={q.list_description.id} queue={q} fetchQueus={fetchQueues} className="Items" />
-        ))}
         {formVisible &&
           <form onSubmit={createQueue} className='formAddList form'>
             <Input id='listName' onChange={changeData} value={List.name} type="text" placeholder="Escribe aqui el nombre de la lista" required />
             <Button type="primary" htmlType="submit" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color: 'white' }}>Enter</Button>
           </form>
         }
-        <div className="Group6">
+
+
+        <div className='Admincardcontainer'>
+          {queues.map((q) => (
+            <AdminListCard key={q.list_description.id} queue={q} fetchQueus={fetchQueues} className="Items" />
+          ))}
+        </div>
+
+        <div className="Group4">
           <Button
             className="Add"
             style={{
@@ -75,7 +80,7 @@ function Main() {
             }}
             onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
-            onClick={() => {setFormVisible(!formVisible)}}
+            onClick={() => { setFormVisible(!formVisible) }}
           >
             <div className="Title">+</div>
           </Button>

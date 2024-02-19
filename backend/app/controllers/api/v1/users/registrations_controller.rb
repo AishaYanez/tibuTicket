@@ -24,18 +24,15 @@ class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
     if request.method == "POST" && resource.persisted?
       render json: {
         status: { code: 200, message: "Signed up sucessfully." },
-      # data: {
-      #   user: UserSerializer.new(resource).serializable_hash[:data][:attributes],
-      #   user_image: UserImageSerializer.new(resource).user_image,
-      # },
       }, status: :ok
     elsif request.method == "DELETE"
+      puts "////////////////////////////////////////7"
       render json: {
-        status: { code: 200, message: "Account deleted successfully." },
-      }, status: :ok
+               status: { code: 200, message: "Cuenta borrada" },
+             }, status: :ok
     else
       render json: {
-        status: { code: 422, message: "User couldn't be created successfully. #{resource.errors.full_messages.to_sentence}" },
+        status: { code: 422, message: "User couldn't be created successfully." },
       }, status: :unprocessable_entity
     end
   end

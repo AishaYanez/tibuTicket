@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './signIn.css';
 import { useNavigate } from 'react-router-dom';
-import { Button, Input } from 'antd';
+import { Button, Input, message } from 'antd';
 import AuthService from '../../services/AuthService/auth.service';
 
 function SignIn() {
@@ -29,8 +29,9 @@ function SignIn() {
       localStorage.getItem('user_image') && localStorage.setItem('user_image', res.user_image.url)
       loadPage(res.user_description.is_admin);
     })
-    .catch(error => {
-      console.error(error);
+    .catch(e => {
+      const mess = e.response.data.status.message;
+        message.error(mess)
     });
   }
 

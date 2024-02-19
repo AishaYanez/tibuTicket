@@ -44,7 +44,7 @@ const loginUser = (credentials) => {
 };
 
 const logoutUser = () => {
-  return http.delete('/logout', {
+  return http.delete('/login', {
     headers: {
       ...http.defaults.headers.common,
       Authorization: getToken()
@@ -62,10 +62,11 @@ const createAccount = (credentials, body) => {
 };
 
 const deleteAccount = () => {
+  const token = getToken() ? getToken() : 'Bearer ';
   return http.delete('/signup', {
     headers: {
       ...http.defaults.headers.common,
-      Authorization: getToken()
+      Authorization: token
     }
   })
 };

@@ -5,3 +5,9 @@
     height: 100%;
     background-color: #EEEDE9;
 }
+
+.Usercardcontainer {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }

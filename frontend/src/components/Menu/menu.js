@@ -17,31 +17,38 @@ function Main() {
             type,
         };
     }
-    
+
     const logoutActions = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('user_image');
         localStorage.removeItem('lastLoginTime');
         nav('/');
     };
-    
+
     const deleteAccount = () => {
         AuthService.deleteAccount().then(res => {
-            message.warning('Cuenta borrada');
+            console.log(res);
+            // message.warning('Cuenta borrada');
             logoutActions();
         }
-        ).catch(err => console.error(err))
+        ).catch(err => {
+            console.log(err);
+            const mess = err.response.data.message;
+            message.error(mess);
+            logoutActions();
+        })
     }
 
     const logOut = () => {
-        if (localStorage.getItem('token') != null) {
-            AuthService.logoutUser().then(r => {
-                message.success('Logout exitoso');
-                logoutActions();
-            }).catch(e => console.error(e))
-        } else {
-            message.error('No hay una sesión iniciada');
-        }
+        AuthService.logoutUser().then(r => {
+            message.success('Logout exitoso');
+            logoutActions();
+        }).catch(err => {
+            const mess = err.response.data.message;
+            message.error(mess);
+            logoutActions();
+        });
+
     }
 
     const items = [
