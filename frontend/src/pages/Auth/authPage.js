@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from 'antd';
+import { Button, Row, Col } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
 import './auth.css';
 import SignUp from "../../components/SignUp/signUp";
@@ -11,7 +11,9 @@ function Authpage() {
   const toggleForm = () => {
     setIsSignIn(prevState => !prevState);
   };
-
+  function isScreenWide() {
+    return window.innerWidth >= 768;
+  }
   useEffect(() => {
     const resizeTriangles = () => {
       const rect = document.getElementById('rect1');
@@ -60,14 +62,16 @@ function Authpage() {
 
     anime({
       targets: '.form-container',
-      translateY: isSignIn ? 0 : '-20%',
+      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : '-40%'),
+      translateX: isScreenWide() ? (isSignIn ? 0 : '-100%') : 0,
       duration: 800,
       easing: 'easeInSine'
     });
 
     anime({
       targets: '.back-container',
-      translateY: isSignIn ? 0 : (window.innerHeight * 0.8),
+      translateY: isScreenWide() ? 0 : (isSignIn ? 0 : '400%'),
+      translateX: isScreenWide() ? (isSignIn ? 0 : (window.innerWidth * 0.5)) : 0,
       duration: 800,
       easing: 'easeInSine'
     });
@@ -83,24 +87,33 @@ function Authpage() {
   }, [isSignIn]);
 
   return (
+
     <div className="prin-container">
       <div className='auth-container'>
-        <div className='back-container'>
-          <div className='changeButton'>
-            <Button onClick={toggleForm} type="primary" ghost style={{ borderColor: 'white', backgroundColor: '#BBC0BA', color: 'white' }} size='large'>
-              {isSignIn ? 'Sign Up' : 'Sign In'}
-            </Button>
-          </div>
-          <svg className='svg'>
-            <rect id='rect1' fill='#E6DED3' strokeWidth='1' stroke='black' />
-            <polygon id='tri1' fill='#FDF0E7' strokeWidth='1' stroke='black' className='triangles' />
-            <polygon id='tri2' fill='#BBC0BA' strokeWidth='1' stroke='black' className='triangles' />
-          </svg>
-        </div>
-        <div className='form-container'>{isSignIn ? <SignIn /> : <SignUp />}</div>
+        <Row>
+          <Col xs={24} md={12}>
+            <div className='back-container'>
+              <div className='changeButton'>
+                <Button onClick={toggleForm} type="primary" ghost style={{ borderColor: 'white', backgroundColor: '#BBC0BA', color: 'white' }} size='large'>
+                  {isSignIn ? 'Sign Up' : 'Sign In'}
+                </Button>
+              </div>
+              <svg className='svg'>
+                <rect id='rect1' fill='#E6DED3' strokeWidth='1' stroke='black' />
+                <polygon id='tri1' fill='#FDF0E7' strokeWidth='1' stroke='black' className='triangles' />
+                <polygon id='tri2' fill='#BBC0BA' strokeWidth='1' stroke='black' className='triangles' />
+              </svg>
+            </div>
+          </Col>
+          <Col xs={24} md={12}>
+            <div className='form-container'>{isSignIn ? <SignIn /> : <SignUp />}</div>
+          </Col>
+        </Row>
+
       </div>
     </div>
-  );  
+
+  );
 }
 
 export default Authpage;
