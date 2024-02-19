@@ -12,9 +12,9 @@ const RootComponent = () => (
   <React.StrictMode>
     <Routes>
     <Route path='/' element={<Authpage/>} />
-    <Route path='/AdminMainPage' element={<AdminMainPage/>} />
-    <Route path='/UserMainPage' element={<UserMainPage/>} />
-    <Route path='/ClientMainPage' element={<ClientMainPage/>} />
+    <Route path='/AdminPage' element={<AdminMainPage/>} />
+    <Route path='/UserPage' element={<UserMainPage/>} />
+    <Route path='/ClientPage' element={<ClientMainPage/>} />
     </Routes>
   </React.StrictMode>
 );
