@@ -1,5 +1,17 @@
 import http from '../http-common';
 
+const getToken = () => {
+  const now = new Date(Date.now()).getTime();
+  const thirtyMinutes = 1000 * 60 * 60;
+  const timeSinceLastLogin = now - localStorage.getItem("lastLoginTime");
+  if (timeSinceLastLogin < thirtyMinutes) {
+    return localStorage.getItem("token");
+  } else {
+    localStorage.removeItem("token");
+    localStorage.removeItem("lastLoginTime");
+    return null;
+  }
+};
 
 const getLists = () => {
   return http.get('/lists');
@@ -10,15 +22,25 @@ const getLists = () => {
 // };
 
 const createList = (data) => {
-  return http.post('/lists', data);
+  return http.post('/lists', data, {
+    headers: {
+      ...http.defaults.headers.common,
+      Authorization: getToken()
+    }
+  })
 };
 
-// const updateActivity = (id, data) => {
-//   return http.put(`/activities/${id}`, data);
+// const increaseNumberList = (id) => {
+//   return http.put(`/activities/${id}`);
 // };
 
 const deleteList = (id) => {
-  return http.delete(`/lists/${id}`);
+  return http.delete(`/lists/${id}`, {
+    headers: {
+      ...http.defaults.headers.common,
+      Authorization: getToken()
+    }
+  })
 };
 
 const ListService = {

@@ -26,7 +26,6 @@ class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
         status: { code: 200, message: "Signed up sucessfully." },
       }, status: :ok
     elsif request.method == "DELETE"
-      puts "////////////////////////////////////////7"
       render json: {
                status: { code: 200, message: "Cuenta borrada" },
              }, status: :ok

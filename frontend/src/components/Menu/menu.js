@@ -27,8 +27,7 @@ function Main() {
 
     const deleteAccount = () => {
         AuthService.deleteAccount().then(res => {
-            console.log(res);
-            // message.warning('Cuenta borrada');
+            message.warning(res.data.status.message);
             logoutActions();
         }
         ).catch(err => {

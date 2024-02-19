@@ -62,11 +62,10 @@ const createAccount = (credentials, body) => {
 };
 
 const deleteAccount = () => {
-  const token = getToken() ? getToken() : 'Bearer ';
   return http.delete('/signup', {
     headers: {
       ...http.defaults.headers.common,
-      Authorization: token
+      Authorization: getToken()
     }
   })
 };

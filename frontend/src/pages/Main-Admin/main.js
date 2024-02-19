@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './main.css';
 import Menu from '../../components/Menu/menu';
 import AdminListCard from '../../components/AdminListCard/ListCard';
-import { Button, List, Input } from 'antd';
+import { Button, List, Input, Upload, message } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
 import ListService from '../../services/ListService/list.service';
 
 function Main() {
+  const [imageUploaded, setImageUploaded] = useState(false);
+  const [imageFile, setImageFile] = useState();
   const [buttonPressed, setButtonPressed] = useState(false);
   const [queues, setQueues] = useState([]);
   const [newQueue, setNewQueue] = useState({ name: "" });
@@ -16,7 +18,6 @@ function Main() {
     try {
       const fetchedQueues = (await ListService.getLists()).data;
       setQueues(fetchedQueues);
-      console.log(fetchedQueues);
     } catch (e) {
       console.error(e);
     }
@@ -43,14 +44,47 @@ function Main() {
       duration: 300,
     });
   };
+  
   const changeData = () => {
     setNewQueue({
       name: document.getElementById('listName').value || ""
     });
   }
 
-  const createQueue = () => {
+  const formattedQueue = () => {
+    const listData = new FormData();
 
+    listData.append('list[list_name]', newQueue.name);
+    
+    imageUploaded && listData.append('list[list_image]', imageFile);
+
+    return listData;
+  }
+
+
+  const handleChange = info => {
+    if (info.fileList.length > 1) {
+      info.fileList.shift();
+    }
+  
+    const file = info.file.originFileObj;
+    
+    if (file) {
+        setImageFile(file);
+    } else {
+      setImageFile(null);
+    }
+
+    setImageUploaded(info.fileList.length > 0);
+  };
+
+  const createQueue = () => {
+    ListService.createList(formattedQueue()).then(r => {
+      message.success(r.data.status.message);
+    }).catch(e => {
+      const mess = e.response.data.status.message;
+      message.error(mess);
+    });
   };
 
   return (
@@ -59,7 +93,18 @@ function Main() {
         <Menu />
         {formVisible &&
           <form onSubmit={createQueue} className='formAddList form'>
-            <Input id='listName' onChange={changeData} value={List.name} type="text" placeholder="Escribe aqui el nombre de la lista" required />
+             <Upload
+            name="avatar"
+            listType="picture-circle"
+            className="avatar-uploader"
+            maxCount={1}
+            onChange={handleChange}
+          >
+            {imageUploaded ? null : (
+              <img alt="" />
+            )}
+          </Upload>
+            <Input id='listName' onChange={changeData} value={newQueue.name} type="text" placeholder="Escribe aqui el nombre de la lista" required />
             <Button type="primary" htmlType="submit" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color: 'white' }}>Enter</Button>
           </form>
         }
@@ -67,7 +112,7 @@ function Main() {
 
         <div className='Admincardcontainer'>
           {queues.map((q) => (
-            <AdminListCard key={q.list_description.id} queue={q} fetchQueus={fetchQueues} className="Items" />
+            <AdminListCard key={q.list_description.id} queue={q} fetchQueues={fetchQueues} className="Items" />
           ))}
         </div>
 
