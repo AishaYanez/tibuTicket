@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   devise_for :users, path: "", path_names: {
                        sign_in: "api/v1/login",
-                       sign_out: "api/v1/logout",
+                       sign_out: "api/v1/login",
                        registration: "api/v1/signup",
                      },
                      controllers: {

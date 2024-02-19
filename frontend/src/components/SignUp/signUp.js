@@ -36,9 +36,10 @@ function SignUp() {
   const submitUser = (credentials) => {
     AuthService.createAccount(credentials, formattedUser())
       .then(r => {
-        message.success(r.data.status.message)
+        message.success(r.data.status.message);
       }).catch(e => {
-        message.error(e.message)
+        const mess = e.response.data.status.message;
+        message.error(mess);
       });
   }
 

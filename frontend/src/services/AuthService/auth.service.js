@@ -44,7 +44,7 @@ const loginUser = (credentials) => {
 };
 
 const logoutUser = () => {
-  return http.delete('/logout', {
+  return http.delete('/login', {
     headers: {
       ...http.defaults.headers.common,
       Authorization: getToken()

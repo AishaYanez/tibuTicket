@@ -13,15 +13,6 @@ function Main() {
         <ListCard className="Items" />
         <ListCard className="Items" />
         <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
         </div>
       </div>
     </>
