@@ -12,6 +12,7 @@
 }
 
 .Group1 {
+  border-radius: 10%;
   width: 85px;
   height: 77px;
   left: 29px;
@@ -30,6 +31,7 @@
 }
 
 .CardImg {
+  border-radius: 10px;
   width: 85px;
   height: 77px;
   left: 0;
