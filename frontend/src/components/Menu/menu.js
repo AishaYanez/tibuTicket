@@ -69,6 +69,10 @@ function Main() {
                 deleteAccount();
                 break;
 
+            case "3":
+            window.open('/Helper/TibuTicket.html', '_blank')
+            break;
+
             default:
                 console.log('No está implementado');
                 break;

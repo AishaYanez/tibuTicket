@@ -1,87 +1,60 @@
-  .auth-container {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-      position: relative;
-  }
+.auth-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
 
-  .form-container {
-    min-height: 50vh;
-  }
+.form-container {
+min-height: 80vh;
+}
 
-  .svg{
-      z-index: 100;
-      justify-content: center;
-      display: none;
-      height: 100%;
-      width: 100%;
-  }
+.svg{
+  z-index: 100;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.back-container{
+  position: relative;
+  z-index: 100;
+  border: 1px black;
+  height: 20vh;
+}
 
-  .back-container{
-      background-color: #E6DED3;
-      position: relative;
-      z-index: 100;
-      border: 1px black;
-      height: 20vh;
-  }
+.form{
+  margin-left: 15%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
 
-  .form{
-      margin-left: 15%;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 70%;
-  }
+.changeButton{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
 
-  .changeButton{
-      position: absolute;
-      top: 30%;
-      left: 40%;
-  }
+Button {
+  fill: #BBC0BA;
+}
 
-  Button {
-      fill: #BBC0BA;
-  }
+@media screen and (min-width: 600px) {
+.changeButton {
+  left: 45%;
+}
 
-  @media screen and (min-width: 600px) {
-    .changeButton {
-      left: 45%;
-    }
-    .back-container{
-      background-color: #E6DED3;
-    }
-    .svg{
-      display: none;
-    }
-  }
+}
 
-  @media screen and (min-width: 768px) {
-    .changeButton {
-      left: 40%;
-    }
-    .back-container{
-      height: 100vh;
-      background-color: #E6DED3;
-    }
-    .svg{
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    .changeButton {
-      left: 50%;
-    }
-    .back-container{
-      height: 100vh;
-      background-color: #E6DED3;
-    }
-    .svg{
-      display: none;
-    }
-  }
+@media screen and (min-width: 800px) {
+.changeButton {
+  left: 47%;
+}
+}

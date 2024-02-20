@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './main.css';
-import MainMenu from '../../components/Menu/MainMenu';
+import Menu from '../../components/Menu/menu';
 import AdminListCard from '../../components/AdminListCard/ListCard';
-import { Button, List, Input, Upload, message } from 'antd';
+import { Button, Input, Upload, message, Form } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
 import ListService from '../../services/ListService/list.service';
 
@@ -44,7 +44,7 @@ function Main() {
       duration: 300,
     });
   };
-  
+
   const changeData = () => {
     setNewQueue({
       name: document.getElementById('listName').value || ""
@@ -55,7 +55,7 @@ function Main() {
     const listData = new FormData();
 
     listData.append('list[list_name]', newQueue.name);
-    
+
     imageUploaded && listData.append('list[list_image]', imageFile);
 
     return listData;
@@ -66,11 +66,11 @@ function Main() {
     if (info.fileList.length > 1) {
       info.fileList.shift();
     }
-  
+
     const file = info.file.originFileObj;
-    
+
     if (file) {
-        setImageFile(file);
+      setImageFile(file);
     } else {
       setImageFile(null);
     }
@@ -79,6 +79,7 @@ function Main() {
   };
 
   const createQueue = () => {
+    console.log("ALO")
     ListService.createList(formattedQueue()).then(r => {
       message.success(r.data.status.message);
     }).catch(e => {
@@ -92,23 +93,22 @@ function Main() {
       <div className="main-container">
         <Menu />
         {formVisible &&
-          <form onSubmit={createQueue} className='formAddList form'>
-             <Upload
-            name="avatar"
-            listType="picture-circle"
-            className="avatar-uploader"
-            maxCount={1}
-            onChange={handleChange}
-          >
-            {imageUploaded ? null : (
-              <img alt="" />
-            )}
-          </Upload>
-            <Input id='listName' onChange={changeData} value={newQueue.name} type="text" placeholder="Escribe aqui el nombre de la lista" required />
-            <Button type="primary" htmlType="submit" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color: 'white' }}>Enter</Button>
-          </form>
+          <form onSubmit={createQueue} className='ListForm form'>
+          <Upload
+         name="avatar"
+         listType="picture-circle"
+         className="avatar-uploader"
+         maxCount={1}
+         onChange={handleChange}
+       >
+         {imageUploaded ? null : (
+           <img alt="" />
+         )}
+       </Upload>
+         <Input id='listName' onChange={changeData} value={newQueue.name} type="text" placeholder="Escribe aqui el nombre de la lista" required />
+         <Button type="primary" htmlType="submit" style={{ borderColor: 'black', backgroundColor: '#BBC0BA', color: 'white' }}>Enter</Button>
+       </form>
         }
-
 
         <div className='Admincardcontainer'>
           {queues.map((q) => (
