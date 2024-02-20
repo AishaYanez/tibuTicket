@@ -1,15 +1,19 @@
+body{
+  background-color: #EEEDE9;
+}
+
 .main-container {
+  position: relative;
   display: flex;  
   width: 100%;
   height: 100%;
-  background-color: #EEEDE9;
 }
 
 .Admincardcontainer {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 80px;
+  padding-bottom: 80px
 }
 
 .Group4 {
@@ -54,8 +58,26 @@
 }
 
 .AdminListCard {
-  width: calc(33.33% - 20px);
+  width: calc(50% - 150px);
   margin-bottom: 20px;
+}
+
+.ListForm {
+  position: absolute;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20%;
+  width: 80%;
+  max-width: 300px;
+  border: black 1px solid;
+  align-self: center;
+  border-radius: 8px;
+  background-color: rgb(197, 197, 197);
+  box-shadow: 1px 1px 10px;
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {

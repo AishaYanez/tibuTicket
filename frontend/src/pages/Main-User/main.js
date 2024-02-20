@@ -8,9 +8,8 @@ function Main() {
   return (
     <>
       <div className="main-container">
-        <Menu />
+        <Menu/>
         <div className='Usercardcontainer'>
-        <ListCard className="Items" />
         <ListCard className="Items" />
         <ListCard className="Items" />
         <ListCard className="Items" />
