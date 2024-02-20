@@ -1,6 +1,6 @@
 class Api::V1::ListsController < ApplicationController
   before_action :authenticate_user!, only: %i[ create destroy ]
-  before_action :set_list, only: %i[ show update destroy ]
+  before_action :set_list, only: %i[ show getTicket destroy ]
 
   # GET /api/v1/lists
   def index
@@ -32,7 +32,7 @@ class Api::V1::ListsController < ApplicationController
 
     if @list.save
       render json: {
-        status: { code: 200, message: "Created list sucessfully." },
+        status: { code: 200, message: "Cola creada correctamente" },
         data: {
           list: ListSerializer.new(@list).serializable_hash[:data][:attributes],
           list_image: ListImageSerializer.new(@list).list_image,
@@ -44,7 +44,7 @@ class Api::V1::ListsController < ApplicationController
   end
 
   # PATCH/PUT /api/v1/lists/1
-  def update
+  def getTicket
     if @list.update(list_params)
       render json: {
         data: {
@@ -89,6 +89,6 @@ class Api::V1::ListsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def list_params
-    params.require(:list).permit(:list_name, :list_image, :list_current_number)
+    params.require(:list).permit(:list_name, :list_image, :list_current_number, :list_limit_number)
   end
 end
