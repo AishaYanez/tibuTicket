@@ -26,7 +26,7 @@ function SignIn() {
   const submitUser = (credentials) => {
     AuthService.loginUser(credentials)
     .then(res => {
-      localStorage.getItem('user_image') && localStorage.setItem('user_image', res.user_image.url)
+      res.user_image && localStorage.setItem('user_image', res.user_image.url)
       loadPage(res.user_description.is_admin);
     })
     .catch(e => {
