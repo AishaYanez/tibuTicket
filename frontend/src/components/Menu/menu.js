@@ -39,8 +39,7 @@ function Main() {
 
     const logOut = () => {
         AuthService.logoutUser().then(r => {
-            console.log();
-            message.success(r.data.status.message);
+            message.success(r.data.message);
             logoutActions();
         }).catch(err => {
             const mess =  err.response ? err.response.data.message : err.message;
