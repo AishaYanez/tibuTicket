@@ -23,7 +23,7 @@ class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
   def respond_with(resource, _opts = {})
     if request.method == "POST" && resource.persisted?
       render json: {
-        status: { code: 200, message: "Signed up sucessfully." },
+        status: { code: 200, message: "Cuenta creada correctamente" },
       }, status: :ok
     elsif request.method == "DELETE"
       render json: {
@@ -31,7 +31,7 @@ class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
              }, status: :ok
     else
       render json: {
-        status: { code: 422, message: "User couldn't be created successfully." },
+        status: { code: 422, message: "Usuario no pudo ser creado" },
       }, status: :unprocessable_entity
     end
   end

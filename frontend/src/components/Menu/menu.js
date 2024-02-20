@@ -32,8 +32,7 @@ function Main() {
             logoutActions();
         }
         ).catch(err => {
-            console.log(err);
-            const mess = err.response.data.message;
+            const mess =  err.response ? err.response.data.message : err.message;
             message.error(mess);
             logoutActions();
         })
@@ -41,10 +40,10 @@ function Main() {
 
     const logOut = () => {
         AuthService.logoutUser().then(r => {
-            message.success('Logout exitoso');
+            message.success(r.data.message);
             logoutActions();
         }).catch(err => {
-            const mess = err.response.data.message;
+            const mess =  err.response ? err.response.data.message : err.message;
             message.error(mess);
             logoutActions();
         });
