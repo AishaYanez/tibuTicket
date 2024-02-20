@@ -11,3 +11,7 @@ ReferenceError: fetch is not defined
     at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
     at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
     at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21) rootId=yvzi9ou47q6p9m9, id=yvzi9ou47q6p9m9
+2024-02-20T17:47:27.637Z - error: Report render failed
+(because) connect ECONNREFUSED 127.0.0.1:4000
+Error: connect ECONNREFUSED 127.0.0.1:4000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16) rootId=ghihxow0faeaqgq, id=ghihxow0faeaqgq

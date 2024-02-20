@@ -1300,3 +1300,446 @@ Error: Unable to find specified template (fA5ZwVax_)
 2024-02-20T17:43:13.158Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=shm0246td02l9zs, id=shm0246td02l9zs
 2024-02-20T17:43:13.271Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=shm0246td02l9zs, id=shm0246td02l9zs
 2024-02-20T17:43:13.271Z - info: Rendering request 20 finished in 119 ms rootId=shm0246td02l9zs, id=shm0246td02l9zs
+2024-02-20T17:45:28.570Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T17:45:28.573Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:45:28.601Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:45:28.603Z - info: Found 35 extension(s)
+2024-02-20T17:45:28.665Z - info: Using extension base@4.0.0
+2024-02-20T17:45:28.670Z - info: Using extension child-templates@4.0.0
+2024-02-20T17:45:28.673Z - info: Using extension cli@4.0.2
+2024-02-20T17:45:28.674Z - info: Using extension components@4.0.0
+2024-02-20T17:45:28.675Z - info: Using extension data@4.0.0
+2024-02-20T17:45:28.676Z - info: Using extension express@4.0.1
+2024-02-20T17:45:28.798Z - info: Using extension freeze@4.0.0
+2024-02-20T17:45:28.799Z - info: Using extension fs-store@4.0.1
+2024-02-20T17:45:28.838Z - info: Using extension handlebars@4.0.1
+2024-02-20T17:45:28.839Z - info: Using extension import-export@4.0.2
+2024-02-20T17:45:28.845Z - info: Using extension jsrender@4.0.0
+2024-02-20T17:45:28.846Z - info: Using extension licensing@4.0.1
+2024-02-20T17:45:28.847Z - info: Using extension localization@4.0.1
+2024-02-20T17:45:28.848Z - info: Using extension npm@4.0.0
+2024-02-20T17:45:28.856Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T17:45:28.858Z - info: Using extension reports@4.0.0
+2024-02-20T17:45:28.860Z - info: Using extension tags@4.0.1
+2024-02-20T17:45:28.861Z - info: Using extension text@4.0.0
+2024-02-20T17:45:28.861Z - info: Using extension version-control@4.0.0
+2024-02-20T17:45:28.870Z - info: Using extension assets@4.0.2
+2024-02-20T17:45:28.875Z - info: Using extension authorization@4.0.0
+2024-02-20T17:45:28.877Z - info: Using extension browser-client@4.0.0
+2024-02-20T17:45:28.878Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T17:45:28.880Z - info: Using extension docx@4.1.1
+2024-02-20T17:45:28.881Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T17:45:29.026Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T17:45:29.026Z - info: Using extension pptx@4.1.0
+2024-02-20T17:45:29.027Z - info: Using extension scheduling@4.0.0
+2024-02-20T17:45:29.045Z - info: Using extension scripts@4.0.0
+2024-02-20T17:45:29.046Z - info: Using extension static-pdf@4.0.0
+2024-02-20T17:45:29.046Z - info: Using extension studio@4.0.2
+2024-02-20T17:45:29.095Z - info: Using extension xlsx@4.0.2
+2024-02-20T17:45:29.096Z - info: Using extension public-templates@4.0.0
+2024-02-20T17:45:29.097Z - info: Using extension sample-template@4.0.0
+2024-02-20T17:45:29.098Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T17:45:29.099Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-20T17:45:29.099Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T17:45:29.099Z - info: Using fs provider for template store.
+2024-02-20T17:45:29.103Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T17:45:29.108Z - info: fs store is loading data
+2024-02-20T17:45:29.141Z - info: fs store is initialized successfully
+2024-02-20T17:45:29.152Z - info: Creating default express app.
+2024-02-20T17:45:29.173Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T17:45:29.173Z - info: Verifying license key free
+2024-02-20T17:45:29.174Z - info: Using free license
+2024-02-20T17:45:29.177Z - info: Initializing worker threads
+2024-02-20T17:45:29.313Z - info: 2 worker threads initialized in 136ms
+2024-02-20T17:45:29.313Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T17:45:29.314Z - info: reporter initialized
+2024-02-20T17:47:27.450Z - info: Render request 1 queued for execution and waiting for available worker rootId=ghihxow0faeaqgq, id=ghihxow0faeaqgq
+2024-02-20T17:47:27.474Z - info: Starting rendering request 1 rootId=ghihxow0faeaqgq, id=ghihxow0faeaqgq
+2024-02-20T17:47:27.475Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ghihxow0faeaqgq, id=ghihxow0faeaqgq
+2024-02-20T17:47:27.637Z - error: Report render failed
+(because) connect ECONNREFUSED 127.0.0.1:4000
+Error: connect ECONNREFUSED 127.0.0.1:4000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16) rootId=ghihxow0faeaqgq, id=ghihxow0faeaqgq
+2024-02-20T17:47:48.376Z - info: Render request 2 queued for execution and waiting for available worker rootId=lb9o826ub8z0wj5, id=lb9o826ub8z0wj5
+2024-02-20T17:47:48.389Z - info: Starting rendering request 2 rootId=lb9o826ub8z0wj5, id=lb9o826ub8z0wj5
+2024-02-20T17:47:48.389Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=lb9o826ub8z0wj5, id=lb9o826ub8z0wj5
+2024-02-20T17:47:49.509Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=lb9o826ub8z0wj5, id=lb9o826ub8z0wj5
+2024-02-20T17:47:49.509Z - info: Rendering request 2 finished in 1133 ms rootId=lb9o826ub8z0wj5, id=lb9o826ub8z0wj5
+2024-02-20T17:49:02.676Z - info: Render request 3 queued for execution and waiting for available worker rootId=yvdxyh1hh16mk37, id=yvdxyh1hh16mk37
+2024-02-20T17:49:02.689Z - info: Starting rendering request 3 rootId=yvdxyh1hh16mk37, id=yvdxyh1hh16mk37
+2024-02-20T17:49:02.690Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=yvdxyh1hh16mk37, id=yvdxyh1hh16mk37
+2024-02-20T17:49:03.597Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=yvdxyh1hh16mk37, id=yvdxyh1hh16mk37
+2024-02-20T17:49:03.612Z - info: Rendering request 3 finished in 935 ms rootId=yvdxyh1hh16mk37, id=yvdxyh1hh16mk37
+2024-02-20T17:50:06.987Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T17:50:06.989Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:50:06.996Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:50:06.999Z - info: Found 35 extension(s)
+2024-02-20T17:50:07.067Z - info: Using extension base@4.0.0
+2024-02-20T17:50:07.073Z - info: Using extension child-templates@4.0.0
+2024-02-20T17:50:07.077Z - info: Using extension cli@4.0.2
+2024-02-20T17:50:07.079Z - info: Using extension components@4.0.0
+2024-02-20T17:50:07.080Z - info: Using extension data@4.0.0
+2024-02-20T17:50:07.080Z - info: Using extension express@4.0.1
+2024-02-20T17:50:07.191Z - info: Using extension freeze@4.0.0
+2024-02-20T17:50:07.192Z - info: Using extension fs-store@4.0.1
+2024-02-20T17:50:07.232Z - info: Using extension handlebars@4.0.1
+2024-02-20T17:50:07.233Z - info: Using extension import-export@4.0.2
+2024-02-20T17:50:07.239Z - info: Using extension jsrender@4.0.0
+2024-02-20T17:50:07.240Z - info: Using extension licensing@4.0.1
+2024-02-20T17:50:07.241Z - info: Using extension localization@4.0.1
+2024-02-20T17:50:07.242Z - info: Using extension npm@4.0.0
+2024-02-20T17:50:07.246Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T17:50:07.248Z - info: Using extension reports@4.0.0
+2024-02-20T17:50:07.251Z - info: Using extension tags@4.0.1
+2024-02-20T17:50:07.251Z - info: Using extension text@4.0.0
+2024-02-20T17:50:07.252Z - info: Using extension version-control@4.0.0
+2024-02-20T17:50:07.260Z - info: Using extension assets@4.0.2
+2024-02-20T17:50:07.267Z - info: Using extension authorization@4.0.0
+2024-02-20T17:50:07.271Z - info: Using extension browser-client@4.0.0
+2024-02-20T17:50:07.272Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T17:50:07.275Z - info: Using extension docx@4.1.1
+2024-02-20T17:50:07.277Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T17:50:07.424Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T17:50:07.424Z - info: Using extension pptx@4.1.0
+2024-02-20T17:50:07.425Z - info: Using extension scheduling@4.0.0
+2024-02-20T17:50:07.440Z - info: Using extension scripts@4.0.0
+2024-02-20T17:50:07.441Z - info: Using extension static-pdf@4.0.0
+2024-02-20T17:50:07.442Z - info: Using extension studio@4.0.2
+2024-02-20T17:50:07.480Z - info: Using extension xlsx@4.0.2
+2024-02-20T17:50:07.481Z - info: Using extension public-templates@4.0.0
+2024-02-20T17:50:07.482Z - info: Using extension sample-template@4.0.0
+2024-02-20T17:50:07.483Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T17:50:07.484Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-20T17:50:07.484Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T17:50:07.484Z - info: Using fs provider for template store.
+2024-02-20T17:50:07.488Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T17:50:07.493Z - info: fs store is loading data
+2024-02-20T17:50:07.521Z - info: fs store is initialized successfully
+2024-02-20T17:50:07.531Z - info: Creating default express app.
+2024-02-20T17:50:07.542Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T17:50:07.543Z - info: Verifying license key free
+2024-02-20T17:50:07.543Z - info: Using free license
+2024-02-20T17:50:07.546Z - info: Initializing worker threads
+2024-02-20T17:50:07.649Z - info: 2 worker threads initialized in 103ms
+2024-02-20T17:50:07.650Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T17:50:07.650Z - info: reporter initialized
+2024-02-20T17:50:20.419Z - info: Render request 1 queued for execution and waiting for available worker rootId=zjqoahaug6f6ts5, id=zjqoahaug6f6ts5
+2024-02-20T17:50:20.448Z - info: Starting rendering request 1 rootId=zjqoahaug6f6ts5, id=zjqoahaug6f6ts5
+2024-02-20T17:50:20.449Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=zjqoahaug6f6ts5, id=zjqoahaug6f6ts5
+2024-02-20T17:50:21.362Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=zjqoahaug6f6ts5, id=zjqoahaug6f6ts5
+2024-02-20T17:50:21.383Z - info: Rendering request 1 finished in 965 ms rootId=zjqoahaug6f6ts5, id=zjqoahaug6f6ts5
+2024-02-20T17:50:48.466Z - info: Render request 2 queued for execution and waiting for available worker rootId=22092ltcv694cu3, id=22092ltcv694cu3
+2024-02-20T17:50:48.480Z - info: Starting rendering request 2 rootId=22092ltcv694cu3, id=22092ltcv694cu3
+2024-02-20T17:50:48.480Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=22092ltcv694cu3, id=22092ltcv694cu3
+2024-02-20T17:50:49.467Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=22092ltcv694cu3, id=22092ltcv694cu3
+2024-02-20T17:50:49.467Z - info: Rendering request 2 finished in 1001 ms rootId=22092ltcv694cu3, id=22092ltcv694cu3
+2024-02-20T17:51:20.015Z - info: Render request 3 queued for execution and waiting for available worker rootId=m7yiihj14tktysd, id=m7yiihj14tktysd
+2024-02-20T17:51:20.026Z - info: Starting rendering request 3 rootId=m7yiihj14tktysd, id=m7yiihj14tktysd
+2024-02-20T17:51:20.027Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=m7yiihj14tktysd, id=m7yiihj14tktysd
+2024-02-20T17:51:20.269Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=m7yiihj14tktysd, id=m7yiihj14tktysd
+2024-02-20T17:51:20.269Z - info: Rendering request 3 finished in 252 ms rootId=m7yiihj14tktysd, id=m7yiihj14tktysd
+2024-02-20T17:51:51.860Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T17:51:51.861Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:51:51.867Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:51:51.869Z - info: Found 35 extension(s)
+2024-02-20T17:51:51.920Z - info: Using extension base@4.0.0
+2024-02-20T17:51:51.924Z - info: Using extension child-templates@4.0.0
+2024-02-20T17:51:51.926Z - info: Using extension cli@4.0.2
+2024-02-20T17:51:51.927Z - info: Using extension components@4.0.0
+2024-02-20T17:51:51.928Z - info: Using extension data@4.0.0
+2024-02-20T17:51:51.929Z - info: Using extension express@4.0.1
+2024-02-20T17:51:52.026Z - info: Using extension freeze@4.0.0
+2024-02-20T17:51:52.028Z - info: Using extension fs-store@4.0.1
+2024-02-20T17:51:52.067Z - info: Using extension handlebars@4.0.1
+2024-02-20T17:51:52.068Z - info: Using extension import-export@4.0.2
+2024-02-20T17:51:52.073Z - info: Using extension jsrender@4.0.0
+2024-02-20T17:51:52.073Z - info: Using extension licensing@4.0.1
+2024-02-20T17:51:52.075Z - info: Using extension localization@4.0.1
+2024-02-20T17:51:52.075Z - info: Using extension npm@4.0.0
+2024-02-20T17:51:52.080Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T17:51:52.082Z - info: Using extension reports@4.0.0
+2024-02-20T17:51:52.084Z - info: Using extension tags@4.0.1
+2024-02-20T17:51:52.085Z - info: Using extension text@4.0.0
+2024-02-20T17:51:52.085Z - info: Using extension version-control@4.0.0
+2024-02-20T17:51:52.091Z - info: Using extension assets@4.0.2
+2024-02-20T17:51:52.097Z - info: Using extension authorization@4.0.0
+2024-02-20T17:51:52.100Z - info: Using extension browser-client@4.0.0
+2024-02-20T17:51:52.101Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T17:51:52.103Z - info: Using extension docx@4.1.1
+2024-02-20T17:51:52.104Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T17:51:52.237Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T17:51:52.237Z - info: Using extension pptx@4.1.0
+2024-02-20T17:51:52.238Z - info: Using extension scheduling@4.0.0
+2024-02-20T17:51:52.255Z - info: Using extension scripts@4.0.0
+2024-02-20T17:51:52.256Z - info: Using extension static-pdf@4.0.0
+2024-02-20T17:51:52.256Z - info: Using extension studio@4.0.2
+2024-02-20T17:51:52.298Z - info: Using extension xlsx@4.0.2
+2024-02-20T17:51:52.299Z - info: Using extension public-templates@4.0.0
+2024-02-20T17:51:52.300Z - info: Using extension sample-template@4.0.0
+2024-02-20T17:51:52.302Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T17:51:52.303Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-20T17:51:52.303Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T17:51:52.303Z - info: Using fs provider for template store.
+2024-02-20T17:51:52.308Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T17:51:52.314Z - info: fs store is loading data
+2024-02-20T17:51:52.348Z - info: fs store is initialized successfully
+2024-02-20T17:51:52.358Z - info: Creating default express app.
+2024-02-20T17:51:52.370Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T17:51:52.371Z - info: Verifying license key free
+2024-02-20T17:51:52.372Z - info: Using free license
+2024-02-20T17:51:52.375Z - info: Initializing worker threads
+2024-02-20T17:51:52.484Z - info: 2 worker threads initialized in 109ms
+2024-02-20T17:51:52.485Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T17:51:52.485Z - info: reporter initialized
+2024-02-20T17:51:54.471Z - info: Render request 1 queued for execution and waiting for available worker rootId=culgv20o3bcmil8, id=culgv20o3bcmil8
+2024-02-20T17:51:54.504Z - info: Starting rendering request 1 rootId=culgv20o3bcmil8, id=culgv20o3bcmil8
+2024-02-20T17:51:54.504Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=culgv20o3bcmil8, id=culgv20o3bcmil8
+2024-02-20T17:51:55.650Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=culgv20o3bcmil8, id=culgv20o3bcmil8
+2024-02-20T17:51:55.651Z - info: Rendering request 1 finished in 1179 ms rootId=culgv20o3bcmil8, id=culgv20o3bcmil8
+2024-02-20T17:56:17.947Z - info: Render request 2 queued for execution and waiting for available worker rootId=2fndlbdutljy9it, id=2fndlbdutljy9it
+2024-02-20T17:56:17.961Z - info: Starting rendering request 2 rootId=2fndlbdutljy9it, id=2fndlbdutljy9it
+2024-02-20T17:56:17.962Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=2fndlbdutljy9it, id=2fndlbdutljy9it
+2024-02-20T17:56:18.915Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=2fndlbdutljy9it, id=2fndlbdutljy9it
+2024-02-20T17:56:18.934Z - info: Rendering request 2 finished in 988 ms rootId=2fndlbdutljy9it, id=2fndlbdutljy9it
+2024-02-20T17:56:42.696Z - info: Render request 3 queued for execution and waiting for available worker rootId=gzj9kupcurbqjic, id=gzj9kupcurbqjic
+2024-02-20T17:56:42.703Z - info: Starting rendering request 3 rootId=gzj9kupcurbqjic, id=gzj9kupcurbqjic
+2024-02-20T17:56:42.703Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=gzj9kupcurbqjic, id=gzj9kupcurbqjic
+2024-02-20T17:56:42.839Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=gzj9kupcurbqjic, id=gzj9kupcurbqjic
+2024-02-20T17:56:42.839Z - info: Rendering request 3 finished in 141 ms rootId=gzj9kupcurbqjic, id=gzj9kupcurbqjic
+2024-02-20T17:58:23.899Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T17:58:23.901Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:58:23.906Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:58:23.910Z - info: Found 35 extension(s)
+2024-02-20T17:58:23.962Z - info: Using extension base@4.0.0
+2024-02-20T17:58:23.967Z - info: Using extension child-templates@4.0.0
+2024-02-20T17:58:23.969Z - info: Using extension cli@4.0.2
+2024-02-20T17:58:23.970Z - info: Using extension components@4.0.0
+2024-02-20T17:58:23.971Z - info: Using extension data@4.0.0
+2024-02-20T17:58:23.971Z - info: Using extension express@4.0.1
+2024-02-20T17:58:24.065Z - info: Using extension freeze@4.0.0
+2024-02-20T17:58:24.066Z - info: Using extension fs-store@4.0.1
+2024-02-20T17:58:24.107Z - info: Using extension handlebars@4.0.1
+2024-02-20T17:58:24.107Z - info: Using extension import-export@4.0.2
+2024-02-20T17:58:24.114Z - info: Using extension jsrender@4.0.0
+2024-02-20T17:58:24.115Z - info: Using extension licensing@4.0.1
+2024-02-20T17:58:24.116Z - info: Using extension localization@4.0.1
+2024-02-20T17:58:24.117Z - info: Using extension npm@4.0.0
+2024-02-20T17:58:24.121Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T17:58:24.123Z - info: Using extension reports@4.0.0
+2024-02-20T17:58:24.124Z - info: Using extension tags@4.0.1
+2024-02-20T17:58:24.125Z - info: Using extension text@4.0.0
+2024-02-20T17:58:24.125Z - info: Using extension version-control@4.0.0
+2024-02-20T17:58:24.132Z - info: Using extension assets@4.0.2
+2024-02-20T17:58:24.137Z - info: Using extension authorization@4.0.0
+2024-02-20T17:58:24.139Z - info: Using extension browser-client@4.0.0
+2024-02-20T17:58:24.140Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T17:58:24.142Z - info: Using extension docx@4.1.1
+2024-02-20T17:58:24.143Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T17:58:24.279Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T17:58:24.279Z - info: Using extension pptx@4.1.0
+2024-02-20T17:58:24.281Z - info: Using extension scheduling@4.0.0
+2024-02-20T17:58:24.299Z - info: Using extension scripts@4.0.0
+2024-02-20T17:58:24.300Z - info: Using extension static-pdf@4.0.0
+2024-02-20T17:58:24.300Z - info: Using extension studio@4.0.2
+2024-02-20T17:58:24.337Z - info: Using extension xlsx@4.0.2
+2024-02-20T17:58:24.338Z - info: Using extension public-templates@4.0.0
+2024-02-20T17:58:24.339Z - info: Using extension sample-template@4.0.0
+2024-02-20T17:58:24.340Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T17:58:24.341Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-20T17:58:24.341Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T17:58:24.341Z - info: Using fs provider for template store.
+2024-02-20T17:58:24.346Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T17:58:24.350Z - info: fs store is loading data
+2024-02-20T17:58:24.378Z - info: fs store is initialized successfully
+2024-02-20T17:58:24.387Z - info: Creating default express app.
+2024-02-20T17:58:24.400Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T17:58:24.401Z - info: Verifying license key free
+2024-02-20T17:58:24.402Z - info: Using free license
+2024-02-20T17:58:24.405Z - info: Initializing worker threads
+2024-02-20T17:58:24.513Z - info: 2 worker threads initialized in 108ms
+2024-02-20T17:58:24.513Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T17:58:24.514Z - info: reporter initialized
+2024-02-20T17:59:18.970Z - info: Render request 1 queued for execution and waiting for available worker rootId=5wgrspo7yvspgm7, id=5wgrspo7yvspgm7
+2024-02-20T17:59:19.005Z - info: Starting rendering request 1 rootId=5wgrspo7yvspgm7, id=5wgrspo7yvspgm7
+2024-02-20T17:59:19.005Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=5wgrspo7yvspgm7, id=5wgrspo7yvspgm7
+2024-02-20T17:59:20.029Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=5wgrspo7yvspgm7, id=5wgrspo7yvspgm7
+2024-02-20T17:59:20.030Z - info: Rendering request 1 finished in 1059 ms rootId=5wgrspo7yvspgm7, id=5wgrspo7yvspgm7
+2024-02-20T18:02:41.755Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T18:02:41.758Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T18:02:41.782Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T18:02:41.786Z - info: Found 35 extension(s)
+2024-02-20T18:02:41.850Z - info: Using extension base@4.0.0
+2024-02-20T18:02:41.854Z - info: Using extension child-templates@4.0.0
+2024-02-20T18:02:41.856Z - info: Using extension cli@4.0.2
+2024-02-20T18:02:41.857Z - info: Using extension components@4.0.0
+2024-02-20T18:02:41.858Z - info: Using extension data@4.0.0
+2024-02-20T18:02:41.859Z - info: Using extension express@4.0.1
+2024-02-20T18:02:41.956Z - info: Using extension freeze@4.0.0
+2024-02-20T18:02:41.957Z - info: Using extension fs-store@4.0.1
+2024-02-20T18:02:41.995Z - info: Using extension handlebars@4.0.1
+2024-02-20T18:02:41.996Z - info: Using extension import-export@4.0.2
+2024-02-20T18:02:42.001Z - info: Using extension jsrender@4.0.0
+2024-02-20T18:02:42.001Z - info: Using extension licensing@4.0.1
+2024-02-20T18:02:42.003Z - info: Using extension localization@4.0.1
+2024-02-20T18:02:42.003Z - info: Using extension npm@4.0.0
+2024-02-20T18:02:42.008Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T18:02:42.009Z - info: Using extension reports@4.0.0
+2024-02-20T18:02:42.011Z - info: Using extension tags@4.0.1
+2024-02-20T18:02:42.012Z - info: Using extension text@4.0.0
+2024-02-20T18:02:42.012Z - info: Using extension version-control@4.0.0
+2024-02-20T18:02:42.018Z - info: Using extension assets@4.0.2
+2024-02-20T18:02:42.022Z - info: Using extension authorization@4.0.0
+2024-02-20T18:02:42.024Z - info: Using extension browser-client@4.0.0
+2024-02-20T18:02:42.025Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T18:02:42.027Z - info: Using extension docx@4.1.1
+2024-02-20T18:02:42.028Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T18:02:42.159Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T18:02:42.159Z - info: Using extension pptx@4.1.0
+2024-02-20T18:02:42.161Z - info: Using extension scheduling@4.0.0
+2024-02-20T18:02:42.178Z - info: Using extension scripts@4.0.0
+2024-02-20T18:02:42.179Z - info: Using extension static-pdf@4.0.0
+2024-02-20T18:02:42.180Z - info: Using extension studio@4.0.2
+2024-02-20T18:02:42.219Z - info: Using extension xlsx@4.0.2
+2024-02-20T18:02:42.221Z - info: Using extension public-templates@4.0.0
+2024-02-20T18:02:42.222Z - info: Using extension sample-template@4.0.0
+2024-02-20T18:02:42.223Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T18:02:42.224Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-20T18:02:42.224Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T18:02:42.224Z - info: Using fs provider for template store.
+2024-02-20T18:02:42.228Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T18:02:42.252Z - info: fs store is loading data
+2024-02-20T18:02:42.273Z - info: fs store is initialized successfully
+2024-02-20T18:02:42.289Z - info: Creating default express app.
+2024-02-20T18:02:42.303Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T18:02:42.304Z - info: Verifying license key free
+2024-02-20T18:02:42.305Z - info: Using free license
+2024-02-20T18:02:42.307Z - info: Initializing worker threads
+2024-02-20T18:02:42.420Z - info: 2 worker threads initialized in 113ms
+2024-02-20T18:02:42.421Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T18:02:42.421Z - info: reporter initialized
+2024-02-20T18:02:45.930Z - info: Render request 1 queued for execution and waiting for available worker rootId=tep28wx4igyx9ap, id=tep28wx4igyx9ap
+2024-02-20T18:02:45.960Z - info: Starting rendering request 1 rootId=tep28wx4igyx9ap, id=tep28wx4igyx9ap
+2024-02-20T18:02:45.961Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=tep28wx4igyx9ap, id=tep28wx4igyx9ap
+2024-02-20T18:02:46.962Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=tep28wx4igyx9ap, id=tep28wx4igyx9ap
+2024-02-20T18:02:46.963Z - info: Rendering request 1 finished in 1033 ms rootId=tep28wx4igyx9ap, id=tep28wx4igyx9ap
+2024-02-20T18:03:17.996Z - info: Render request 2 queued for execution and waiting for available worker rootId=cwk5oatlrlqzf2e, id=cwk5oatlrlqzf2e
+2024-02-20T18:03:18.010Z - info: Starting rendering request 2 rootId=cwk5oatlrlqzf2e, id=cwk5oatlrlqzf2e
+2024-02-20T18:03:18.010Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=cwk5oatlrlqzf2e, id=cwk5oatlrlqzf2e
+2024-02-20T18:03:18.997Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=cwk5oatlrlqzf2e, id=cwk5oatlrlqzf2e
+2024-02-20T18:03:18.999Z - info: Rendering request 2 finished in 1001 ms rootId=cwk5oatlrlqzf2e, id=cwk5oatlrlqzf2e
+2024-02-20T18:04:22.496Z - info: Render request 3 queued for execution and waiting for available worker rootId=97lzh3eczeh2qr7, id=97lzh3eczeh2qr7
+2024-02-20T18:04:22.505Z - info: Starting rendering request 3 rootId=97lzh3eczeh2qr7, id=97lzh3eczeh2qr7
+2024-02-20T18:04:22.505Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=97lzh3eczeh2qr7, id=97lzh3eczeh2qr7
+2024-02-20T18:04:22.618Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=97lzh3eczeh2qr7, id=97lzh3eczeh2qr7
+2024-02-20T18:04:22.633Z - info: Rendering request 3 finished in 132 ms rootId=97lzh3eczeh2qr7, id=97lzh3eczeh2qr7
+2024-02-20T18:04:54.945Z - info: Render request 4 queued for execution and waiting for available worker rootId=2y25x9zqd2aliyk, id=2y25x9zqd2aliyk
+2024-02-20T18:04:54.953Z - info: Starting rendering request 4 rootId=2y25x9zqd2aliyk, id=2y25x9zqd2aliyk
+2024-02-20T18:04:54.954Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=2y25x9zqd2aliyk, id=2y25x9zqd2aliyk
+2024-02-20T18:04:55.113Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=2y25x9zqd2aliyk, id=2y25x9zqd2aliyk
+2024-02-20T18:04:55.114Z - info: Rendering request 4 finished in 166 ms rootId=2y25x9zqd2aliyk, id=2y25x9zqd2aliyk
+2024-02-20T18:05:34.363Z - info: Render request 5 queued for execution and waiting for available worker rootId=8hytk3d058rjxsi, id=8hytk3d058rjxsi
+2024-02-20T18:05:34.374Z - info: Starting rendering request 5 rootId=8hytk3d058rjxsi, id=8hytk3d058rjxsi
+2024-02-20T18:05:34.374Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=8hytk3d058rjxsi, id=8hytk3d058rjxsi
+2024-02-20T18:05:34.469Z - info: Rendering request 5 finished in 103 ms rootId=8hytk3d058rjxsi, id=8hytk3d058rjxsi
+2024-02-20T18:06:38.206Z - info: Render request 6 queued for execution and waiting for available worker rootId=mijezdbd85sj7fq, id=mijezdbd85sj7fq
+2024-02-20T18:06:38.215Z - info: Starting rendering request 6 rootId=mijezdbd85sj7fq, id=mijezdbd85sj7fq
+2024-02-20T18:06:38.215Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=mijezdbd85sj7fq, id=mijezdbd85sj7fq
+2024-02-20T18:06:38.313Z - info: Rendering request 6 finished in 106 ms rootId=mijezdbd85sj7fq, id=mijezdbd85sj7fq
+2024-02-20T18:07:03.475Z - info: Render request 7 queued for execution and waiting for available worker rootId=s56uuipj4a2gkfb, id=s56uuipj4a2gkfb
+2024-02-20T18:07:03.482Z - info: Starting rendering request 7 rootId=s56uuipj4a2gkfb, id=s56uuipj4a2gkfb
+2024-02-20T18:07:03.482Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=s56uuipj4a2gkfb, id=s56uuipj4a2gkfb
+2024-02-20T18:07:03.576Z - info: Rendering request 7 finished in 99 ms rootId=s56uuipj4a2gkfb, id=s56uuipj4a2gkfb
+2024-02-20T18:07:44.665Z - info: Render request 8 queued for execution and waiting for available worker rootId=krqjxsyylhg7hnl, id=krqjxsyylhg7hnl
+2024-02-20T18:07:44.676Z - info: Starting rendering request 8 rootId=krqjxsyylhg7hnl, id=krqjxsyylhg7hnl
+2024-02-20T18:07:44.678Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=krqjxsyylhg7hnl, id=krqjxsyylhg7hnl
+2024-02-20T18:07:44.796Z - info: Rendering request 8 finished in 128 ms rootId=krqjxsyylhg7hnl, id=krqjxsyylhg7hnl
+2024-02-20T18:09:16.398Z - info: Render request 9 queued for execution and waiting for available worker rootId=5vu7kkmimn1fmw0, id=5vu7kkmimn1fmw0
+2024-02-20T18:09:16.408Z - info: Starting rendering request 9 rootId=5vu7kkmimn1fmw0, id=5vu7kkmimn1fmw0
+2024-02-20T18:09:16.410Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=5vu7kkmimn1fmw0, id=5vu7kkmimn1fmw0
+2024-02-20T18:09:16.549Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=5vu7kkmimn1fmw0, id=5vu7kkmimn1fmw0
+2024-02-20T18:09:16.550Z - info: Rendering request 9 finished in 150 ms rootId=5vu7kkmimn1fmw0, id=5vu7kkmimn1fmw0
+2024-02-20T18:09:37.755Z - info: Render request 10 queued for execution and waiting for available worker rootId=6itleb83l5umsk6, id=6itleb83l5umsk6
+2024-02-20T18:09:37.764Z - info: Starting rendering request 10 rootId=6itleb83l5umsk6, id=6itleb83l5umsk6
+2024-02-20T18:09:37.764Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=6itleb83l5umsk6, id=6itleb83l5umsk6
+2024-02-20T18:09:37.883Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=6itleb83l5umsk6, id=6itleb83l5umsk6
+2024-02-20T18:09:37.884Z - info: Rendering request 10 finished in 126 ms rootId=6itleb83l5umsk6, id=6itleb83l5umsk6
+2024-02-20T18:11:40.715Z - info: Render request 11 queued for execution and waiting for available worker rootId=q81g4155we3no7b, id=q81g4155we3no7b
+2024-02-20T18:11:40.724Z - info: Starting rendering request 11 rootId=q81g4155we3no7b, id=q81g4155we3no7b
+2024-02-20T18:11:40.725Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=q81g4155we3no7b, id=q81g4155we3no7b
+2024-02-20T18:11:40.859Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=q81g4155we3no7b, id=q81g4155we3no7b
+2024-02-20T18:11:40.859Z - info: Rendering request 11 finished in 142 ms rootId=q81g4155we3no7b, id=q81g4155we3no7b
+2024-02-20T18:13:15.421Z - info: Render request 12 queued for execution and waiting for available worker rootId=od9kgxtqvdif6c3, id=od9kgxtqvdif6c3
+2024-02-20T18:13:15.435Z - info: Starting rendering request 12 rootId=od9kgxtqvdif6c3, id=od9kgxtqvdif6c3
+2024-02-20T18:13:15.435Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=od9kgxtqvdif6c3, id=od9kgxtqvdif6c3
+2024-02-20T18:13:15.556Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=od9kgxtqvdif6c3, id=od9kgxtqvdif6c3
+2024-02-20T18:13:15.557Z - info: Rendering request 12 finished in 133 ms rootId=od9kgxtqvdif6c3, id=od9kgxtqvdif6c3
+2024-02-20T18:13:33.815Z - info: Render request 13 queued for execution and waiting for available worker rootId=7rfpnh1cq80aanm, id=7rfpnh1cq80aanm
+2024-02-20T18:13:33.823Z - info: Starting rendering request 13 rootId=7rfpnh1cq80aanm, id=7rfpnh1cq80aanm
+2024-02-20T18:13:33.823Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=7rfpnh1cq80aanm, id=7rfpnh1cq80aanm
+2024-02-20T18:13:33.928Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=7rfpnh1cq80aanm, id=7rfpnh1cq80aanm
+2024-02-20T18:13:33.944Z - info: Rendering request 13 finished in 128 ms rootId=7rfpnh1cq80aanm, id=7rfpnh1cq80aanm
+2024-02-20T18:13:55.705Z - info: Render request 14 queued for execution and waiting for available worker rootId=0083n87nzqqykyh, id=0083n87nzqqykyh
+2024-02-20T18:13:55.712Z - info: Starting rendering request 14 rootId=0083n87nzqqykyh, id=0083n87nzqqykyh
+2024-02-20T18:13:55.712Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=0083n87nzqqykyh, id=0083n87nzqqykyh
+2024-02-20T18:13:55.837Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=0083n87nzqqykyh, id=0083n87nzqqykyh
+2024-02-20T18:13:55.838Z - info: Rendering request 14 finished in 131 ms rootId=0083n87nzqqykyh, id=0083n87nzqqykyh
+2024-02-20T18:14:39.035Z - info: Render request 15 queued for execution and waiting for available worker rootId=trx1w468udwect9, id=trx1w468udwect9
+2024-02-20T18:14:39.045Z - info: Starting rendering request 15 rootId=trx1w468udwect9, id=trx1w468udwect9
+2024-02-20T18:14:39.045Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=trx1w468udwect9, id=trx1w468udwect9
+2024-02-20T18:14:39.195Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=trx1w468udwect9, id=trx1w468udwect9
+2024-02-20T18:14:39.196Z - info: Rendering request 15 finished in 158 ms rootId=trx1w468udwect9, id=trx1w468udwect9
+2024-02-20T18:15:07.565Z - info: Render request 16 queued for execution and waiting for available worker rootId=d94g77cd4xzjev5, id=d94g77cd4xzjev5
+2024-02-20T18:15:07.572Z - info: Starting rendering request 16 rootId=d94g77cd4xzjev5, id=d94g77cd4xzjev5
+2024-02-20T18:15:07.572Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=d94g77cd4xzjev5, id=d94g77cd4xzjev5
+2024-02-20T18:15:07.680Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=d94g77cd4xzjev5, id=d94g77cd4xzjev5
+2024-02-20T18:15:07.696Z - info: Rendering request 16 finished in 130 ms rootId=d94g77cd4xzjev5, id=d94g77cd4xzjev5
+2024-02-20T18:15:36.826Z - info: Render request 17 queued for execution and waiting for available worker rootId=syxc3rj23f45cl7, id=syxc3rj23f45cl7
+2024-02-20T18:15:36.832Z - info: Starting rendering request 17 rootId=syxc3rj23f45cl7, id=syxc3rj23f45cl7
+2024-02-20T18:15:36.833Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=syxc3rj23f45cl7, id=syxc3rj23f45cl7
+2024-02-20T18:15:36.968Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=syxc3rj23f45cl7, id=syxc3rj23f45cl7
+2024-02-20T18:15:36.979Z - info: Rendering request 17 finished in 153 ms rootId=syxc3rj23f45cl7, id=syxc3rj23f45cl7
+2024-02-20T18:20:50.706Z - info: Render request 18 queued for execution and waiting for available worker rootId=ft6u1xci0e10rvi, id=ft6u1xci0e10rvi
+2024-02-20T18:20:50.716Z - info: Starting rendering request 18 rootId=ft6u1xci0e10rvi, id=ft6u1xci0e10rvi
+2024-02-20T18:20:50.716Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ft6u1xci0e10rvi, id=ft6u1xci0e10rvi
+2024-02-20T18:20:50.874Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=ft6u1xci0e10rvi, id=ft6u1xci0e10rvi
+2024-02-20T18:20:50.874Z - info: Rendering request 18 finished in 167 ms rootId=ft6u1xci0e10rvi, id=ft6u1xci0e10rvi
+2024-02-20T18:21:04.605Z - info: Render request 19 queued for execution and waiting for available worker rootId=4j32t036su35b1d, id=4j32t036su35b1d
+2024-02-20T18:21:04.615Z - info: Starting rendering request 19 rootId=4j32t036su35b1d, id=4j32t036su35b1d
+2024-02-20T18:21:04.615Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=4j32t036su35b1d, id=4j32t036su35b1d
+2024-02-20T18:21:04.787Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=4j32t036su35b1d, id=4j32t036su35b1d
+2024-02-20T18:21:04.787Z - info: Rendering request 19 finished in 181 ms rootId=4j32t036su35b1d, id=4j32t036su35b1d
+2024-02-20T18:21:14.986Z - info: Render request 20 queued for execution and waiting for available worker rootId=cnqt4q7d58hv716, id=cnqt4q7d58hv716
+2024-02-20T18:21:14.995Z - info: Starting rendering request 20 rootId=cnqt4q7d58hv716, id=cnqt4q7d58hv716
+2024-02-20T18:21:14.995Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=cnqt4q7d58hv716, id=cnqt4q7d58hv716
+2024-02-20T18:21:15.131Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=cnqt4q7d58hv716, id=cnqt4q7d58hv716
+2024-02-20T18:21:15.131Z - info: Rendering request 20 finished in 144 ms rootId=cnqt4q7d58hv716, id=cnqt4q7d58hv716
+2024-02-20T18:21:18.379Z - info: Render request 21 queued for execution and waiting for available worker rootId=wownn9whj60olnm, id=wownn9whj60olnm
+2024-02-20T18:21:18.390Z - info: Starting rendering request 21 rootId=wownn9whj60olnm, id=wownn9whj60olnm
+2024-02-20T18:21:18.390Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=wownn9whj60olnm, id=wownn9whj60olnm
+2024-02-20T18:21:18.505Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=wownn9whj60olnm, id=wownn9whj60olnm
+2024-02-20T18:21:18.505Z - info: Rendering request 21 finished in 127 ms rootId=wownn9whj60olnm, id=wownn9whj60olnm
+2024-02-20T18:21:25.026Z - info: Render request 22 queued for execution and waiting for available worker rootId=impzz91gjuned5n, id=impzz91gjuned5n
+2024-02-20T18:21:25.033Z - info: Starting rendering request 22 rootId=impzz91gjuned5n, id=impzz91gjuned5n
+2024-02-20T18:21:25.033Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=impzz91gjuned5n, id=impzz91gjuned5n
+2024-02-20T18:21:25.155Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=impzz91gjuned5n, id=impzz91gjuned5n
+2024-02-20T18:21:25.156Z - info: Rendering request 22 finished in 128 ms rootId=impzz91gjuned5n, id=impzz91gjuned5n
+2024-02-20T18:23:20.985Z - info: Render request 23 queued for execution and waiting for available worker rootId=xfg4iuyv351omrb, id=xfg4iuyv351omrb
+2024-02-20T18:23:20.993Z - info: Starting rendering request 23 rootId=xfg4iuyv351omrb, id=xfg4iuyv351omrb
+2024-02-20T18:23:20.993Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=xfg4iuyv351omrb, id=xfg4iuyv351omrb
+2024-02-20T18:23:21.372Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=xfg4iuyv351omrb, id=xfg4iuyv351omrb
+2024-02-20T18:23:21.444Z - info: Rendering request 23 finished in 459 ms rootId=xfg4iuyv351omrb, id=xfg4iuyv351omrb
+2024-02-20T18:24:19.375Z - info: Render request 24 queued for execution and waiting for available worker rootId=w9h0ky0xh37s1ri, id=w9h0ky0xh37s1ri
+2024-02-20T18:24:19.381Z - info: Starting rendering request 24 rootId=w9h0ky0xh37s1ri, id=w9h0ky0xh37s1ri
+2024-02-20T18:24:19.382Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=w9h0ky0xh37s1ri, id=w9h0ky0xh37s1ri
+2024-02-20T18:24:19.735Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=w9h0ky0xh37s1ri, id=w9h0ky0xh37s1ri
+2024-02-20T18:24:19.756Z - info: Rendering request 24 finished in 381 ms rootId=w9h0ky0xh37s1ri, id=w9h0ky0xh37s1ri
+2024-02-20T18:26:00.285Z - info: Render request 25 queued for execution and waiting for available worker rootId=378j6b6zgxsunqu, id=378j6b6zgxsunqu
+2024-02-20T18:26:00.292Z - info: Starting rendering request 25 rootId=378j6b6zgxsunqu, id=378j6b6zgxsunqu
+2024-02-20T18:26:00.293Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=378j6b6zgxsunqu, id=378j6b6zgxsunqu
+2024-02-20T18:26:00.445Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=378j6b6zgxsunqu, id=378j6b6zgxsunqu
+2024-02-20T18:26:00.494Z - info: Rendering request 25 finished in 208 ms rootId=378j6b6zgxsunqu, id=378j6b6zgxsunqu
+2024-02-20T18:26:12.296Z - info: Render request 26 queued for execution and waiting for available worker rootId=96a38ch49cwcy8g, id=96a38ch49cwcy8g
+2024-02-20T18:26:12.304Z - info: Starting rendering request 26 rootId=96a38ch49cwcy8g, id=96a38ch49cwcy8g
+2024-02-20T18:26:12.304Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=96a38ch49cwcy8g, id=96a38ch49cwcy8g
+2024-02-20T18:26:12.492Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=96a38ch49cwcy8g, id=96a38ch49cwcy8g
+2024-02-20T18:26:12.497Z - info: Rendering request 26 finished in 201 ms rootId=96a38ch49cwcy8g, id=96a38ch49cwcy8g
