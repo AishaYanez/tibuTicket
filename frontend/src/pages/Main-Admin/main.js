@@ -79,7 +79,6 @@ function Main() {
   };
 
   const createQueue = () => {
-    console.log("ALO")
     ListService.createList(formattedQueue()).then(r => {
       message.success(r.data.status.message);
     }).catch(e => {

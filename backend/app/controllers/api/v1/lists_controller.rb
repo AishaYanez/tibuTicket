@@ -82,9 +82,8 @@ class Api::V1::ListsController < ApplicationController
                }, status: :unprocessable_entity
       end
     else
-      render json: {
-        status: { code: 422, message: "No hay más clientes" },
-      }, status: :unprocessable_entity
+      render json: { status: 422, message: "No hay más clientes" },
+             status: :unprocessable_entity
     end
   end
 
@@ -95,27 +94,34 @@ class Api::V1::ListsController < ApplicationController
 
       if @list.save
         render json: {
-                 status: { code: 200, message: "Número disminuido correctamente" },
+                 status: 200,
+                 message: "Número disminuido correctamente",
                  data: {
                    list_description: ListSerializer.new(@list).serializable_hash[:data][:attributes],
                    list_image: ListImageSerializer.new(@list).list_image,
                  },
                }, status: :ok
       else
-        render json: {
-                 status: { code: 422, message: "No se pudo disminuir el número" },
-               }, status: :unprocessable_entity
+        render json: { status: 422, message: "No se pudo disminuir el número" },
+               status: :unprocessable_entity
       end
     else
-      render json: {
-        status: { code: 422, message: "El número ya es 0" },
-      }, status: :unprocessable_entity
+      render json: { status: 422, message: "El número ya es 0" },
+             status: :unprocessable_entity
     end
   end
 
-  # DELETE /api/v1/lists/1
+  # # DELETE /api/v1/lists/1
   def destroy
-    @list.destroy!
+    if @list.destroy!
+      render json: {
+               status: 200,
+               message: "Lista borrada correctamente",
+             }, status: :ok
+    else
+      render json: { status: 422, message: "No se pudo borrar la lista" },
+             status: :unprocessable_entity
+    end
   end
 
   private

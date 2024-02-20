@@ -1,5 +1,7 @@
 require "webpush"
 Rails.application.routes.draw do
+  mount ActionCable.server => "/cable"
+
   put "api/v1/lists/:id/getTicket", to: "api/v1/lists#getTicket"
   put "api/v1/lists/:id/increaseNumber", to: "api/v1/lists#increaseNumber"
   put "api/v1/lists/:id/decreaseNumber", to: "api/v1/lists#decreaseNumber"
