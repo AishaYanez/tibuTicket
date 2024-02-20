@@ -31,8 +31,15 @@ const createList = (data) => {
 };
 
 // const increaseNumberList = (id) => {
-//   return http.put(`/activities/${id}`);
+//   return http.put(`/lists/${id}`);
 // };
+// const decreaseNumberList = (id) => {
+//   return http.put(`/lists/${id}`);
+// };
+
+const getTicket = (id) => {
+  return http.put(`/lists/${id}`);
+};
 
 const deleteList = (id) => {
   return http.delete(`/lists/${id}`, {
@@ -46,7 +53,8 @@ const deleteList = (id) => {
 const ListService = {
   getLists,
   createList,
-  deleteList
+  deleteList,
+  getTicket
 };
 
 export default ListService;

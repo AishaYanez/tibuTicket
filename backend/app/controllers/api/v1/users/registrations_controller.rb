@@ -23,7 +23,7 @@ class Api::V1::Users::RegistrationsController < Devise::RegistrationsController
   def respond_with(resource, _opts = {})
     if request.method == "POST" && resource.persisted?
       render json: {
-        status: { code: 200, message: "Cuenta creads correctamente" },
+        status: { code: 200, message: "Cuenta creada correctamente" },
       }, status: :ok
     elsif request.method == "DELETE"
       render json: {
