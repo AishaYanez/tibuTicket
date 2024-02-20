@@ -4,6 +4,7 @@ import { Avatar, Menu, message } from 'antd';
 import MenuIcon from '../../assets/images/menu-square.svg';
 import AuthService from '../../services/AuthService/auth.service';
 import { useNavigate } from 'react-router-dom';
+import ReportsViews from '../../services/jsreports.service';
 
 function Main() {
     const nav = useNavigate();
@@ -63,18 +64,18 @@ function Main() {
         switch (key) {
             case "1":
                 logOut();
-                break;
+                break; 
 
             case "2":
                 deleteAccount();
                 break;
 
             case "3":
-            window.open('/Helper/TibuTicket.html', '_blank')
-            break;
+                window.open('/Helper/TibuTicket.html', '_blank')
+                break;
 
             default:
-                console.log('No está implementado');
+                ReportsViews();
                 break;
         }
     };

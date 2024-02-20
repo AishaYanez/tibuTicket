@@ -22,7 +22,7 @@
       "filename": "logs/error.log"
     }
   },
-  "trustUserCode": false,
+  "trustUserCode": true,
   "reportTimeout": 60000,
   "workers": {
     "numberOfWorkers": 2
@@ -39,5 +39,8 @@
     "sample-template": {
       "createSamples": true
     }
+  },
+  "sandbox": {
+    "allowedModules": ["node-fetch"]
   }
 }

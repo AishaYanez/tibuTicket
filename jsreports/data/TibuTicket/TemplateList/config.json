@@ -1,0 +1,23 @@
+{
+    "name": "TemplateList",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "data": null,
+    "shortid": "g6tta7BMG",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1708449336115
+    },
+    "modificationDate": {
+        "$$date": 1708450778630
+    },
+    "_id": "ZCB252nuVHM8nDa3",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "6v8QPG_9N3"
+        }
+    ]
+}

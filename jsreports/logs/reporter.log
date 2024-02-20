@@ -1,0 +1,1302 @@
+2024-02-20T15:29:41.010Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T15:29:41.012Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T15:29:41.018Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T15:29:41.019Z - info: Found 35 extension(s)
+2024-02-20T15:29:41.066Z - info: Using extension base@4.0.0
+2024-02-20T15:29:41.071Z - info: Using extension child-templates@4.0.0
+2024-02-20T15:29:41.073Z - info: Using extension cli@4.0.2
+2024-02-20T15:29:41.075Z - info: Using extension components@4.0.0
+2024-02-20T15:29:41.076Z - info: Using extension data@4.0.0
+2024-02-20T15:29:41.076Z - info: Using extension express@4.0.1
+2024-02-20T15:29:41.256Z - info: Using extension freeze@4.0.0
+2024-02-20T15:29:41.257Z - info: Using extension fs-store@4.0.1
+2024-02-20T15:29:41.332Z - info: Using extension handlebars@4.0.1
+2024-02-20T15:29:41.334Z - info: Using extension import-export@4.0.2
+2024-02-20T15:29:41.343Z - info: Using extension jsrender@4.0.0
+2024-02-20T15:29:41.343Z - info: Using extension licensing@4.0.1
+2024-02-20T15:29:41.346Z - info: Using extension localization@4.0.1
+2024-02-20T15:29:41.347Z - info: Using extension npm@4.0.0
+2024-02-20T15:29:41.351Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T15:29:41.353Z - info: Using extension reports@4.0.0
+2024-02-20T15:29:41.355Z - info: Using extension tags@4.0.1
+2024-02-20T15:29:41.357Z - info: Using extension text@4.0.0
+2024-02-20T15:29:41.357Z - info: Using extension version-control@4.0.0
+2024-02-20T15:29:41.370Z - info: Using extension assets@4.0.2
+2024-02-20T15:29:41.378Z - info: Using extension authorization@4.0.0
+2024-02-20T15:29:41.383Z - info: Using extension browser-client@4.0.0
+2024-02-20T15:29:41.385Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T15:29:41.388Z - info: Using extension docx@4.1.1
+2024-02-20T15:29:41.392Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T15:29:41.624Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T15:29:41.625Z - info: Using extension pptx@4.1.0
+2024-02-20T15:29:41.627Z - info: Using extension scheduling@4.0.0
+2024-02-20T15:29:41.653Z - info: Using extension scripts@4.0.0
+2024-02-20T15:29:41.654Z - info: Using extension static-pdf@4.0.0
+2024-02-20T15:29:41.655Z - info: Using extension studio@4.0.2
+2024-02-20T15:29:41.712Z - info: Using extension xlsx@4.0.2
+2024-02-20T15:29:41.714Z - info: Using extension public-templates@4.0.0
+2024-02-20T15:29:41.715Z - info: Using extension sample-template@4.0.0
+2024-02-20T15:29:41.716Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T15:29:41.717Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T15:29:41.717Z - info: Using fs provider for template store.
+2024-02-20T15:29:41.720Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T15:29:41.738Z - info: fs store is loading data
+2024-02-20T15:29:41.749Z - info: fs store is initialized successfully
+2024-02-20T15:29:41.758Z - info: Creating default express app.
+2024-02-20T15:29:41.777Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T15:29:41.778Z - info: Verifying license key free
+2024-02-20T15:29:41.778Z - info: Using free license
+2024-02-20T15:29:41.796Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2024-02-20T15:29:41.800Z - info: Migration successful
+2024-02-20T15:29:41.891Z - info: Initializing worker threads
+2024-02-20T15:29:42.450Z - info: 2 worker threads initialized in 559ms
+2024-02-20T15:29:42.450Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T15:29:42.451Z - info: reporter initialized
+2024-02-20T16:03:06.487Z - info: Render request 1 queued for execution and waiting for available worker rootId=cg2jiogsnd0272k, id=cg2jiogsnd0272k
+2024-02-20T16:03:06.500Z - info: Starting rendering request 1 rootId=cg2jiogsnd0272k, id=cg2jiogsnd0272k
+2024-02-20T16:03:06.500Z - warn: Error when processing render request 1
+(because) unable to find specified template (VxpiX4EFd)
+Error: Unable to find specified template (VxpiX4EFd)
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at AsyncFunction.<anonymous> (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/templates.js:51:28)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=cg2jiogsnd0272k, id=cg2jiogsnd0272k
+2024-02-20T16:03:06.500Z - warn: Rendering request 1 finished with error in 14 ms rootId=cg2jiogsnd0272k, id=cg2jiogsnd0272k
+2024-02-20T16:03:06.502Z - warn: Error during processing request at http://localhost:5488/api/report
+2024-02-20T16:03:35.009Z - info: Render request 2 queued for execution and waiting for available worker rootId=g4qvp7s2ls6xisf, id=g4qvp7s2ls6xisf
+2024-02-20T16:03:35.029Z - info: Starting rendering request 2 rootId=g4qvp7s2ls6xisf, id=g4qvp7s2ls6xisf
+2024-02-20T16:03:35.029Z - warn: Error when processing render request 2
+(because) unable to find specified template (VxpiX4EFd)
+Error: Unable to find specified template (VxpiX4EFd)
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at AsyncFunction.<anonymous> (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/templates.js:51:28)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=g4qvp7s2ls6xisf, id=g4qvp7s2ls6xisf
+2024-02-20T16:03:35.029Z - warn: Rendering request 2 finished with error in 20 ms rootId=g4qvp7s2ls6xisf, id=g4qvp7s2ls6xisf
+2024-02-20T16:03:35.030Z - warn: Error during processing request at http://localhost:5488/api/report
+2024-02-20T16:04:00.199Z - info: Render request 3 queued for execution and waiting for available worker rootId=k4a7uo4hwm2y6pj, id=k4a7uo4hwm2y6pj
+2024-02-20T16:04:00.204Z - info: Starting rendering request 3 rootId=k4a7uo4hwm2y6pj, id=k4a7uo4hwm2y6pj
+2024-02-20T16:04:00.204Z - warn: Error when processing render request 3
+(because) unable to find specified template (VxpiX4EFd)
+Error: Unable to find specified template (VxpiX4EFd)
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at AsyncFunction.<anonymous> (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/templates.js:51:28)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=k4a7uo4hwm2y6pj, id=k4a7uo4hwm2y6pj
+2024-02-20T16:04:00.204Z - warn: Rendering request 3 finished with error in 6 ms rootId=k4a7uo4hwm2y6pj, id=k4a7uo4hwm2y6pj
+2024-02-20T16:04:00.205Z - warn: Error during processing request at http://localhost:5488/api/report
+2024-02-20T16:04:08.652Z - info: Render request 4 queued for execution and waiting for available worker rootId=rqxajvrj3mwf3fa, id=rqxajvrj3mwf3fa
+2024-02-20T16:04:08.659Z - info: Starting rendering request 4 rootId=rqxajvrj3mwf3fa, id=rqxajvrj3mwf3fa
+2024-02-20T16:04:08.659Z - warn: Error when processing render request 4
+(because) unable to find specified template (yI1Jhn0)
+Error: Unable to find specified template (yI1Jhn0)
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at AsyncFunction.<anonymous> (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/templates.js:51:28)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=rqxajvrj3mwf3fa, id=rqxajvrj3mwf3fa
+2024-02-20T16:04:08.659Z - warn: Rendering request 4 finished with error in 6 ms rootId=rqxajvrj3mwf3fa, id=rqxajvrj3mwf3fa
+2024-02-20T16:04:08.660Z - warn: Error during processing request at http://localhost:5488/api/report
+2024-02-20T16:04:21.844Z - info: Render request 5 queued for execution and waiting for available worker rootId=pnw6jqkb2zaz1f8, id=pnw6jqkb2zaz1f8
+2024-02-20T16:04:21.903Z - info: Starting rendering request 5 rootId=pnw6jqkb2zaz1f8, id=pnw6jqkb2zaz1f8
+2024-02-20T16:04:21.903Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=pnw6jqkb2zaz1f8, id=pnw6jqkb2zaz1f8
+2024-02-20T16:04:22.853Z - info: Rendering request 5 finished in 1009 ms rootId=pnw6jqkb2zaz1f8, id=pnw6jqkb2zaz1f8
+2024-02-20T16:04:44.753Z - info: Render request 6 queued for execution and waiting for available worker rootId=t3ht4dq0dfv73zu, id=t3ht4dq0dfv73zu
+2024-02-20T16:04:44.800Z - info: Starting rendering request 6 rootId=t3ht4dq0dfv73zu, id=t3ht4dq0dfv73zu
+2024-02-20T16:04:44.800Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=t3ht4dq0dfv73zu, id=t3ht4dq0dfv73zu
+2024-02-20T16:04:45.362Z - info: Rendering request 6 finished in 609 ms rootId=t3ht4dq0dfv73zu, id=t3ht4dq0dfv73zu
+2024-02-20T16:31:25.008Z - info: Render request 7 queued for execution and waiting for available worker rootId=pnpvss2jua605cn, id=pnpvss2jua605cn
+2024-02-20T16:31:25.022Z - info: Starting rendering request 7 rootId=pnpvss2jua605cn, id=pnpvss2jua605cn
+2024-02-20T16:31:25.023Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=pnpvss2jua605cn, id=pnpvss2jua605cn
+2024-02-20T16:31:25.106Z - warn: Error when processing render request 7
+(because) error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) "asset" helper call failed
+(because) asset stillhigher.css not found
+
+(sandbox.js line 294:20)
+
+  292 |
+  293 |   const jsreport = require('jsreport-proxy')
+> 294 |   const assetVal = await jsreport.assets.read(path, encoding)
+      |                    ^
+  295 |   return assetVal
+  296 | }
+  297 |
+
+
+Error: Asset stillhigher.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at readAsset (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-assets/lib/assetsShared.js:111:24)
+  at async Object.read (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-assets/lib/worker.js:120:19)
+  at async Object.asset (sandbox.js:294:20)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:228:40
+  at async Promise.all (index 0)
+  at async executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:227:9)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17)
+wrapped by:
+Error: "asset" helper call failed
+(because) asset stillhigher.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at getEnhancedHelperError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:364:54)
+  at /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:378:15
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:228:40
+  at async Promise.all (index 0)
+  at async executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:227:9)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) "asset" helper call failed
+(because) asset stillhigher.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=pnpvss2jua605cn, id=pnpvss2jua605cn
+2024-02-20T16:31:25.107Z - warn: Rendering request 7 finished with error in 100 ms rootId=pnpvss2jua605cn, id=pnpvss2jua605cn
+2024-02-20T16:31:50.605Z - info: Render request 8 queued for execution and waiting for available worker rootId=zy5f3dturwcer89, id=zy5f3dturwcer89
+2024-02-20T16:31:50.624Z - info: Starting rendering request 8 rootId=zy5f3dturwcer89, id=zy5f3dturwcer89
+2024-02-20T16:31:50.624Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=zy5f3dturwcer89, id=zy5f3dturwcer89
+2024-02-20T16:31:50.732Z - warn: Error when processing render request 8
+(because) error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) "asset" helper call failed
+(because) asset style.css.css not found
+
+(sandbox.js line 294:20)
+
+  292 |
+  293 |   const jsreport = require('jsreport-proxy')
+> 294 |   const assetVal = await jsreport.assets.read(path, encoding)
+      |                    ^
+  295 |   return assetVal
+  296 | }
+  297 |
+
+
+Error: Asset style.css.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at readAsset (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-assets/lib/assetsShared.js:111:24)
+  at async Object.read (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-assets/lib/worker.js:120:19)
+  at async Object.asset (sandbox.js:294:20)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:228:40
+  at async Promise.all (index 0)
+  at async executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:227:9)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17)
+wrapped by:
+Error: "asset" helper call failed
+(because) asset style.css.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at getEnhancedHelperError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:364:54)
+  at /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:378:15
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:228:40
+  at async Promise.all (index 0)
+  at async executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:227:9)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) "asset" helper call failed
+(because) asset style.css.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=zy5f3dturwcer89, id=zy5f3dturwcer89
+2024-02-20T16:31:50.732Z - warn: Rendering request 8 finished with error in 127 ms rootId=zy5f3dturwcer89, id=zy5f3dturwcer89
+2024-02-20T16:32:02.105Z - info: Render request 9 queued for execution and waiting for available worker rootId=nxs366o1zwlmyah, id=nxs366o1zwlmyah
+2024-02-20T16:32:02.115Z - info: Starting rendering request 9 rootId=nxs366o1zwlmyah, id=nxs366o1zwlmyah
+2024-02-20T16:32:02.115Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=nxs366o1zwlmyah, id=nxs366o1zwlmyah
+2024-02-20T16:32:02.152Z - warn: Error when processing render request 9
+(because) error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) "asset" helper call failed
+(because) asset style.css not found
+
+(sandbox.js line 294:20)
+
+  292 |
+  293 |   const jsreport = require('jsreport-proxy')
+> 294 |   const assetVal = await jsreport.assets.read(path, encoding)
+      |                    ^
+  295 |   return assetVal
+  296 | }
+  297 |
+
+
+Error: Asset style.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at readAsset (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-assets/lib/assetsShared.js:111:24)
+  at async Object.read (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-assets/lib/worker.js:120:19)
+  at async Object.asset (sandbox.js:294:20)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:228:40
+  at async Promise.all (index 0)
+  at async executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:227:9)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17)
+wrapped by:
+Error: "asset" helper call failed
+(because) asset style.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at getEnhancedHelperError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:364:54)
+  at /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:378:15
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:228:40
+  at async Promise.all (index 0)
+  at async executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:227:9)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) "asset" helper call failed
+(because) asset style.css not found
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=nxs366o1zwlmyah, id=nxs366o1zwlmyah
+2024-02-20T16:32:02.153Z - warn: Rendering request 9 finished with error in 47 ms rootId=nxs366o1zwlmyah, id=nxs366o1zwlmyah
+2024-02-20T16:32:43.385Z - info: Render request 10 queued for execution and waiting for available worker rootId=8p9pronah52bb2z, id=8p9pronah52bb2z
+2024-02-20T16:32:43.393Z - info: Starting rendering request 10 rootId=8p9pronah52bb2z, id=8p9pronah52bb2z
+2024-02-20T16:32:43.394Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=8p9pronah52bb2z, id=8p9pronah52bb2z
+2024-02-20T16:32:43.738Z - info: Rendering request 10 finished in 352 ms rootId=8p9pronah52bb2z, id=8p9pronah52bb2z
+2024-02-20T16:34:58.175Z - info: Render request 11 queued for execution and waiting for available worker rootId=gvys2x2yczzejq5, id=gvys2x2yczzejq5
+2024-02-20T16:34:58.182Z - info: Starting rendering request 11 rootId=gvys2x2yczzejq5, id=gvys2x2yczzejq5
+2024-02-20T16:34:58.182Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=gvys2x2yczzejq5, id=gvys2x2yczzejq5
+2024-02-20T16:34:58.474Z - info: Rendering request 11 finished in 298 ms rootId=gvys2x2yczzejq5, id=gvys2x2yczzejq5
+2024-02-20T16:35:38.706Z - info: Render request 12 queued for execution and waiting for available worker rootId=77ypqrtga6qntj9, id=77ypqrtga6qntj9
+2024-02-20T16:35:38.713Z - info: Starting rendering request 12 rootId=77ypqrtga6qntj9, id=77ypqrtga6qntj9
+2024-02-20T16:35:38.714Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=77ypqrtga6qntj9, id=77ypqrtga6qntj9
+2024-02-20T16:35:38.785Z - info: Rendering request 12 finished in 76 ms rootId=77ypqrtga6qntj9, id=77ypqrtga6qntj9
+2024-02-20T16:39:32.906Z - info: Render request 13 queued for execution and waiting for available worker rootId=gcj94h8drr61pp1, id=gcj94h8drr61pp1
+2024-02-20T16:39:32.918Z - info: Starting rendering request 13 rootId=gcj94h8drr61pp1, id=gcj94h8drr61pp1
+2024-02-20T16:39:32.919Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=gcj94h8drr61pp1, id=gcj94h8drr61pp1
+2024-02-20T16:39:33.029Z - info: Rendering request 13 finished in 121 ms rootId=gcj94h8drr61pp1, id=gcj94h8drr61pp1
+2024-02-20T16:39:35.616Z - info: Render request 14 queued for execution and waiting for available worker rootId=x7mkehfevnsbepj, id=x7mkehfevnsbepj
+2024-02-20T16:39:35.625Z - info: Starting rendering request 14 rootId=x7mkehfevnsbepj, id=x7mkehfevnsbepj
+2024-02-20T16:39:35.626Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=x7mkehfevnsbepj, id=x7mkehfevnsbepj
+2024-02-20T16:39:35.730Z - info: Rendering request 14 finished in 111 ms rootId=x7mkehfevnsbepj, id=x7mkehfevnsbepj
+2024-02-20T16:39:44.847Z - info: Render request 15 queued for execution and waiting for available worker rootId=e7bzehajp5r2kqi, id=e7bzehajp5r2kqi
+2024-02-20T16:39:44.859Z - info: Starting rendering request 15 rootId=e7bzehajp5r2kqi, id=e7bzehajp5r2kqi
+2024-02-20T16:39:44.859Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=e7bzehajp5r2kqi, id=e7bzehajp5r2kqi
+2024-02-20T16:39:44.980Z - info: Rendering request 15 finished in 132 ms rootId=e7bzehajp5r2kqi, id=e7bzehajp5r2kqi
+2024-02-20T16:42:19.328Z - info: Render request 16 queued for execution and waiting for available worker rootId=xnz67ncz2mw17kr, id=xnz67ncz2mw17kr
+2024-02-20T16:42:19.341Z - info: Starting rendering request 16 rootId=xnz67ncz2mw17kr, id=xnz67ncz2mw17kr
+2024-02-20T16:42:19.341Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=xnz67ncz2mw17kr, id=xnz67ncz2mw17kr
+2024-02-20T16:42:19.404Z - info: Rendering request 16 finished in 75 ms rootId=xnz67ncz2mw17kr, id=xnz67ncz2mw17kr
+2024-02-20T16:44:24.403Z - info: Render request 17 queued for execution and waiting for available worker rootId=5g8xsyydu4ubvx6, id=5g8xsyydu4ubvx6
+2024-02-20T16:44:24.413Z - info: Starting rendering request 17 rootId=5g8xsyydu4ubvx6, id=5g8xsyydu4ubvx6
+2024-02-20T16:44:24.413Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=5g8xsyydu4ubvx6, id=5g8xsyydu4ubvx6
+2024-02-20T16:44:24.488Z - warn: Page request failed: GET (fetch) http://localhost:4000/api/v1/lists, failure: net::ERR_FAILED rootId=5g8xsyydu4ubvx6, id=5g8xsyydu4ubvx6
+2024-02-20T16:44:24.488Z - info: Rendering request 17 finished in 83 ms rootId=5g8xsyydu4ubvx6, id=5g8xsyydu4ubvx6
+2024-02-20T16:44:26.805Z - info: Render request 18 queued for execution and waiting for available worker rootId=ay33l0umoiq7p5u, id=ay33l0umoiq7p5u
+2024-02-20T16:44:26.812Z - info: Starting rendering request 18 rootId=ay33l0umoiq7p5u, id=ay33l0umoiq7p5u
+2024-02-20T16:44:26.812Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ay33l0umoiq7p5u, id=ay33l0umoiq7p5u
+2024-02-20T16:44:26.888Z - warn: Page request failed: GET (fetch) http://localhost:4000/api/v1/lists, failure: net::ERR_FAILED rootId=ay33l0umoiq7p5u, id=ay33l0umoiq7p5u
+2024-02-20T16:44:26.890Z - info: Rendering request 18 finished in 81 ms rootId=ay33l0umoiq7p5u, id=ay33l0umoiq7p5u
+2024-02-20T16:44:27.666Z - info: Render request 19 queued for execution and waiting for available worker rootId=ln67tt918tyojci, id=ln67tt918tyojci
+2024-02-20T16:44:27.674Z - info: Starting rendering request 19 rootId=ln67tt918tyojci, id=ln67tt918tyojci
+2024-02-20T16:44:27.674Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ln67tt918tyojci, id=ln67tt918tyojci
+2024-02-20T16:44:27.738Z - warn: Page request failed: GET (fetch) http://localhost:4000/api/v1/lists, failure: net::ERR_FAILED rootId=ln67tt918tyojci, id=ln67tt918tyojci
+2024-02-20T16:44:27.739Z - info: Rendering request 19 finished in 71 ms rootId=ln67tt918tyojci, id=ln67tt918tyojci
+2024-02-20T16:46:08.618Z - info: Render request 20 queued for execution and waiting for available worker rootId=ac1dcjxgn0mrttn, id=ac1dcjxgn0mrttn
+2024-02-20T16:46:08.628Z - info: Starting rendering request 20 rootId=ac1dcjxgn0mrttn, id=ac1dcjxgn0mrttn
+2024-02-20T16:46:08.628Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ac1dcjxgn0mrttn, id=ac1dcjxgn0mrttn
+2024-02-20T16:46:08.708Z - info: Rendering request 20 finished in 88 ms rootId=ac1dcjxgn0mrttn, id=ac1dcjxgn0mrttn
+2024-02-20T16:49:45.565Z - info: Render request 21 queued for execution and waiting for available worker rootId=ny9dyjurxjfp2j9, id=ny9dyjurxjfp2j9
+2024-02-20T16:49:45.575Z - info: Starting rendering request 21 rootId=ny9dyjurxjfp2j9, id=ny9dyjurxjfp2j9
+2024-02-20T16:49:45.575Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ny9dyjurxjfp2j9, id=ny9dyjurxjfp2j9
+2024-02-20T16:49:45.659Z - info: Rendering request 21 finished in 90 ms rootId=ny9dyjurxjfp2j9, id=ny9dyjurxjfp2j9
+2024-02-20T16:50:16.043Z - info: Render request 22 queued for execution and waiting for available worker rootId=wu1mo7n3ofez7oj, id=wu1mo7n3ofez7oj
+2024-02-20T16:50:16.055Z - info: Starting rendering request 22 rootId=wu1mo7n3ofez7oj, id=wu1mo7n3ofez7oj
+2024-02-20T16:50:16.055Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=wu1mo7n3ofez7oj, id=wu1mo7n3ofez7oj
+2024-02-20T16:50:16.129Z - info: Rendering request 22 finished in 84 ms rootId=wu1mo7n3ofez7oj, id=wu1mo7n3ofez7oj
+2024-02-20T16:52:01.055Z - info: Render request 23 queued for execution and waiting for available worker rootId=u825qurol7tb5zz, id=u825qurol7tb5zz
+2024-02-20T16:52:01.063Z - info: Starting rendering request 23 rootId=u825qurol7tb5zz, id=u825qurol7tb5zz
+2024-02-20T16:52:01.064Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=u825qurol7tb5zz, id=u825qurol7tb5zz
+2024-02-20T16:52:01.159Z - info: Rendering request 23 finished in 102 ms rootId=u825qurol7tb5zz, id=u825qurol7tb5zz
+2024-02-20T16:56:39.625Z - info: Render request 24 queued for execution and waiting for available worker rootId=q3kqiegm0q4qhk0, id=q3kqiegm0q4qhk0
+2024-02-20T16:56:39.633Z - info: Starting rendering request 24 rootId=q3kqiegm0q4qhk0, id=q3kqiegm0q4qhk0
+2024-02-20T16:56:39.633Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=q3kqiegm0q4qhk0, id=q3kqiegm0q4qhk0
+2024-02-20T16:56:39.985Z - info: Rendering request 24 finished in 358 ms rootId=q3kqiegm0q4qhk0, id=q3kqiegm0q4qhk0
+2024-02-20T16:58:09.015Z - info: Render request 25 queued for execution and waiting for available worker rootId=4m0x0a3de0okm69, id=4m0x0a3de0okm69
+2024-02-20T16:58:09.024Z - info: Starting rendering request 25 rootId=4m0x0a3de0okm69, id=4m0x0a3de0okm69
+2024-02-20T16:58:09.024Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=4m0x0a3de0okm69, id=4m0x0a3de0okm69
+2024-02-20T16:58:09.322Z - info: Rendering request 25 finished in 307 ms rootId=4m0x0a3de0okm69, id=4m0x0a3de0okm69
+2024-02-20T16:59:07.415Z - info: Render request 26 queued for execution and waiting for available worker rootId=2eczrqspqoo9bkk, id=2eczrqspqoo9bkk
+2024-02-20T16:59:07.425Z - info: Starting rendering request 26 rootId=2eczrqspqoo9bkk, id=2eczrqspqoo9bkk
+2024-02-20T16:59:07.425Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=2eczrqspqoo9bkk, id=2eczrqspqoo9bkk
+2024-02-20T16:59:07.507Z - info: Rendering request 26 finished in 90 ms rootId=2eczrqspqoo9bkk, id=2eczrqspqoo9bkk
+2024-02-20T17:00:05.346Z - info: Render request 27 queued for execution and waiting for available worker rootId=pp9kh7lmk0eg8vl, id=pp9kh7lmk0eg8vl
+2024-02-20T17:00:05.355Z - info: Starting rendering request 27 rootId=pp9kh7lmk0eg8vl, id=pp9kh7lmk0eg8vl
+2024-02-20T17:00:05.356Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=pp9kh7lmk0eg8vl, id=pp9kh7lmk0eg8vl
+2024-02-20T17:00:05.462Z - info: Rendering request 27 finished in 115 ms rootId=pp9kh7lmk0eg8vl, id=pp9kh7lmk0eg8vl
+2024-02-20T17:00:30.942Z - info: Render request 28 queued for execution and waiting for available worker rootId=18k21drr83ftcdp, id=18k21drr83ftcdp
+2024-02-20T17:00:30.951Z - info: Starting rendering request 28 rootId=18k21drr83ftcdp, id=18k21drr83ftcdp
+2024-02-20T17:00:30.951Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=18k21drr83ftcdp, id=18k21drr83ftcdp
+2024-02-20T17:00:31.033Z - info: Rendering request 28 finished in 88 ms rootId=18k21drr83ftcdp, id=18k21drr83ftcdp
+2024-02-20T17:01:21.796Z - info: Render request 29 queued for execution and waiting for available worker rootId=71u6ttmuxhrtxcc, id=71u6ttmuxhrtxcc
+2024-02-20T17:01:21.805Z - info: Starting rendering request 29 rootId=71u6ttmuxhrtxcc, id=71u6ttmuxhrtxcc
+2024-02-20T17:01:21.805Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=71u6ttmuxhrtxcc, id=71u6ttmuxhrtxcc
+2024-02-20T17:01:21.910Z - info: Rendering request 29 finished in 113 ms rootId=71u6ttmuxhrtxcc, id=71u6ttmuxhrtxcc
+2024-02-20T17:03:48.515Z - info: Render request 30 queued for execution and waiting for available worker rootId=99deg8exw2dh21c, id=99deg8exw2dh21c
+2024-02-20T17:03:48.523Z - info: Starting rendering request 30 rootId=99deg8exw2dh21c, id=99deg8exw2dh21c
+2024-02-20T17:03:48.524Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=99deg8exw2dh21c, id=99deg8exw2dh21c
+2024-02-20T17:03:48.712Z - info: Rendering request 30 finished in 194 ms rootId=99deg8exw2dh21c, id=99deg8exw2dh21c
+2024-02-20T17:05:45.665Z - info: Render request 31 queued for execution and waiting for available worker rootId=now89082g4phb8n, id=now89082g4phb8n
+2024-02-20T17:05:45.672Z - info: Starting rendering request 31 rootId=now89082g4phb8n, id=now89082g4phb8n
+2024-02-20T17:05:45.673Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=now89082g4phb8n, id=now89082g4phb8n
+2024-02-20T17:05:45.737Z - warn: Error when processing render request 31
+(because) error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) parse error on line 30:
+...              <td>{{= list.list_name }}<
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+
+(sandbox.js line 3086:18)
+Error: Parse error on line 30:
+...              <td>{{= list.list_name }}<
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+  at Parser.parseError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
+  at Parser.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:336:30)
+  at parseWithoutProcessing (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:46:33)
+  at HandlebarsEnvironment.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:52:13)
+  at Object.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:485:17)
+  at hb.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars.js:42:40)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/handlebarsEngine.js:34:52)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/worker.js:26:43)
+  at executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:201:42)
+  at eval (sandbox.js:3086:18)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) parse error on line 30:
+...              <td>{{= list.list_name }}<
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=now89082g4phb8n, id=now89082g4phb8n
+2024-02-20T17:05:45.737Z - warn: Rendering request 31 finished with error in 71 ms rootId=now89082g4phb8n, id=now89082g4phb8n
+2024-02-20T17:06:24.195Z - info: Render request 32 queued for execution and waiting for available worker rootId=9i86znpg3wk96ao, id=9i86znpg3wk96ao
+2024-02-20T17:06:24.202Z - info: Starting rendering request 32 rootId=9i86znpg3wk96ao, id=9i86znpg3wk96ao
+2024-02-20T17:06:24.203Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=9i86znpg3wk96ao, id=9i86znpg3wk96ao
+2024-02-20T17:06:24.269Z - warn: Error when processing render request 32
+(because) error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) parse error on line 37:
+...    const lists = {{= JSON.stringify(lis
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+
+(sandbox.js line 3086:18)
+Error: Parse error on line 37:
+...    const lists = {{= JSON.stringify(lis
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+  at Parser.parseError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
+  at Parser.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:336:30)
+  at parseWithoutProcessing (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:46:33)
+  at HandlebarsEnvironment.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:52:13)
+  at Object.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:485:17)
+  at hb.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars.js:42:40)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/handlebarsEngine.js:34:52)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/worker.js:26:43)
+  at executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:201:42)
+  at eval (sandbox.js:3086:18)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) parse error on line 37:
+...    const lists = {{= JSON.stringify(lis
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=9i86znpg3wk96ao, id=9i86znpg3wk96ao
+2024-02-20T17:06:24.270Z - warn: Rendering request 32 finished with error in 74 ms rootId=9i86znpg3wk96ao, id=9i86znpg3wk96ao
+2024-02-20T17:06:25.045Z - info: Render request 33 queued for execution and waiting for available worker rootId=jiv9ftqwqfft7tt, id=jiv9ftqwqfft7tt
+2024-02-20T17:06:25.051Z - info: Starting rendering request 33 rootId=jiv9ftqwqfft7tt, id=jiv9ftqwqfft7tt
+2024-02-20T17:06:25.051Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=jiv9ftqwqfft7tt, id=jiv9ftqwqfft7tt
+2024-02-20T17:06:25.098Z - warn: Error when processing render request 33
+(because) error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) parse error on line 37:
+...    const lists = {{= JSON.stringify(lis
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+
+(sandbox.js line 3086:18)
+Error: Parse error on line 37:
+...    const lists = {{= JSON.stringify(lis
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+  at Parser.parseError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
+  at Parser.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:336:30)
+  at parseWithoutProcessing (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:46:33)
+  at HandlebarsEnvironment.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:52:13)
+  at Object.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:485:17)
+  at hb.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars.js:42:40)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/handlebarsEngine.js:34:52)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/worker.js:26:43)
+  at executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:201:42)
+  at eval (sandbox.js:3086:18)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/InfoList
+(because) parse error on line 37:
+...    const lists = {{= JSON.stringify(lis
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=jiv9ftqwqfft7tt, id=jiv9ftqwqfft7tt
+2024-02-20T17:06:25.099Z - warn: Rendering request 33 finished with error in 54 ms rootId=jiv9ftqwqfft7tt, id=jiv9ftqwqfft7tt
+2024-02-20T17:07:06.756Z - info: Render request 34 queued for execution and waiting for available worker rootId=ym1slywm8za9tbb, id=ym1slywm8za9tbb
+2024-02-20T17:07:06.769Z - info: Starting rendering request 34 rootId=ym1slywm8za9tbb, id=ym1slywm8za9tbb
+2024-02-20T17:07:06.769Z - info: Rendering template { name: InfoList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ym1slywm8za9tbb, id=ym1slywm8za9tbb
+2024-02-20T17:07:06.846Z - info: Rendering request 34 finished in 88 ms rootId=ym1slywm8za9tbb, id=ym1slywm8za9tbb
+2024-02-20T17:08:56.085Z - info: Render request 35 queued for execution and waiting for available worker rootId=qtgobqw6u04gajg, id=qtgobqw6u04gajg
+2024-02-20T17:08:56.093Z - info: Starting rendering request 35 rootId=qtgobqw6u04gajg, id=qtgobqw6u04gajg
+2024-02-20T17:08:56.093Z - info: Rendering template { name: ListTemplate, recipe: html, engine: handlebars, preview: true } rootId=qtgobqw6u04gajg, id=qtgobqw6u04gajg
+2024-02-20T17:08:56.104Z - info: Rendering request 35 finished in 19 ms rootId=qtgobqw6u04gajg, id=qtgobqw6u04gajg
+2024-02-20T17:11:15.385Z - info: Render request 36 queued for execution and waiting for available worker rootId=kgf37fvx5c43yuk, id=kgf37fvx5c43yuk
+2024-02-20T17:11:15.392Z - info: Starting rendering request 36 rootId=kgf37fvx5c43yuk, id=kgf37fvx5c43yuk
+2024-02-20T17:11:15.392Z - info: Rendering template { name: ListTemplate, recipe: html, engine: handlebars, preview: true } rootId=kgf37fvx5c43yuk, id=kgf37fvx5c43yuk
+2024-02-20T17:11:15.404Z - info: Rendering request 36 finished in 20 ms rootId=kgf37fvx5c43yuk, id=kgf37fvx5c43yuk
+2024-02-20T17:11:16.255Z - info: Render request 37 queued for execution and waiting for available worker rootId=e17rc04bq0dtq85, id=e17rc04bq0dtq85
+2024-02-20T17:11:16.263Z - info: Starting rendering request 37 rootId=e17rc04bq0dtq85, id=e17rc04bq0dtq85
+2024-02-20T17:11:16.264Z - info: Rendering template { name: ListTemplate, recipe: html, engine: handlebars, preview: true } rootId=e17rc04bq0dtq85, id=e17rc04bq0dtq85
+2024-02-20T17:11:16.278Z - info: Rendering request 37 finished in 23 ms rootId=e17rc04bq0dtq85, id=e17rc04bq0dtq85
+2024-02-20T17:11:16.865Z - info: Render request 38 queued for execution and waiting for available worker rootId=ie2g46mvbytmjfe, id=ie2g46mvbytmjfe
+2024-02-20T17:11:16.871Z - info: Starting rendering request 38 rootId=ie2g46mvbytmjfe, id=ie2g46mvbytmjfe
+2024-02-20T17:11:16.871Z - info: Rendering template { name: ListTemplate, recipe: html, engine: handlebars, preview: true } rootId=ie2g46mvbytmjfe, id=ie2g46mvbytmjfe
+2024-02-20T17:11:16.882Z - info: Rendering request 38 finished in 17 ms rootId=ie2g46mvbytmjfe, id=ie2g46mvbytmjfe
+2024-02-20T17:12:03.195Z - info: Render request 39 queued for execution and waiting for available worker rootId=lejh5gjmlhgd63y, id=lejh5gjmlhgd63y
+2024-02-20T17:12:03.202Z - info: Starting rendering request 39 rootId=lejh5gjmlhgd63y, id=lejh5gjmlhgd63y
+2024-02-20T17:12:03.202Z - info: Rendering template { name: ListTemplate, recipe: html, engine: handlebars, preview: true } rootId=lejh5gjmlhgd63y, id=lejh5gjmlhgd63y
+2024-02-20T17:12:03.257Z - warn: Error when processing render request 39
+(because) error when evaluating engine handlebars for template /TibuTicket/ListTemplate
+(because) parse error on line 43:
+...g("Lists:", {{ JSON.stringify(lists) }})
+-----------------------^
+Expecting 'ID', got 'INVALID'
+
+(sandbox.js line 3086:18)
+Error: Parse error on line 43:
+...g("Lists:", {{ JSON.stringify(lists) }})
+-----------------------^
+Expecting 'ID', got 'INVALID'
+  at Parser.parseError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
+  at Parser.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:336:30)
+  at parseWithoutProcessing (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:46:33)
+  at HandlebarsEnvironment.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:52:13)
+  at Object.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:485:17)
+  at hb.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars.js:42:40)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/handlebarsEngine.js:34:52)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/worker.js:26:43)
+  at executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:201:42)
+  at eval (sandbox.js:3086:18)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/ListTemplate
+(because) parse error on line 43:
+...g("Lists:", {{ JSON.stringify(lists) }})
+-----------------------^
+Expecting 'ID', got 'INVALID'
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=lejh5gjmlhgd63y, id=lejh5gjmlhgd63y
+2024-02-20T17:12:03.258Z - warn: Rendering request 39 finished with error in 63 ms rootId=lejh5gjmlhgd63y, id=lejh5gjmlhgd63y
+2024-02-20T17:12:30.655Z - info: Render request 40 queued for execution and waiting for available worker rootId=jb22zbruncytimt, id=jb22zbruncytimt
+2024-02-20T17:12:30.662Z - info: Starting rendering request 40 rootId=jb22zbruncytimt, id=jb22zbruncytimt
+2024-02-20T17:12:30.662Z - info: Rendering template { name: ListTemplate, recipe: html, engine: handlebars, preview: true } rootId=jb22zbruncytimt, id=jb22zbruncytimt
+2024-02-20T17:12:30.717Z - warn: Error when processing render request 40
+(because) error when evaluating engine handlebars for template /TibuTicket/ListTemplate
+(because) parse error on line 41:
+...g("Lists:", {{ JSON.stringify(lists) }})
+-----------------------^
+Expecting 'ID', got 'INVALID'
+
+(sandbox.js line 3086:18)
+Error: Parse error on line 41:
+...g("Lists:", {{ JSON.stringify(lists) }})
+-----------------------^
+Expecting 'ID', got 'INVALID'
+  at Parser.parseError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
+  at Parser.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:336:30)
+  at parseWithoutProcessing (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:46:33)
+  at HandlebarsEnvironment.parse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:52:13)
+  at Object.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:485:17)
+  at hb.precompile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars.js:42:40)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/handlebarsEngine.js:34:52)
+  at Object.compile (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-handlebars/lib/worker.js:26:43)
+  at executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:201:42)
+  at eval (sandbox.js:3086:18)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:287:14)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+wrapped by:
+Error: Error when evaluating engine handlebars for template /TibuTicket/ListTemplate
+(because) parse error on line 41:
+...g("Lists:", {{ JSON.stringify(lists) }})
+-----------------------^
+Expecting 'ID', got 'INVALID'
+  at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+  at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+  at executeEngine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:310:33)
+  at async engine.engine (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/executeEngine.js:115:14)
+  at async invokeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:61:23)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:142:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=jb22zbruncytimt, id=jb22zbruncytimt
+2024-02-20T17:12:30.717Z - warn: Rendering request 40 finished with error in 63 ms rootId=jb22zbruncytimt, id=jb22zbruncytimt
+2024-02-20T17:13:08.325Z - info: Render request 41 queued for execution and waiting for available worker rootId=ffj5261o9cxmrcr, id=ffj5261o9cxmrcr
+2024-02-20T17:13:08.332Z - info: Starting rendering request 41 rootId=ffj5261o9cxmrcr, id=ffj5261o9cxmrcr
+2024-02-20T17:13:08.332Z - info: Rendering template { name: ListTemplate, recipe: html, engine: handlebars, preview: true } rootId=ffj5261o9cxmrcr, id=ffj5261o9cxmrcr
+2024-02-20T17:13:08.343Z - info: Rendering request 41 finished in 18 ms rootId=ffj5261o9cxmrcr, id=ffj5261o9cxmrcr
+2024-02-20T17:15:39.305Z - info: Render request 42 queued for execution and waiting for available worker rootId=i3dj3gx5kshcx50, id=i3dj3gx5kshcx50
+2024-02-20T17:15:39.314Z - info: Starting rendering request 42 rootId=i3dj3gx5kshcx50, id=i3dj3gx5kshcx50
+2024-02-20T17:15:39.314Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=i3dj3gx5kshcx50, id=i3dj3gx5kshcx50
+2024-02-20T17:15:39.401Z - info: Rendering request 42 finished in 93 ms rootId=i3dj3gx5kshcx50, id=i3dj3gx5kshcx50
+2024-02-20T17:16:13.075Z - info: Render request 43 queued for execution and waiting for available worker rootId=105guvu3k3hv61f, id=105guvu3k3hv61f
+2024-02-20T17:16:13.083Z - info: Starting rendering request 43 rootId=105guvu3k3hv61f, id=105guvu3k3hv61f
+2024-02-20T17:16:13.083Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=105guvu3k3hv61f, id=105guvu3k3hv61f
+2024-02-20T17:16:13.162Z - info: Rendering request 43 finished in 86 ms rootId=105guvu3k3hv61f, id=105guvu3k3hv61f
+2024-02-20T17:16:44.535Z - info: Render request 44 queued for execution and waiting for available worker rootId=ilnohvmy9u7tdc0, id=ilnohvmy9u7tdc0
+2024-02-20T17:16:44.541Z - info: Starting rendering request 44 rootId=ilnohvmy9u7tdc0, id=ilnohvmy9u7tdc0
+2024-02-20T17:16:44.541Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ilnohvmy9u7tdc0, id=ilnohvmy9u7tdc0
+2024-02-20T17:16:44.622Z - info: Rendering request 44 finished in 86 ms rootId=ilnohvmy9u7tdc0, id=ilnohvmy9u7tdc0
+2024-02-20T17:17:25.869Z - info: Render request 45 queued for execution and waiting for available worker rootId=5rm9a45vj9mzqzg, id=5rm9a45vj9mzqzg
+2024-02-20T17:17:25.878Z - info: Starting rendering request 45 rootId=5rm9a45vj9mzqzg, id=5rm9a45vj9mzqzg
+2024-02-20T17:17:25.879Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=5rm9a45vj9mzqzg, id=5rm9a45vj9mzqzg
+2024-02-20T17:17:25.953Z - info: Rendering request 45 finished in 84 ms rootId=5rm9a45vj9mzqzg, id=5rm9a45vj9mzqzg
+2024-02-20T17:17:36.215Z - info: Render request 46 queued for execution and waiting for available worker rootId=hpnuvw28ykf79xq, id=hpnuvw28ykf79xq
+2024-02-20T17:17:36.223Z - info: Starting rendering request 46 rootId=hpnuvw28ykf79xq, id=hpnuvw28ykf79xq
+2024-02-20T17:17:36.223Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=hpnuvw28ykf79xq, id=hpnuvw28ykf79xq
+2024-02-20T17:17:36.296Z - info: Rendering request 46 finished in 80 ms rootId=hpnuvw28ykf79xq, id=hpnuvw28ykf79xq
+2024-02-20T17:17:36.915Z - info: Render request 47 queued for execution and waiting for available worker rootId=lvd2cjvwznm4jgl, id=lvd2cjvwznm4jgl
+2024-02-20T17:17:36.922Z - info: Starting rendering request 47 rootId=lvd2cjvwznm4jgl, id=lvd2cjvwznm4jgl
+2024-02-20T17:17:36.922Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=lvd2cjvwznm4jgl, id=lvd2cjvwznm4jgl
+2024-02-20T17:17:37.002Z - info: Rendering request 47 finished in 85 ms rootId=lvd2cjvwznm4jgl, id=lvd2cjvwznm4jgl
+2024-02-20T17:18:29.606Z - info: Render request 48 queued for execution and waiting for available worker rootId=4hkert545nkqq35, id=4hkert545nkqq35
+2024-02-20T17:18:29.620Z - info: Starting rendering request 48 rootId=4hkert545nkqq35, id=4hkert545nkqq35
+2024-02-20T17:18:29.620Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=4hkert545nkqq35, id=4hkert545nkqq35
+2024-02-20T17:18:29.632Z - warn: Error when processing render request 48
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+SyntaxError: Cannot use import statement outside a module
+  at Object.eval (eval at makeEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:6142:27), <anonymous>:12:36)
+  at safeEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:6241:14)
+  at compartmentEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:8252:10)
+  at Compartment.evaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:9034:12)
+  at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:36)
+  at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=4hkert545nkqq35, id=4hkert545nkqq35
+2024-02-20T17:18:29.632Z - warn: Rendering request 48 finished with error in 27 ms rootId=4hkert545nkqq35, id=4hkert545nkqq35
+2024-02-20T17:19:15.265Z - info: Render request 49 queued for execution and waiting for available worker rootId=ydx5ik43d76b8dj, id=ydx5ik43d76b8dj
+2024-02-20T17:19:15.276Z - info: Starting rendering request 49 rootId=ydx5ik43d76b8dj, id=ydx5ik43d76b8dj
+2024-02-20T17:19:15.276Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ydx5ik43d76b8dj, id=ydx5ik43d76b8dj
+2024-02-20T17:19:15.293Z - warn: Error when processing render request 49
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=ydx5ik43d76b8dj, id=ydx5ik43d76b8dj
+2024-02-20T17:19:15.293Z - warn: Rendering request 49 finished with error in 28 ms rootId=ydx5ik43d76b8dj, id=ydx5ik43d76b8dj
+2024-02-20T17:19:26.889Z - info: Render request 50 queued for execution and waiting for available worker rootId=hrbij6zr8znmrp3, id=hrbij6zr8znmrp3
+2024-02-20T17:19:26.919Z - info: Starting rendering request 50 rootId=hrbij6zr8znmrp3, id=hrbij6zr8znmrp3
+2024-02-20T17:19:26.920Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=hrbij6zr8znmrp3, id=hrbij6zr8znmrp3
+2024-02-20T17:19:26.928Z - warn: Error when processing render request 50
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+SyntaxError: Cannot use import statement outside a module
+  at Object.eval (eval at makeEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:6142:27), <anonymous>:12:36)
+  at safeEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:6241:14)
+  at compartmentEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:8252:10)
+  at Compartment.evaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:9034:12)
+  at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:36)
+  at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=hrbij6zr8znmrp3, id=hrbij6zr8znmrp3
+2024-02-20T17:19:26.929Z - warn: Rendering request 50 finished with error in 42 ms rootId=hrbij6zr8znmrp3, id=hrbij6zr8znmrp3
+2024-02-20T17:19:33.905Z - info: Render request 51 queued for execution and waiting for available worker rootId=xsst5ovkresqk65, id=xsst5ovkresqk65
+2024-02-20T17:19:33.913Z - info: Starting rendering request 51 rootId=xsst5ovkresqk65, id=xsst5ovkresqk65
+2024-02-20T17:19:33.913Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=xsst5ovkresqk65, id=xsst5ovkresqk65
+2024-02-20T17:19:33.920Z - warn: Error when processing render request 51
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+SyntaxError: Cannot use import statement outside a module
+  at Object.eval (eval at makeEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:6142:27), <anonymous>:12:36)
+  at safeEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:6241:14)
+  at compartmentEvaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:8252:10)
+  at Compartment.evaluate (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/ses/index.js:9034:12)
+  at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:36)
+  at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=xsst5ovkresqk65, id=xsst5ovkresqk65
+2024-02-20T17:19:33.920Z - warn: Rendering request 51 finished with error in 15 ms rootId=xsst5ovkresqk65, id=xsst5ovkresqk65
+2024-02-20T17:19:39.026Z - info: Render request 52 queued for execution and waiting for available worker rootId=hj9ce9stpjujkmq, id=hj9ce9stpjujkmq
+2024-02-20T17:19:39.034Z - info: Starting rendering request 52 rootId=hj9ce9stpjujkmq, id=hj9ce9stpjujkmq
+2024-02-20T17:19:39.034Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=hj9ce9stpjujkmq, id=hj9ce9stpjujkmq
+2024-02-20T17:19:39.045Z - warn: Error when processing render request 52
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=hj9ce9stpjujkmq, id=hj9ce9stpjujkmq
+2024-02-20T17:19:39.046Z - warn: Rendering request 52 finished with error in 20 ms rootId=hj9ce9stpjujkmq, id=hj9ce9stpjujkmq
+2024-02-20T17:20:52.515Z - info: Render request 53 queued for execution and waiting for available worker rootId=v6quieymmyqvei2, id=v6quieymmyqvei2
+2024-02-20T17:20:52.523Z - info: Starting rendering request 53 rootId=v6quieymmyqvei2, id=v6quieymmyqvei2
+2024-02-20T17:20:52.523Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=v6quieymmyqvei2, id=v6quieymmyqvei2
+2024-02-20T17:20:52.530Z - warn: Error when processing render request 53
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 |   jsreport.options.sandbox = {
+  4 |     allowedModules: ['node-fetch']
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=v6quieymmyqvei2, id=v6quieymmyqvei2
+2024-02-20T17:20:52.531Z - warn: Rendering request 53 finished with error in 16 ms rootId=v6quieymmyqvei2, id=v6quieymmyqvei2
+2024-02-20T17:21:15.312Z - info: Render request 54 queued for execution and waiting for available worker rootId=yvptt9y81ua8pj2, id=yvptt9y81ua8pj2
+2024-02-20T17:21:15.320Z - info: Starting rendering request 54 rootId=yvptt9y81ua8pj2, id=yvptt9y81ua8pj2
+2024-02-20T17:21:15.320Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=yvptt9y81ua8pj2, id=yvptt9y81ua8pj2
+2024-02-20T17:21:15.325Z - warn: Error when processing render request 54
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=yvptt9y81ua8pj2, id=yvptt9y81ua8pj2
+2024-02-20T17:21:15.325Z - warn: Rendering request 54 finished with error in 14 ms rootId=yvptt9y81ua8pj2, id=yvptt9y81ua8pj2
+2024-02-20T17:21:19.995Z - info: Render request 55 queued for execution and waiting for available worker rootId=focu2v59q3dng56, id=focu2v59q3dng56
+2024-02-20T17:21:20.001Z - info: Starting rendering request 55 rootId=focu2v59q3dng56, id=focu2v59q3dng56
+2024-02-20T17:21:20.002Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=focu2v59q3dng56, id=focu2v59q3dng56
+2024-02-20T17:21:20.013Z - warn: Error when processing render request 55
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=focu2v59q3dng56, id=focu2v59q3dng56
+2024-02-20T17:21:20.015Z - warn: Rendering request 55 finished with error in 19 ms rootId=focu2v59q3dng56, id=focu2v59q3dng56
+2024-02-20T17:23:24.465Z - info: Render request 56 queued for execution and waiting for available worker rootId=3iv2etagbrgjbql, id=3iv2etagbrgjbql
+2024-02-20T17:23:24.473Z - info: Starting rendering request 56 rootId=3iv2etagbrgjbql, id=3iv2etagbrgjbql
+2024-02-20T17:23:24.473Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=3iv2etagbrgjbql, id=3iv2etagbrgjbql
+2024-02-20T17:23:24.480Z - warn: Error when processing render request 56
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=3iv2etagbrgjbql, id=3iv2etagbrgjbql
+2024-02-20T17:23:24.480Z - warn: Rendering request 56 finished with error in 16 ms rootId=3iv2etagbrgjbql, id=3iv2etagbrgjbql
+2024-02-20T17:26:08.468Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T17:26:08.471Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:26:08.480Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:26:08.484Z - info: Found 35 extension(s)
+2024-02-20T17:26:08.549Z - info: Using extension base@4.0.0
+2024-02-20T17:26:08.553Z - info: Using extension child-templates@4.0.0
+2024-02-20T17:26:08.556Z - info: Using extension cli@4.0.2
+2024-02-20T17:26:08.557Z - info: Using extension components@4.0.0
+2024-02-20T17:26:08.558Z - info: Using extension data@4.0.0
+2024-02-20T17:26:08.559Z - info: Using extension express@4.0.1
+2024-02-20T17:26:08.707Z - info: Using extension freeze@4.0.0
+2024-02-20T17:26:08.708Z - info: Using extension fs-store@4.0.1
+2024-02-20T17:26:08.760Z - info: Using extension handlebars@4.0.1
+2024-02-20T17:26:08.761Z - info: Using extension import-export@4.0.2
+2024-02-20T17:26:08.771Z - info: Using extension jsrender@4.0.0
+2024-02-20T17:26:08.772Z - info: Using extension licensing@4.0.1
+2024-02-20T17:26:08.773Z - info: Using extension localization@4.0.1
+2024-02-20T17:26:08.774Z - info: Using extension npm@4.0.0
+2024-02-20T17:26:08.779Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T17:26:08.782Z - info: Using extension reports@4.0.0
+2024-02-20T17:26:08.785Z - info: Using extension tags@4.0.1
+2024-02-20T17:26:08.787Z - info: Using extension text@4.0.0
+2024-02-20T17:26:08.788Z - info: Using extension version-control@4.0.0
+2024-02-20T17:26:08.799Z - info: Using extension assets@4.0.2
+2024-02-20T17:26:08.805Z - info: Using extension authorization@4.0.0
+2024-02-20T17:26:08.807Z - info: Using extension browser-client@4.0.0
+2024-02-20T17:26:08.809Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T17:26:08.812Z - info: Using extension docx@4.1.1
+2024-02-20T17:26:08.814Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T17:26:09.012Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T17:26:09.013Z - info: Using extension pptx@4.1.0
+2024-02-20T17:26:09.014Z - info: Using extension scheduling@4.0.0
+2024-02-20T17:26:09.059Z - info: Using extension scripts@4.0.0
+2024-02-20T17:26:09.059Z - info: Using extension static-pdf@4.0.0
+2024-02-20T17:26:09.060Z - info: Using extension studio@4.0.2
+2024-02-20T17:26:09.117Z - info: Using extension xlsx@4.0.2
+2024-02-20T17:26:09.119Z - info: Using extension public-templates@4.0.0
+2024-02-20T17:26:09.120Z - info: Using extension sample-template@4.0.0
+2024-02-20T17:26:09.121Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T17:26:09.122Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T17:26:09.122Z - info: Using fs provider for template store.
+2024-02-20T17:26:09.127Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T17:26:09.159Z - info: fs store is loading data
+2024-02-20T17:26:09.178Z - info: fs store is initialized successfully
+2024-02-20T17:26:09.188Z - info: Creating default express app.
+2024-02-20T17:26:09.218Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T17:26:09.248Z - info: Verifying license key free
+2024-02-20T17:26:09.249Z - info: Using free license
+2024-02-20T17:26:09.253Z - info: Initializing worker threads
+2024-02-20T17:26:09.897Z - info: 2 worker threads initialized in 645ms
+2024-02-20T17:26:09.897Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T17:26:09.897Z - info: reporter initialized
+2024-02-20T17:26:17.260Z - info: Render request 1 queued for execution and waiting for available worker rootId=zlrwcxo6rryij4r, id=zlrwcxo6rryij4r
+2024-02-20T17:26:17.294Z - info: Starting rendering request 1 rootId=zlrwcxo6rryij4r, id=zlrwcxo6rryij4r
+2024-02-20T17:26:17.295Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=zlrwcxo6rryij4r, id=zlrwcxo6rryij4r
+2024-02-20T17:26:17.454Z - warn: Error when processing render request 1
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=zlrwcxo6rryij4r, id=zlrwcxo6rryij4r
+2024-02-20T17:26:17.454Z - warn: Rendering request 1 finished with error in 196 ms rootId=zlrwcxo6rryij4r, id=zlrwcxo6rryij4r
+2024-02-20T17:26:17.560Z - info: Render request 2 queued for execution and waiting for available worker rootId=65y76i5f0ltpv6t, id=65y76i5f0ltpv6t
+2024-02-20T17:26:17.591Z - info: Starting rendering request 2 rootId=65y76i5f0ltpv6t, id=65y76i5f0ltpv6t
+2024-02-20T17:26:17.591Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=65y76i5f0ltpv6t, id=65y76i5f0ltpv6t
+2024-02-20T17:26:17.719Z - warn: Error when processing render request 2
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=65y76i5f0ltpv6t, id=65y76i5f0ltpv6t
+2024-02-20T17:26:17.720Z - warn: Rendering request 2 finished with error in 162 ms rootId=65y76i5f0ltpv6t, id=65y76i5f0ltpv6t
+2024-02-20T17:26:47.852Z - info: Render request 3 queued for execution and waiting for available worker rootId=vuymqohpq6t5ykh, id=vuymqohpq6t5ykh
+2024-02-20T17:26:47.864Z - info: Starting rendering request 3 rootId=vuymqohpq6t5ykh, id=vuymqohpq6t5ykh
+2024-02-20T17:26:47.864Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=vuymqohpq6t5ykh, id=vuymqohpq6t5ykh
+2024-02-20T17:26:47.870Z - warn: Error when processing render request 3
+(because) error when evaluating custom script /TibuTicket/list-data
+require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+
+(sandbox.js line 1:164)
+
+> 1 | const fetch = require('node-fetch');
+    |                                     ^
+  2 |
+  3 | async function fetchlists() {
+  4 |     const response = await fetch('http://localhost:4000/api/v1/lists');
+
+
+Error: require of "node-fetch" module has been blocked. To be able to require custom modules you need to add to configuration { "trustUserCode": true } or enable just specific module using { sandbox: { allowedModules": ["node-fetch"] }
+  at sandboxRequire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/requireSandbox.js:53:19)
+  at Object.require (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:89:30)
+  at eval (sandbox.js:1:164)
+  at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:132:18)
+  at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+  at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+  at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+  at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+  at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+  at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+  at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+  at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+  at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=vuymqohpq6t5ykh, id=vuymqohpq6t5ykh
+2024-02-20T17:26:47.871Z - warn: Rendering request 3 finished with error in 20 ms rootId=vuymqohpq6t5ykh, id=vuymqohpq6t5ykh
+2024-02-20T17:26:58.055Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-20T17:26:58.057Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:26:58.063Z - info: Extensions location cache contains up to date information, skipping crawling in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-20T17:26:58.065Z - info: Found 35 extension(s)
+2024-02-20T17:26:58.119Z - info: Using extension base@4.0.0
+2024-02-20T17:26:58.123Z - info: Using extension child-templates@4.0.0
+2024-02-20T17:26:58.125Z - info: Using extension cli@4.0.2
+2024-02-20T17:26:58.126Z - info: Using extension components@4.0.0
+2024-02-20T17:26:58.127Z - info: Using extension data@4.0.0
+2024-02-20T17:26:58.128Z - info: Using extension express@4.0.1
+2024-02-20T17:26:58.221Z - info: Using extension freeze@4.0.0
+2024-02-20T17:26:58.222Z - info: Using extension fs-store@4.0.1
+2024-02-20T17:26:58.258Z - info: Using extension handlebars@4.0.1
+2024-02-20T17:26:58.259Z - info: Using extension import-export@4.0.2
+2024-02-20T17:26:58.264Z - info: Using extension jsrender@4.0.0
+2024-02-20T17:26:58.264Z - info: Using extension licensing@4.0.1
+2024-02-20T17:26:58.266Z - info: Using extension localization@4.0.1
+2024-02-20T17:26:58.266Z - info: Using extension npm@4.0.0
+2024-02-20T17:26:58.271Z - info: Using extension pdf-utils@4.0.2
+2024-02-20T17:26:58.272Z - info: Using extension reports@4.0.0
+2024-02-20T17:26:58.274Z - info: Using extension tags@4.0.1
+2024-02-20T17:26:58.275Z - info: Using extension text@4.0.0
+2024-02-20T17:26:58.275Z - info: Using extension version-control@4.0.0
+2024-02-20T17:26:58.281Z - info: Using extension assets@4.0.2
+2024-02-20T17:26:58.285Z - info: Using extension authorization@4.0.0
+2024-02-20T17:26:58.288Z - info: Using extension browser-client@4.0.0
+2024-02-20T17:26:58.290Z - info: Using extension chrome-pdf@4.0.0
+2024-02-20T17:26:58.292Z - info: Using extension docx@4.1.1
+2024-02-20T17:26:58.293Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-20T17:26:58.421Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-20T17:26:58.421Z - info: Using extension pptx@4.1.0
+2024-02-20T17:26:58.422Z - info: Using extension scheduling@4.0.0
+2024-02-20T17:26:58.441Z - info: Using extension scripts@4.0.0
+2024-02-20T17:26:58.442Z - info: Using extension static-pdf@4.0.0
+2024-02-20T17:26:58.442Z - info: Using extension studio@4.0.2
+2024-02-20T17:26:58.485Z - info: Using extension xlsx@4.0.2
+2024-02-20T17:26:58.487Z - info: Using extension public-templates@4.0.0
+2024-02-20T17:26:58.488Z - info: Using extension sample-template@4.0.0
+2024-02-20T17:26:58.489Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-20T17:26:58.489Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-20T17:26:58.489Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-20T17:26:58.490Z - info: Using fs provider for template store.
+2024-02-20T17:26:58.494Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-20T17:26:58.532Z - info: fs store is loading data
+2024-02-20T17:26:58.552Z - info: fs store is initialized successfully
+2024-02-20T17:26:58.562Z - info: Creating default express app.
+2024-02-20T17:26:58.575Z - info: jsreport server successfully started on http port: 5488
+2024-02-20T17:26:58.576Z - info: Verifying license key free
+2024-02-20T17:26:58.577Z - info: Using free license
+2024-02-20T17:26:58.579Z - info: Initializing worker threads
+2024-02-20T17:26:58.708Z - info: 2 worker threads initialized in 129ms
+2024-02-20T17:26:58.708Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-20T17:26:58.709Z - info: reporter initialized
+2024-02-20T17:27:02.271Z - info: Render request 1 queued for execution and waiting for available worker rootId=mhw8aud4aqdr79x, id=mhw8aud4aqdr79x
+2024-02-20T17:27:02.310Z - info: Starting rendering request 1 rootId=mhw8aud4aqdr79x, id=mhw8aud4aqdr79x
+2024-02-20T17:27:02.310Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=mhw8aud4aqdr79x, id=mhw8aud4aqdr79x
+2024-02-20T17:27:02.486Z - warn: Error when processing render request 1
+(because) error when evaluating custom script /TibuTicket/list-data
+module is not defined
+
+(sandbox.js line 20:1)
+
+  18 | }
+  19 |
+> 20 | module.exports = {
+     | ^
+  21 |     beforeRender
+  22 | };
+  23 |
+
+
+ReferenceError: module is not defined
+    at sandbox.js:20:1 rootId=mhw8aud4aqdr79x, id=mhw8aud4aqdr79x
+2024-02-20T17:27:02.487Z - warn: Rendering request 1 finished with error in 218 ms rootId=mhw8aud4aqdr79x, id=mhw8aud4aqdr79x
+2024-02-20T17:27:43.626Z - info: Render request 2 queued for execution and waiting for available worker rootId=yvzi9ou47q6p9m9, id=yvzi9ou47q6p9m9
+2024-02-20T17:27:43.641Z - info: Starting rendering request 2 rootId=yvzi9ou47q6p9m9, id=yvzi9ou47q6p9m9
+2024-02-20T17:27:43.642Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=yvzi9ou47q6p9m9, id=yvzi9ou47q6p9m9
+2024-02-20T17:27:43.786Z - error: Report render failed
+(because) fetch is not defined
+ReferenceError: fetch is not defined
+    at fetchlists (sandbox.js:10:22)
+    at Object.beforeRender (sandbox.js:3:26)
+    at executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:67:35)
+    at sandbox.js:29:18
+    at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:137:16)
+    at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+    at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+    at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+    at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+    at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21) rootId=yvzi9ou47q6p9m9, id=yvzi9ou47q6p9m9
+2024-02-20T17:27:51.965Z - info: Render request 3 queued for execution and waiting for available worker rootId=l2kl5x3ktir3yc8, id=l2kl5x3ktir3yc8
+2024-02-20T17:27:51.980Z - info: Starting rendering request 3 rootId=l2kl5x3ktir3yc8, id=l2kl5x3ktir3yc8
+2024-02-20T17:27:51.980Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=l2kl5x3ktir3yc8, id=l2kl5x3ktir3yc8
+2024-02-20T17:27:53.242Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=l2kl5x3ktir3yc8, id=l2kl5x3ktir3yc8
+2024-02-20T17:27:53.243Z - info: Rendering request 3 finished in 1276 ms rootId=l2kl5x3ktir3yc8, id=l2kl5x3ktir3yc8
+2024-02-20T17:28:16.035Z - info: Render request 4 queued for execution and waiting for available worker rootId=hcygnukp7b1rwp6, id=hcygnukp7b1rwp6
+2024-02-20T17:28:16.045Z - info: Starting rendering request 4 rootId=hcygnukp7b1rwp6, id=hcygnukp7b1rwp6
+2024-02-20T17:28:16.045Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=hcygnukp7b1rwp6, id=hcygnukp7b1rwp6
+2024-02-20T17:28:16.052Z - warn: Error when processing render request 4
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+sandbox.js:1
+;(async () => { await 1;const odegtkibim_executionFn_expose = odegtkibim_executionFn;delete this.__handleError;delete this['odegtkibim_executionFn'];import fetch from 'node-fetch';
+                                                                                                                                                     ^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at new Script (node:vm:93:7)
+    at doCompileScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:154:10)
+    at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:135:74)
+    at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=hcygnukp7b1rwp6, id=hcygnukp7b1rwp6
+2024-02-20T17:28:16.053Z - warn: Rendering request 4 finished with error in 17 ms rootId=hcygnukp7b1rwp6, id=hcygnukp7b1rwp6
+2024-02-20T17:31:36.115Z - info: Render request 5 queued for execution and waiting for available worker rootId=gk356pe497cbxaf, id=gk356pe497cbxaf
+2024-02-20T17:31:36.124Z - info: Starting rendering request 5 rootId=gk356pe497cbxaf, id=gk356pe497cbxaf
+2024-02-20T17:31:36.125Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=gk356pe497cbxaf, id=gk356pe497cbxaf
+2024-02-20T17:31:36.131Z - warn: Error when processing render request 5
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+sandbox.js:1
+;(async () => { await 1;const guxhyckpku_executionFn_expose = guxhyckpku_executionFn;delete this.__handleError;delete this['guxhyckpku_executionFn'];import fetch from 'node-fetch';
+                                                                                                                                                     ^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at new Script (node:vm:93:7)
+    at doCompileScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:154:10)
+    at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:135:74)
+    at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=gk356pe497cbxaf, id=gk356pe497cbxaf
+2024-02-20T17:31:36.131Z - warn: Rendering request 5 finished with error in 16 ms rootId=gk356pe497cbxaf, id=gk356pe497cbxaf
+2024-02-20T17:31:57.424Z - info: Render request 6 queued for execution and waiting for available worker rootId=ruk3uhk4ly73l3u, id=ruk3uhk4ly73l3u
+2024-02-20T17:31:57.434Z - info: Starting rendering request 6 rootId=ruk3uhk4ly73l3u, id=ruk3uhk4ly73l3u
+2024-02-20T17:31:57.434Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ruk3uhk4ly73l3u, id=ruk3uhk4ly73l3u
+2024-02-20T17:31:57.439Z - warn: Error when processing render request 6
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+sandbox.js:1
+;(async () => { await 1;const etzgttyves_executionFn_expose = etzgttyves_executionFn;delete this.__handleError;delete this['etzgttyves_executionFn'];import fetch from 'node-fetch';
+                                                                                                                                                     ^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at new Script (node:vm:93:7)
+    at doCompileScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:154:10)
+    at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:135:74)
+    at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=ruk3uhk4ly73l3u, id=ruk3uhk4ly73l3u
+2024-02-20T17:31:57.439Z - warn: Rendering request 6 finished with error in 16 ms rootId=ruk3uhk4ly73l3u, id=ruk3uhk4ly73l3u
+2024-02-20T17:32:12.426Z - info: Render request 7 queued for execution and waiting for available worker rootId=2ullnacn5cjmqtf, id=2ullnacn5cjmqtf
+2024-02-20T17:32:12.434Z - info: Starting rendering request 7 rootId=2ullnacn5cjmqtf, id=2ullnacn5cjmqtf
+2024-02-20T17:32:12.435Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=2ullnacn5cjmqtf, id=2ullnacn5cjmqtf
+2024-02-20T17:32:12.440Z - warn: Error when processing render request 7
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+sandbox.js:1
+;(async () => { await 1;const mnbsjwvzro_executionFn_expose = mnbsjwvzro_executionFn;delete this.__handleError;delete this['mnbsjwvzro_executionFn'];import fetch from 'node-fetch';
+                                                                                                                                                     ^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at new Script (node:vm:93:7)
+    at doCompileScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:154:10)
+    at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:135:74)
+    at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=2ullnacn5cjmqtf, id=2ullnacn5cjmqtf
+2024-02-20T17:32:12.440Z - warn: Rendering request 7 finished with error in 15 ms rootId=2ullnacn5cjmqtf, id=2ullnacn5cjmqtf
+2024-02-20T17:33:31.919Z - info: Render request 8 queued for execution and waiting for available worker rootId=9s1uq2u0ssv0nce, id=9s1uq2u0ssv0nce
+2024-02-20T17:33:31.932Z - info: Starting rendering request 8 rootId=9s1uq2u0ssv0nce, id=9s1uq2u0ssv0nce
+2024-02-20T17:33:31.933Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=9s1uq2u0ssv0nce, id=9s1uq2u0ssv0nce
+2024-02-20T17:33:31.938Z - warn: Error when processing render request 8
+(because) error when evaluating custom script /TibuTicket/list-data
+Cannot use import statement outside a module
+sandbox.js:1
+;(async () => { await 1;const mnldjhfjta_executionFn_expose = mnldjhfjta_executionFn;delete this.__handleError;delete this['mnldjhfjta_executionFn'];import fetch from 'node-fetch';
+                                                                                                                                                     ^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at new Script (node:vm:93:7)
+    at doCompileScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:154:10)
+    at run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:135:74)
+    at WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:20) rootId=9s1uq2u0ssv0nce, id=9s1uq2u0ssv0nce
+2024-02-20T17:33:31.939Z - warn: Rendering request 8 finished with error in 20 ms rootId=9s1uq2u0ssv0nce, id=9s1uq2u0ssv0nce
+2024-02-20T17:33:45.251Z - info: Render request 9 queued for execution and waiting for available worker rootId=oo071jd8zymfo1x, id=oo071jd8zymfo1x
+2024-02-20T17:33:45.277Z - info: Starting rendering request 9 rootId=oo071jd8zymfo1x, id=oo071jd8zymfo1x
+2024-02-20T17:33:45.277Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=oo071jd8zymfo1x, id=oo071jd8zymfo1x
+2024-02-20T17:33:45.383Z - info: Rendering request 9 finished in 133 ms rootId=oo071jd8zymfo1x, id=oo071jd8zymfo1x
+2024-02-20T17:34:22.557Z - info: Render request 10 queued for execution and waiting for available worker rootId=azbxad6r1yniy3m, id=azbxad6r1yniy3m
+2024-02-20T17:34:22.595Z - info: Starting rendering request 10 rootId=azbxad6r1yniy3m, id=azbxad6r1yniy3m
+2024-02-20T17:34:22.595Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=azbxad6r1yniy3m, id=azbxad6r1yniy3m
+2024-02-20T17:34:23.430Z - info: Rendering request 10 finished in 872 ms rootId=azbxad6r1yniy3m, id=azbxad6r1yniy3m
+2024-02-20T17:34:48.647Z - info: Render request 11 queued for execution and waiting for available worker rootId=xssaw84er8scvl5, id=xssaw84er8scvl5
+2024-02-20T17:34:48.656Z - info: Starting rendering request 11 rootId=xssaw84er8scvl5, id=xssaw84er8scvl5
+2024-02-20T17:34:48.656Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=xssaw84er8scvl5, id=xssaw84er8scvl5
+2024-02-20T17:34:48.744Z - info: Rendering request 11 finished in 98 ms rootId=xssaw84er8scvl5, id=xssaw84er8scvl5
+2024-02-20T17:37:38.675Z - info: Render request 12 queued for execution and waiting for available worker rootId=nhrvern78v4aj9a, id=nhrvern78v4aj9a
+2024-02-20T17:37:38.683Z - info: Starting rendering request 12 rootId=nhrvern78v4aj9a, id=nhrvern78v4aj9a
+2024-02-20T17:37:38.684Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=nhrvern78v4aj9a, id=nhrvern78v4aj9a
+2024-02-20T17:37:38.784Z - info: Rendering request 12 finished in 107 ms rootId=nhrvern78v4aj9a, id=nhrvern78v4aj9a
+2024-02-20T17:38:02.685Z - info: Render request 13 queued for execution and waiting for available worker rootId=lesw7aycdyiu0ek, id=lesw7aycdyiu0ek
+2024-02-20T17:38:02.694Z - info: Starting rendering request 13 rootId=lesw7aycdyiu0ek, id=lesw7aycdyiu0ek
+2024-02-20T17:38:02.694Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=lesw7aycdyiu0ek, id=lesw7aycdyiu0ek
+2024-02-20T17:38:02.798Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=lesw7aycdyiu0ek, id=lesw7aycdyiu0ek
+2024-02-20T17:38:02.799Z - info: Rendering request 13 finished in 110 ms rootId=lesw7aycdyiu0ek, id=lesw7aycdyiu0ek
+2024-02-20T17:38:20.235Z - info: Render request 14 queued for execution and waiting for available worker rootId=gz9k7asdszf4g3w, id=gz9k7asdszf4g3w
+2024-02-20T17:38:20.244Z - info: Starting rendering request 14 rootId=gz9k7asdszf4g3w, id=gz9k7asdszf4g3w
+2024-02-20T17:38:20.244Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=gz9k7asdszf4g3w, id=gz9k7asdszf4g3w
+2024-02-20T17:38:20.359Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=gz9k7asdszf4g3w, id=gz9k7asdszf4g3w
+2024-02-20T17:38:20.360Z - info: Rendering request 14 finished in 123 ms rootId=gz9k7asdszf4g3w, id=gz9k7asdszf4g3w
+2024-02-20T17:39:40.355Z - info: Render request 15 queued for execution and waiting for available worker rootId=ntupj27hhwa5dok, id=ntupj27hhwa5dok
+2024-02-20T17:39:40.364Z - info: Starting rendering request 15 rootId=ntupj27hhwa5dok, id=ntupj27hhwa5dok
+2024-02-20T17:39:40.364Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ntupj27hhwa5dok, id=ntupj27hhwa5dok
+2024-02-20T17:39:40.477Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=ntupj27hhwa5dok, id=ntupj27hhwa5dok
+2024-02-20T17:39:40.478Z - info: Rendering request 15 finished in 121 ms rootId=ntupj27hhwa5dok, id=ntupj27hhwa5dok
+2024-02-20T17:39:55.371Z - info: Render request 16 queued for execution and waiting for available worker rootId=l6nfifcgybmdf88, id=l6nfifcgybmdf88
+2024-02-20T17:39:55.384Z - info: Starting rendering request 16 rootId=l6nfifcgybmdf88, id=l6nfifcgybmdf88
+2024-02-20T17:39:55.384Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=l6nfifcgybmdf88, id=l6nfifcgybmdf88
+2024-02-20T17:39:55.508Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=l6nfifcgybmdf88, id=l6nfifcgybmdf88
+2024-02-20T17:39:55.508Z - info: Rendering request 16 finished in 136 ms rootId=l6nfifcgybmdf88, id=l6nfifcgybmdf88
+2024-02-20T17:42:02.302Z - info: Render request 17 queued for execution and waiting for available worker rootId=iwtb1ogck6xxrnv, id=iwtb1ogck6xxrnv
+2024-02-20T17:42:02.314Z - info: Starting rendering request 17 rootId=iwtb1ogck6xxrnv, id=iwtb1ogck6xxrnv
+2024-02-20T17:42:02.314Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=iwtb1ogck6xxrnv, id=iwtb1ogck6xxrnv
+2024-02-20T17:42:02.429Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=iwtb1ogck6xxrnv, id=iwtb1ogck6xxrnv
+2024-02-20T17:42:02.436Z - info: Rendering request 17 finished in 129 ms rootId=iwtb1ogck6xxrnv, id=iwtb1ogck6xxrnv
+2024-02-20T17:42:12.896Z - info: Render request 18 queued for execution and waiting for available worker rootId=t88rjn7hrep2lxk, id=t88rjn7hrep2lxk
+2024-02-20T17:42:12.902Z - info: Starting rendering request 18 rootId=t88rjn7hrep2lxk, id=t88rjn7hrep2lxk
+2024-02-20T17:42:12.903Z - warn: Error when processing render request 18
+(because) unable to find specified template (fA5ZwVax_)
+Error: Unable to find specified template (fA5ZwVax_)
+    at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
+    at WorkerReporter.createError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/reporter.js:49:12)
+    at AsyncFunction.<anonymous> (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/templates.js:51:28)
+    at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+    at async beforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:24:5)
+    at async WorkerReporter._render (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/render/render.js:141:7)
+    at async /home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/reporter.js:224:19
+    at async processAndResponse (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/advanced-workers/lib/workerHandler.js:41:17) rootId=t88rjn7hrep2lxk, id=t88rjn7hrep2lxk
+2024-02-20T17:42:12.903Z - warn: Rendering request 18 finished with error in 7 ms rootId=t88rjn7hrep2lxk, id=t88rjn7hrep2lxk
+2024-02-20T17:42:12.904Z - warn: Error during processing request at http://localhost:5488/api/report
+2024-02-20T17:42:43.385Z - info: Render request 19 queued for execution and waiting for available worker rootId=2f9h79wgasajek4, id=2f9h79wgasajek4
+2024-02-20T17:42:43.392Z - info: Starting rendering request 19 rootId=2f9h79wgasajek4, id=2f9h79wgasajek4
+2024-02-20T17:42:43.392Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=2f9h79wgasajek4, id=2f9h79wgasajek4
+2024-02-20T17:42:43.494Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=2f9h79wgasajek4, id=2f9h79wgasajek4
+2024-02-20T17:42:43.495Z - info: Rendering request 19 finished in 108 ms rootId=2f9h79wgasajek4, id=2f9h79wgasajek4
+2024-02-20T17:43:13.150Z - info: Render request 20 queued for execution and waiting for available worker rootId=shm0246td02l9zs, id=shm0246td02l9zs
+2024-02-20T17:43:13.158Z - info: Starting rendering request 20 rootId=shm0246td02l9zs, id=shm0246td02l9zs
+2024-02-20T17:43:13.158Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=shm0246td02l9zs, id=shm0246td02l9zs
+2024-02-20T17:43:13.271Z - warn: Page error: Unexpected identifier 'Object' , stack: SyntaxError: Unexpected identifier 'Object' rootId=shm0246td02l9zs, id=shm0246td02l9zs
+2024-02-20T17:43:13.271Z - info: Rendering request 20 finished in 119 ms rootId=shm0246td02l9zs, id=shm0246td02l9zs
