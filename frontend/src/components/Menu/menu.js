@@ -37,7 +37,8 @@ function Main() {
         ).catch(err => {
             const mess =  err.response ? err.response.data.message : err.message;
             message.error(mess);
-            logoutActions();
+            err.response && logoutActions();
+            
         })
     }
 
@@ -48,7 +49,7 @@ function Main() {
         }).catch(err => {
             const mess =  err.response ? err.response.data.message : err.message;
             message.error(mess);
-            logoutActions();
+            err.response && logoutActions();
         });
 
     }
