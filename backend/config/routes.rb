@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :lists
 
   get "api/v1/current_user", to: "api/v1/users/current_user#index"
+  get 'webpush/vapid_public_key', to: 'webpush#vapid_public_key'
+  post '/notifications', to: 'notifications#create'
+  post '/push', to: 'notifications#push'
 
   devise_for :users, path: "", path_names: {
                        sign_in: "api/v1/login",
