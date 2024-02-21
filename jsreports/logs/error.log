@@ -15,3 +15,9 @@ ReferenceError: fetch is not defined
 (because) connect ECONNREFUSED 127.0.0.1:4000
 Error: connect ECONNREFUSED 127.0.0.1:4000
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16) rootId=ghihxow0faeaqgq, id=ghihxow0faeaqgq
+2024-02-21T09:02:04.773Z - error: Report render failed
+(because) connect ECONNREFUSED 127.0.0.1:4000
+Error: connect ECONNREFUSED 127.0.0.1:4000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16) rootId=t4yxbs51bj31esf, id=t4yxbs51bj31esf
+2024-02-21T09:02:04.884Z - error: Error during processing request at http://localhost:5488/api/report, details: connect ECONNREFUSED 127.0.0.1:4000, stack: Error: connect ECONNREFUSED 127.0.0.1:4000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)

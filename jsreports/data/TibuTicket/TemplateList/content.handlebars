@@ -7,11 +7,7 @@
     <title>Reporte</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        {{asset "styles.css" "utf-8"}}
-    </style>
+    <style> {{asset "styles.css" "utf-8"}} </style>
 </head>
 
 <body>
@@ -35,75 +31,6 @@
             </tbody>
         </table>
     </div>
-    <div style="page-break-before: always;">
-        <h1>Usuarios</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Admin</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{#each users}}
-                <tr>
-                    <td>{{ nickname }}</td>
-                    <td>{{ email}}</td>
-                    <td>{{is_admin}}</td>
-                </tr>
-                {{/each}}
-            </tbody>
-        </table>
-    </div>
-        <div style="page-break-before: always;">
-            <h1>Grafico de listas</h1>
-            <canvas id="myChart" width="400" height="400"></canvas>
-            </div>
-        </div>
-    <div class="ct-chart" id="clientsChart" style="max-width: 700px;"></div>
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: [
-                    {{#each lists}}
-                    '{{ list_description.list_name }}',
-                    {{/each}}
-                ],
-                datasets: [{
-                    label: 'Número de tickets',
-                    data: [
-                        {{#each lists}}
-                        {{ list_description.list_limit_number }},
-                        {{/each}}
-                    ],
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        type: 'linear',
-                        display: true,
-                        position: 'left',
-                        beginAtZero: true,
-                        ticks: {
-                            callback: function (value) {
-                                return value.toLocaleString();
-                            }
-                        }
-                    }
-                }
-            }
-        });
-    });
-</script>
-
 
 </html>

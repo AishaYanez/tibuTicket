@@ -1,0 +1,22 @@
+{
+    "name": "TemplateCalc",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "shortid": "ZWQR_BxAk",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1708503073213
+    },
+    "modificationDate": {
+        "$$date": 1708505861133
+    },
+    "_id": "cglez3tDEeMt7h9P",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "6v8QPG_9N3"
+        }
+    ]
+}

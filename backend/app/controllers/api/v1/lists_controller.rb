@@ -65,7 +65,7 @@ class Api::V1::ListsController < ApplicationController
 
   # PATCH/PUT /api/v1/list/1/increaseNumber
   def increaseNumber
-    if @list.list_current_number < @list.list_limit_number
+    # if @list.list_current_number < @list.list_limit_number
       @list.list_current_number += 1
 
       if @list.save
@@ -81,15 +81,15 @@ class Api::V1::ListsController < ApplicationController
                  status: { code: 422, message: "No se pudo aumentar el número" },
                }, status: :unprocessable_entity
       end
-    else
-      render json: {
-        status: { code: 422, message: "No hay más clientes" },
-      }, status: :unprocessable_entity
-    end
+      # else
+      #   render json: {
+      #     status: { code: 422, message: "No hay más clientes" },
+      #   }, status: :unprocessable_entity
+      # end
   end
 
   #   PATCH/PUT /api/v1/list/1/decreaseNumber
-  def decreaseNumber
+  def decreaseNumber  
     if @list.list_current_number > 0
       @list.list_current_number -= 1
 
