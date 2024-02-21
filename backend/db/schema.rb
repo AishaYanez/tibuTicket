@@ -45,6 +45,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_07_154019) do
   create_table "lists", force: :cascade do |t|
     t.string "list_name", null: false
     t.integer "list_current_number", default: 0
+    t.integer "list_limit_number", default: 100
     t.bigint "list_creator_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

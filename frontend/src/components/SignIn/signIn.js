@@ -29,8 +29,8 @@ function SignIn() {
       res.user_image && localStorage.setItem('user_image', res.user_image.url)
       loadPage(res.user_description.is_admin);
     })
-    .catch(e => {
-      const mess = e.response.data.status.message;
+    .catch(err => {
+      const mess =  err.response ? err.response.data.status.message : err.message;
         message.error(mess)
     });
   }

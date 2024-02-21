@@ -8,14 +8,34 @@ import ListService from '../../services/ListService/list.service';
 
 function AdminListCard({queue, fetchQueues}) {
 
+  const increaseNumber = (id) => {
+    ListService.increaseNumber(id).then(res => {
+      fetchQueues();
+      // message.warning(res.data.status.message);
+      console.log(res);
+    }).catch(err => {
+      message.error(err.response.data.status.message);
+    })
+  }
+
+  const decreaseNumber = (id) => {
+    ListService.decreaseNumber(id).then(res => {
+      fetchQueues();
+      // message.warning(res.data.status.message);
+      console.log(res);
+    }).catch(err => {
+      message.error(err.response.data.status.message);
+    })
+  }
+
   const deleteQueue = (id) => {
       ListService.deleteList(id).then(res => {
         fetchQueues();
         // message.warning(res.data.status.message);
         console.log(res);
       }).catch(err => {
-        // message.error(err.response.data.status.message);
-        console.error('No se ha podido crear');
+        const mess =  err.response ? err.response.data.status.message : err.message;
+        message.error(mess);
       })
   };
 
@@ -28,10 +48,10 @@ function AdminListCard({queue, fetchQueues}) {
         </div>
         <div className="CardText">{queue.list_description.list_name}</div>
         <div className="Number">{queue.list_description.list_current_number}</div>
-        <Button className="StepperAdd">
+        <Button onClick={() => {increaseNumber(queue.list_description.id)}} className="StepperAdd">
           <img src={PlusIcon} alt="Plus" />
         </Button>
-        <Button className="StepperMinus">
+        <Button onClick={() => {decreaseNumber(queue.list_description.id)}} className="StepperMinus">
           <div className="Vector2"></div>
         </Button>
         <Button onClick={() => {deleteQueue(queue.list_description.id)}} className="Delete">
