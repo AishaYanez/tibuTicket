@@ -1,28 +1,44 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './ListCard.css';
 import Meat from '../../assets/images/meat.png';
-import { Button } from 'antd';
+import { Button, message } from 'antd';
 import ListService from '../../services/ListService/list.service';
 
-function ListCard({queue}) {
+function ListCard({ queue }) {
   const [buttonColor, setButtonColor] = useState('#D2D2D2');
   const [buttonTextColor, setButtonTextColor] = useState('#533D3D');
+  const [yourNumber, setYourNumber] = useState();
   const [displayText, setDisplayText] = useState(false);
+
+  const getNumber = useCallback(() => {
+    const number = localStorage.getItem(queue.list_description.list_name) || null;
+    setYourNumber(number);
+    setDisplayText(number ? true : false);
+  }, [queue.list_description.list_name]);
+
+  useEffect(() => {
+    getNumber();
+  }, [getNumber]);
 
   const handleButtonClick = () => {
     setButtonColor('#yourNewColor');
     setButtonTextColor('#000000');
-    setDisplayText(true);
   };
+
+  const actionsTicket = (ticket) => {
+    localStorage.setItem(ticket[0], ticket[1])
+    message.success(`Tu número es el ${ticket[1]} en la cola ${ticket[0]}`)
+    getNumber();  
+  }
 
   const getTicket = (id) => {
     handleButtonClick();
-
-    // ListService.getTicket(id).then((res) => {
-
-    // }).catch((err) => {
-      
-    // })
+    ListService.getTicket(id).then((res) => {
+      const ticket = res.data.list_ticket.split(':')
+      actionsTicket(ticket);
+    }).catch((err) => {
+      console.log(err);
+    })
   }
 
   return (
@@ -35,10 +51,10 @@ function ListCard({queue}) {
         <div className="ListText">{queue.list_description.list_name}</div>
         <div className="Number">{queue.list_description.list_current_number}</div>
         <div className="ClientNumberText">Your number:</div>
-        <Button onClick={() => getTicket(queue.list_description.id)} className="TicketButton" style={{ backgroundColor: buttonColor, color: buttonTextColor }}>
+        <Button disabled={yourNumber !== null} onClick={() => getTicket(queue.list_description.id)} className="TicketButton" style={{ backgroundColor: buttonColor, color: buttonTextColor }}>
           <div className="TicketText">Ticket</div>
         </Button>
-        {displayText && <div className='ClientNumber'>01</div>}
+        {displayText && <div className='ClientNumber'>{yourNumber}</div>}
       </div>
     </>
   );

@@ -52,10 +52,9 @@ class Api::V1::ListsController < ApplicationController
     if @list.save
       list_ticket = "#{@list.list_name}:#{@list.list_limit_number}"
       render json: {
-        data: {
-          list_ticket: list_ticket,
-        },
-      }
+               status: { code: 200, message: "Ticket generado" },
+               list_ticket: list_ticket,
+             }, status: :ok
     else
       render json: {
         status: { code: 422, message: "No se reservar un número" },
