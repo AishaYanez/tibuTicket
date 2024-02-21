@@ -8,36 +8,33 @@
 
   function AdminListCard({queue, fetchQueues}) {
 
-    const increaseNumber = (id) => {
-      ListService.increaseNumber(id).then(res => {
-        fetchQueues();
-        // message.warning(res.data.status.message);
-        console.log(res);
-      }).catch(err => {
-        message.error(err.response.data.status.message);
-      })
-    }
+  const increaseNumber = (id) => {
+    ListService.increaseNumber(id).then(() => {
+      fetchQueues();
+    }).catch(err => {  
+      const mess =  err.response ? err.response.data.message : err.message;
+      message.error(mess);
+    })
+  }
 
-    const decreaseNumber = (id) => {
-      ListService.decreaseNumber(id).then(res => {
-        fetchQueues();
-        // message.warning(res.data.status.message);
-        console.log(res);
-      }).catch(err => {
-        message.error(err.response.data.status.message);
-      })
-    }
+  const decreaseNumber = (id) => {
+    ListService.decreaseNumber(id).then(res => {
+      fetchQueues();
+    }).catch(err => {
+      const mess =  err.response ? err.response.data.message : err.message;
+      message.error(mess);
+    })
+  }
 
-    const deleteQueue = (id) => {
-        ListService.deleteList(id).then(res => {
-          fetchQueues();
-          // message.warning(res.data.status.message);
-          console.log(res);
-        }).catch(err => {
-          const mess =  err.response ? err.response.data.status.message : err.message;
-          message.error(mess);
-        })
-    };
+  const deleteQueue = (id) => {
+      ListService.deleteList(id).then(res => {
+        fetchQueues();
+        message.warning(res.data.message);
+      }).catch(err => {
+        const mess =  err.response ? err.response.data.message : err.message;
+        message.error(mess);
+      })
+  };
 
     return (
       <>
