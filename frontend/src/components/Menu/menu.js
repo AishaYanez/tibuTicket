@@ -4,6 +4,10 @@ import { Avatar, Menu, message } from 'antd';
 import MenuIcon from '../../assets/images/menu-square.svg';
 import AuthService from '../../services/AuthService/auth.service';
 import { useNavigate } from 'react-router-dom';
+import ReportsViews from '../../services/jsreports.service.list';
+import ReportsGraphic from '../../services/jsreports.service.Graphic';
+import ReportsUsers from '../../services/jsreports.service.Users';
+import ReportsCalc from '../../services/jsreports.service.Calc';
 
 function Main() {
     const nav = useNavigate();
@@ -52,7 +56,8 @@ function Main() {
     const items = [
         getItem('', 'sub1', <img src={MenuIcon} alt='Icono de menu' className='iconMenu' />, [
             getItem('Cuenta', null, null, [getItem('Cerrar sesión', '1'), getItem('Borrar cuenta', '2')], 'group'),
-            getItem('Ayuda', null, null, [getItem('Helper', '3'), getItem('Report', '4')], 'group'),
+            getItem('Ayuda', null, null, [getItem('Helper', '3')], 'group'),
+            getItem('Reports', null, null, [getItem('Report Lista', '4'), getItem('Report Usuarios', '5'), getItem('Report Grafico', '6'), getItem('Report Calculado', '7')],'group')
         ]),
     ];
 
@@ -62,19 +67,31 @@ function Main() {
         switch (key) {
             case "1":
                 logOut();
-                break;
+                break; 
 
             case "2":
                 deleteAccount();
                 break;
 
             case "3":
-            window.open('/Helper/TibuTicket.html', '_blank')
-            break;
-
-            default:
-                console.log('No está implementado');
+                window.open('/Helper/TibuTicket.html', '_blank')
                 break;
+
+            case "4":
+                ReportsViews();
+                break;
+                
+            case "5":
+                ReportsUsers();
+                break;
+            
+            case "6":
+                ReportsGraphic();
+                break;
+            case "7":
+                ReportsCalc();
+                break;
+            default:
         }
     };
 

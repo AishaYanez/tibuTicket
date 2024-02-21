@@ -27,11 +27,6 @@ function Main() {
         {queues.map((q) => (
             <ListCard key={q.list_description.id} queue={q} fetchQueues={fetchQueues} className="Items" />
           ))}
-               {/* <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" /> */}
         </div>
       </div>
     </>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './main.css';
 import Menu from '../../components/Menu/menu';
 import AdminListCard from '../../components/AdminListCard/ListCard';
-import { Button, Input, Upload, message, Form } from 'antd';
+import { Button, Input, Upload, message } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
 import ListService from '../../services/ListService/list.service';
 
