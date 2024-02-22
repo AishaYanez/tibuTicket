@@ -42,13 +42,13 @@ function AdminListCard({queue}) {
           </div>
           <div className="CardText">{queue.list_description.list_name}</div>
           <div className="Number">{queue.list_description.list_current_number}</div>
-          <Button onClick={() => {increaseNumber(queue.list_description.id)}} className="StepperAdd">
+          <Button  data-testid="increase-button" onClick={() => {increaseNumber(queue.list_description.id)}} className="StepperAdd">
             <img src={PlusIcon} alt="Plus" />
           </Button>
-          <Button onClick={() => {decreaseNumber(queue.list_description.id)}} className="StepperMinus">
+          <Button data-testid="decrease-button" onClick={() => {decreaseNumber(queue.list_description.id)}} className="StepperMinus">
             <div className="Vector2"></div>
           </Button>
-          <Button onClick={() => {deleteQueue(queue.list_description.id)}} className="Delete">
+          <Button data-testid="delete-button" onClick={() => {deleteQueue(queue.list_description.id)}} className="Delete">
             <img src={DelIcon} alt="Delete" />
           </Button>
         </div>

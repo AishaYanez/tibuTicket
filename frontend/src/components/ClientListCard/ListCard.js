@@ -49,7 +49,7 @@ function ListCard({ queue }) {
 
   return (
     <>
-      <div className="ClienItemlistcomponent">
+      <div className="ClienItemlistcomponent" data-testid="ListCard"> 
         <div className="Group1">
           <div className="ContentBlock" />
           <img className="CardImg" src={queue.list_image ? queue.list_image.url : Meat} alt='Icono de la lista' />
