@@ -1882,13 +1882,15 @@ Error: connect ECONNREFUSED 127.0.0.1:4000
 2024-02-20T18:50:54.046Z - warn: Error when processing render request 19
 (because) error when evaluating engine handlebars for template /TibuTicket/TemplateList
 (because) parse error on line 73:
-...list_current_number }*1},             
+...list_current_number }*1}, 
+            
 -----------------------^
 Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
 
 (sandbox.js line 13:18)
 Error: Parse error on line 73:
-...list_current_number }*1},             
+...list_current_number }*1}, 
+            
 -----------------------^
 Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
     at Parser.parseError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
@@ -1904,7 +1906,8 @@ Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SE
 wrapped by:
 Error: Error when evaluating engine handlebars for template /TibuTicket/TemplateList
 (because) parse error on line 73:
-...list_current_number }*1},             
+...list_current_number }*1}, 
+            
 -----------------------^
 Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
     at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
