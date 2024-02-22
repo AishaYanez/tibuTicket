@@ -25,6 +25,7 @@ function Main() {
     const logoutActions = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('user_image');
+        localStorage.removeItem('email');
         localStorage.removeItem('lastLoginTime');
         nav('/');
     };
@@ -79,18 +80,18 @@ function Main() {
                 break;
 
             case "4":
-                ReportsViews();
+                ReportsViews(localStorage.getItem('email'));
                 break;
                 
             case "5":
-                ReportsUsers();
+                ReportsUsers(localStorage.getItem('email'));
                 break;
             
             case "6":
-                ReportsGraphic();
+                ReportsGraphic(localStorage.getItem('email'));
                 break;
             case "7":
-                ReportsCalc();
+                ReportsCalc(localStorage.getItem('email'));
                 break;
             default:
         }

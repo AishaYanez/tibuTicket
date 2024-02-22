@@ -10,6 +10,7 @@ function ListCard({ queue }) {
   const [yourNumber, setYourNumber] = useState(null);
   const [displayText, setDisplayText] = useState(false);
 
+  // eslint-disable-next-line
   const getNumber = () => {
     const number = localStorage.getItem(queue.list_description.list_name);
     if (queue.list_description.list_current_number < number) {
@@ -23,7 +24,6 @@ function ListCard({ queue }) {
 
   useEffect(() => {
     getNumber();
-
   }, [getNumber]);
 
   const handleButtonClick = () => {
