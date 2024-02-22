@@ -3033,3 +3033,56 @@ Error: connect ECONNREFUSED 127.0.0.1:4000
 2024-02-21T15:17:47.190Z - info: Starting rendering request 4 rootId=3m96ad908x66lw0, id=3m96ad908x66lw0
 2024-02-21T15:17:47.190Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=3m96ad908x66lw0, id=3m96ad908x66lw0
 2024-02-21T15:17:47.260Z - info: Rendering request 4 finished in 76 ms rootId=3m96ad908x66lw0, id=3m96ad908x66lw0
+2024-02-22T19:13:31.155Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-22T19:13:31.158Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
+2024-02-22T19:13:31.160Z - info: Extensions location cache not found, crawling directories
+2024-02-22T19:13:31.472Z - info: Found 35 extension(s)
+2024-02-22T19:13:31.549Z - info: Using extension base@4.0.0
+2024-02-22T19:13:31.554Z - info: Using extension child-templates@4.0.0
+2024-02-22T19:13:31.557Z - info: Using extension cli@4.0.2
+2024-02-22T19:13:31.559Z - info: Using extension components@4.0.0
+2024-02-22T19:13:31.561Z - info: Using extension data@4.0.0
+2024-02-22T19:13:31.562Z - info: Using extension express@4.0.1
+2024-02-22T19:13:31.764Z - info: Using extension freeze@4.0.0
+2024-02-22T19:13:31.765Z - info: Using extension fs-store@4.0.1
+2024-02-22T19:13:31.843Z - info: Using extension handlebars@4.0.1
+2024-02-22T19:13:31.844Z - info: Using extension import-export@4.0.2
+2024-02-22T19:13:31.855Z - info: Using extension jsrender@4.0.0
+2024-02-22T19:13:31.856Z - info: Using extension licensing@4.0.1
+2024-02-22T19:13:31.858Z - info: Using extension localization@4.0.1
+2024-02-22T19:13:31.859Z - info: Using extension npm@4.0.0
+2024-02-22T19:13:31.861Z - info: Using extension pdf-utils@4.0.2
+2024-02-22T19:13:31.862Z - info: Using extension reports@4.0.0
+2024-02-22T19:13:31.865Z - info: Using extension tags@4.0.1
+2024-02-22T19:13:31.867Z - info: Using extension text@4.0.0
+2024-02-22T19:13:31.869Z - info: Using extension version-control@4.0.0
+2024-02-22T19:13:31.879Z - info: Using extension assets@4.0.2
+2024-02-22T19:13:31.889Z - info: Using extension authorization@4.0.0
+2024-02-22T19:13:31.892Z - info: Using extension browser-client@4.0.0
+2024-02-22T19:13:31.893Z - info: Using extension chrome-pdf@4.0.0
+2024-02-22T19:13:31.895Z - info: Using extension docx@4.1.1
+2024-02-22T19:13:31.897Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-22T19:13:32.142Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-22T19:13:32.142Z - info: Using extension pptx@4.1.0
+2024-02-22T19:13:32.143Z - info: Using extension scheduling@4.0.0
+2024-02-22T19:13:32.169Z - info: Using extension scripts@4.0.0
+2024-02-22T19:13:32.170Z - info: Using extension static-pdf@4.0.0
+2024-02-22T19:13:32.170Z - info: Using extension studio@4.0.2
+2024-02-22T19:13:32.228Z - info: Using extension xlsx@4.0.2
+2024-02-22T19:13:32.229Z - info: Using extension public-templates@4.0.0
+2024-02-22T19:13:32.230Z - info: Using extension sample-template@4.0.0
+2024-02-22T19:13:32.231Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-22T19:13:32.232Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-22T19:13:32.232Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-22T19:13:32.233Z - info: Using fs provider for template store.
+2024-02-22T19:13:32.236Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
+2024-02-22T19:13:32.247Z - info: fs store is loading data
+2024-02-22T19:13:32.284Z - info: fs store is initialized successfully
+2024-02-22T19:13:32.300Z - info: Creating default express app.
+2024-02-22T19:13:32.323Z - info: jsreport server successfully started on http port: 5488
+2024-02-22T19:13:32.324Z - info: Verifying license key free
+2024-02-22T19:13:32.324Z - info: Using free license
+2024-02-22T19:13:32.328Z - info: Initializing worker threads
+2024-02-22T19:13:32.472Z - info: 2 worker threads initialized in 144ms
+2024-02-22T19:13:32.473Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-22T19:13:32.473Z - info: reporter initialized

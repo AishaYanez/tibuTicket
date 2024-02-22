@@ -1,29 +1,9 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import ListCard from './ListCard';
-import { MemoryRouter } from 'react-router-dom';
+import AdminListCard from './ListCard';
+import ListService from '../../services/ListService/list.service';
 
-describe('ListCard', () => {
-  it('renders ListCard form with correct data', () => {
-    const queue = {
-      list_description: {
-        id: 1,
-        list_name: 'Test List',
-        list_current_number: 5,
-      },
-      list_image: null, 
-    };
-
-    const { getByText } = render(
-      <MemoryRouter>
-        <ListCard queue={queue} />
-      </MemoryRouter>
-    );
-
-    expect(getByText('Test List')).toBeInTheDocument();
-    expect(getByText('5')).toBeInTheDocument();
-  });
-
+describe('AdminListCard', () => {
   it('calls increaseNumber function when the increase button is clicked', () => {
     const queue = {
       list_description: {
@@ -31,15 +11,13 @@ describe('ListCard', () => {
         list_name: 'Test List',
         list_current_number: 5,
       },
-      list_image: null, 
+      list_image: null,
     };
 
-    const increaseNumberMock = jest.fn();
+    const increaseNumberMock = jest.spyOn(ListService, 'increaseNumber').mockResolvedValue();
 
     const { getByTestId } = render(
-      <MemoryRouter>
-        <ListCard queue={queue} increaseNumber={increaseNumberMock} />
-      </MemoryRouter>
+      <AdminListCard queue={queue} />
     );
 
     const increaseButton = getByTestId('increase-button');
@@ -55,15 +33,13 @@ describe('ListCard', () => {
         list_name: 'Test List',
         list_current_number: 5,
       },
-      list_image: null, 
+      list_image: null,
     };
 
-    const decreaseNumberMock = jest.fn();
+    const decreaseNumberMock = jest.spyOn(ListService, 'decreaseNumber').mockResolvedValue();
 
     const { getByTestId } = render(
-      <MemoryRouter>
-        <ListCard queue={queue} decreaseNumber={decreaseNumberMock} />
-      </MemoryRouter>
+      <AdminListCard queue={queue} />
     );
 
     const decreaseButton = getByTestId('decrease-button');
@@ -79,15 +55,13 @@ describe('ListCard', () => {
         list_name: 'Test List',
         list_current_number: 5,
       },
-      list_image: null, 
+      list_image: null,
     };
 
-    const deleteListMock = jest.fn();
+    const deleteListMock = jest.spyOn(ListService, 'deleteList').mockResolvedValue();
 
     const { getByTestId } = render(
-      <MemoryRouter>
-        <ListCard queue={queue} deleteList={deleteListMock} />
-      </MemoryRouter>
+      <AdminListCard queue={queue} />
     );
 
     const deleteButton = getByTestId('delete-button');

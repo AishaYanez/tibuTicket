@@ -31,12 +31,13 @@ function ListCard({ queue }) {
         </div>
         <div className="CardText">{queue.list_description.list_name}</div>
         <div className="Number">{queue.list_description.list_current_number}</div>
-        <Button onClick={() => { increaseNumber(queue.list_description.id) }} className="StepperAdd">
+        <Button onClick={() => { increaseNumber(queue.list_description.id) }} className="StepperAdd" data-testid="increase-button">
           <img src={PlusIcon} alt="Plus" />
         </Button>
-        <Button onClick={() => { decreaseNumber(queue.list_description.id) }} className="StepperMinus">
+        <Button onClick={() => { decreaseNumber(queue.list_description.id) }} className="StepperMinus" data-testid="decrease-button">
           <div className="Vector2"></div>
         </Button>
+
       </div>
     </>
   );
