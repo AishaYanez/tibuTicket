@@ -6,38 +6,32 @@
   import Meat from '../../assets/images/meat.png';
   import ListService from '../../services/ListService/list.service';
 
-  function AdminListCard({queue, fetchQueues}) {
+function AdminListCard({queue}) {
 
-    const increaseNumber = (id) => {
-      ListService.increaseNumber(id).then(res => {
-        fetchQueues();
-        // message.warning(res.data.status.message);
-        console.log(res);
+  const increaseNumber = (id) => {
+    ListService.increaseNumber(id).then(() => {
+    }).catch(err => {  
+      const mess =  err.response ? err.response.data.message : err.message;
+      message.error(mess);
+    })
+  }
+
+  const decreaseNumber = (id) => {
+    ListService.decreaseNumber(id).then(res => {
+    }).catch(err => {
+      const mess =  err.response ? err.response.data.message : err.message;
+      message.error(mess);
+    })
+  }
+
+  const deleteQueue = (id) => {
+      ListService.deleteList(id).then(res => {
+        message.warning(res.data.message);
       }).catch(err => {
-        message.error(err.response.data.status.message);
+        const mess =  err.response ? err.response.data.message : err.message;
+        message.error(mess);
       })
-    }
-
-    const decreaseNumber = (id) => {
-      ListService.decreaseNumber(id).then(res => {
-        fetchQueues();
-        // message.warning(res.data.status.message);
-        console.log(res);
-      }).catch(err => {
-        message.error(err.response.data.status.message);
-      })
-    }
-
-    const deleteQueue = (id) => {
-        ListService.deleteList(id).then(res => {
-          fetchQueues();
-          // message.warning(res.data.status.message);
-          console.log(res);
-        }).catch(err => {
-          const mess =  err.response ? err.response.data.status.message : err.message;
-          message.error(mess);
-        })
-    };
+  };
 
     return (
       <>
@@ -48,13 +42,13 @@
           </div>
           <div className="CardText">{queue.list_description.list_name}</div>
           <div className="Number">{queue.list_description.list_current_number}</div>
-          <Button onClick={() => {increaseNumber(queue.list_description.id)}} className="StepperAdd">
+          <Button  data-testid="increase-button" onClick={() => {increaseNumber(queue.list_description.id)}} className="StepperAdd">
             <img src={PlusIcon} alt="Plus" />
           </Button>
-          <Button onClick={() => {decreaseNumber(queue.list_description.id)}} className="StepperMinus">
+          <Button data-testid="decrease-button" onClick={() => {decreaseNumber(queue.list_description.id)}} className="StepperMinus">
             <div className="Vector2"></div>
           </Button>
-          <Button onClick={() => {deleteQueue(queue.list_description.id)}} className="Delete">
+          <Button data-testid="delete-button" onClick={() => {deleteQueue(queue.list_description.id)}} className="Delete">
             <img src={DelIcon} alt="Delete" />
           </Button>
         </div>

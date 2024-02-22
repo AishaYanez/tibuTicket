@@ -5,26 +5,28 @@ import AdminListCard from '../../components/AdminListCard/ListCard';
 import { Button, Input, Upload, message } from 'antd';
 import anime from 'animejs/lib/anime.es.js';
 import ListService from '../../services/ListService/list.service';
+import { useNavigate } from 'react-router-dom';
 
-function Main() {
+function Main({queues}) {
+  const nav = useNavigate();
   const [imageUploaded, setImageUploaded] = useState(false);
   const [imageFile, setImageFile] = useState();
   const [buttonPressed, setButtonPressed] = useState(false);
-  const [queues, setQueues] = useState([]);
   const [newQueue, setNewQueue] = useState({ name: "" });
   const [formVisible, setFormVisible] = useState(false);
+  // const [queues, setQueues] = useState([]);
 
-  async function fetchQueues() {
-    try {
-      const fetchedQueues = (await ListService.getLists()).data;
-      setQueues(fetchedQueues);
-    } catch (e) {
-      console.error(e);
-    }
-  };
+  // async function fetchQueues() {
+  //   try {
+  //     const fetchedQueues = (await ListService.getLists()).data;
+  //     setQueues(fetchedQueues);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
   useEffect(() => {
-    fetchQueues();
+    
   }, []);
 
   const handleMouseDown = () => {
@@ -78,14 +80,24 @@ function Main() {
     setImageUploaded(info.fileList.length > 0);
   };
 
-  const createQueue = () => {
-    console.log("ALO")
+  const logoutActions = () => {
+    message.error('Inicia sesión para crear listas')
+    localStorage.removeItem('token');
+    localStorage.removeItem('user_image');
+    localStorage.removeItem('lastLoginTime');
+    nav('/');
+};
+
+  const createQueue = (event) => {
+    event.preventDefault();
+    localStorage.getItem('token') ?
     ListService.createList(formattedQueue()).then(r => {
       message.success(r.data.status.message);
-    }).catch(e => {
-      const mess = e.response.data.status.message;
+    }).catch(err => {
+      const mess = err.response ? err.response.data.status.message : err.message;
       message.error(mess);
-    });
+    }) : logoutActions();
+    setFormVisible(!formVisible)
   };
 
   return (
@@ -111,8 +123,8 @@ function Main() {
         }
 
         <div className='Admincardcontainer'>
-          {queues.map((q) => (
-            <AdminListCard key={q.list_description.id} queue={q} fetchQueues={fetchQueues} className="Items" />
+          {queues && queues.map((q) => (
+            <AdminListCard key={q.list_description.id} queue={q} className="Items" />
           ))}
         </div>
 

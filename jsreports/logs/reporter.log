@@ -1882,13 +1882,15 @@ Error: connect ECONNREFUSED 127.0.0.1:4000
 2024-02-20T18:50:54.046Z - warn: Error when processing render request 19
 (because) error when evaluating engine handlebars for template /TibuTicket/TemplateList
 (because) parse error on line 73:
-...list_current_number }*1},             
+...list_current_number }*1}, 
+            
 -----------------------^
 Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
 
 (sandbox.js line 13:18)
 Error: Parse error on line 73:
-...list_current_number }*1},             
+...list_current_number }*1}, 
+            
 -----------------------^
 Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
     at Parser.parseError (/home/miguel/workspace/tibuTicket/jsreports/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:267:19)
@@ -1904,7 +1906,8 @@ Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SE
 wrapped by:
 Error: Error when evaluating engine handlebars for template /TibuTicket/TemplateList
 (because) parse error on line 73:
-...list_current_number }*1},             
+...list_current_number }*1}, 
+            
 -----------------------^
 Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
     at module.exports (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/createError.js:10:13)
@@ -2961,56 +2964,72 @@ Error: connect ECONNREFUSED 127.0.0.1:4000
 2024-02-21T09:02:37.517Z - info: Starting rendering request 2 rootId=fczi6bj84aal5vq, id=fczi6bj84aal5vq
 2024-02-21T09:02:37.518Z - info: Rendering template { name: TemplateCalc, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=fczi6bj84aal5vq, id=fczi6bj84aal5vq
 2024-02-21T09:02:38.419Z - info: Rendering request 2 finished in 916 ms rootId=fczi6bj84aal5vq, id=fczi6bj84aal5vq
-2024-02-21T17:28:37.965Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
-2024-02-21T17:28:37.968Z - info: Searching for available extensions in /home/miguel/workspace/tibuTicket/jsreports/
-2024-02-21T17:28:37.970Z - info: Extensions location cache not found, crawling directories
-2024-02-21T17:28:38.278Z - info: Found 35 extension(s)
-2024-02-21T17:28:38.351Z - info: Using extension base@4.0.0
-2024-02-21T17:28:38.355Z - info: Using extension child-templates@4.0.0
-2024-02-21T17:28:38.358Z - info: Using extension cli@4.0.2
-2024-02-21T17:28:38.359Z - info: Using extension components@4.0.0
-2024-02-21T17:28:38.360Z - info: Using extension data@4.0.0
-2024-02-21T17:28:38.361Z - info: Using extension express@4.0.1
-2024-02-21T17:28:38.562Z - info: Using extension freeze@4.0.0
-2024-02-21T17:28:38.563Z - info: Using extension fs-store@4.0.1
-2024-02-21T17:28:38.640Z - info: Using extension handlebars@4.0.1
-2024-02-21T17:28:38.642Z - info: Using extension import-export@4.0.2
-2024-02-21T17:28:38.651Z - info: Using extension jsrender@4.0.0
-2024-02-21T17:28:38.651Z - info: Using extension licensing@4.0.1
-2024-02-21T17:28:38.653Z - info: Using extension localization@4.0.1
-2024-02-21T17:28:38.654Z - info: Using extension npm@4.0.0
-2024-02-21T17:28:38.656Z - info: Using extension pdf-utils@4.0.2
-2024-02-21T17:28:38.658Z - info: Using extension reports@4.0.0
-2024-02-21T17:28:38.661Z - info: Using extension tags@4.0.1
-2024-02-21T17:28:38.663Z - info: Using extension text@4.0.0
-2024-02-21T17:28:38.664Z - info: Using extension version-control@4.0.0
-2024-02-21T17:28:38.675Z - info: Using extension assets@4.0.2
-2024-02-21T17:28:38.684Z - info: Using extension authorization@4.0.0
-2024-02-21T17:28:38.687Z - info: Using extension browser-client@4.0.0
-2024-02-21T17:28:38.689Z - info: Using extension chrome-pdf@4.0.0
-2024-02-21T17:28:38.693Z - info: Using extension docx@4.1.1
-2024-02-21T17:28:38.695Z - info: Using extension html-to-xlsx@4.0.1
-2024-02-21T17:28:38.953Z - info: html-to-xlsx detected chrome as available html engine
-2024-02-21T17:28:38.953Z - info: Using extension pptx@4.1.0
-2024-02-21T17:28:38.954Z - info: Using extension scheduling@4.0.0
-2024-02-21T17:28:38.981Z - info: Using extension scripts@4.0.0
-2024-02-21T17:28:38.982Z - info: Using extension static-pdf@4.0.0
-2024-02-21T17:28:38.982Z - info: Using extension studio@4.0.2
-2024-02-21T17:28:39.036Z - info: Using extension xlsx@4.0.2
-2024-02-21T17:28:39.038Z - info: Using extension public-templates@4.0.0
-2024-02-21T17:28:39.038Z - info: Using extension sample-template@4.0.0
-2024-02-21T17:28:39.040Z - info: Using extension studio-theme-dark@4.0.0
-2024-02-21T17:28:39.041Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
-2024-02-21T17:28:39.041Z - info: Using general timeout for rendering (reportTimeout: 60000)
-2024-02-21T17:28:39.041Z - info: Using fs provider for template store.
-2024-02-21T17:28:39.044Z - info: fs store is persisting using fs for /home/miguel/workspace/tibuTicket/jsreports/data
-2024-02-21T17:28:39.063Z - info: fs store is loading data
-2024-02-21T17:28:39.089Z - info: fs store is initialized successfully
-2024-02-21T17:28:39.099Z - info: Creating default express app.
-2024-02-21T17:28:39.118Z - info: jsreport server successfully started on http port: 5488
-2024-02-21T17:28:39.119Z - info: Verifying license key free
-2024-02-21T17:28:39.120Z - info: Using free license
-2024-02-21T17:28:39.122Z - info: Initializing worker threads
-2024-02-21T17:28:39.262Z - info: 2 worker threads initialized in 140ms
-2024-02-21T17:28:39.263Z - info: Starting temp files cleanup with 180000ms threshold
-2024-02-21T17:28:39.263Z - info: reporter initialized
+2024-02-21T15:12:21.560Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-21T15:12:21.562Z - info: Searching for available extensions in /home/ruby/workspace/tibuTicket/jsreports/
+2024-02-21T15:12:21.567Z - info: Extensions location cache doesn't contain entry yet, crawling
+2024-02-21T15:12:21.647Z - info: Found 35 extension(s)
+2024-02-21T15:12:21.686Z - info: Using extension base@4.0.0
+2024-02-21T15:12:21.689Z - info: Using extension child-templates@4.0.0
+2024-02-21T15:12:21.691Z - info: Using extension cli@4.0.2
+2024-02-21T15:12:21.692Z - info: Using extension components@4.0.0
+2024-02-21T15:12:21.693Z - info: Using extension data@4.0.0
+2024-02-21T15:12:21.693Z - info: Using extension express@4.0.1
+2024-02-21T15:12:21.780Z - info: Using extension freeze@4.0.0
+2024-02-21T15:12:21.781Z - info: Using extension fs-store@4.0.1
+2024-02-21T15:12:21.817Z - info: Using extension handlebars@4.0.1
+2024-02-21T15:12:21.818Z - info: Using extension import-export@4.0.2
+2024-02-21T15:12:21.821Z - info: Using extension jsrender@4.0.0
+2024-02-21T15:12:21.822Z - info: Using extension licensing@4.0.1
+2024-02-21T15:12:21.830Z - info: Using extension localization@4.0.1
+2024-02-21T15:12:21.831Z - info: Using extension npm@4.0.0
+2024-02-21T15:12:21.834Z - info: Using extension pdf-utils@4.0.2
+2024-02-21T15:12:21.835Z - info: Using extension reports@4.0.0
+2024-02-21T15:12:21.836Z - info: Using extension tags@4.0.1
+2024-02-21T15:12:21.837Z - info: Using extension text@4.0.0
+2024-02-21T15:12:21.837Z - info: Using extension version-control@4.0.0
+2024-02-21T15:12:21.842Z - info: Using extension assets@4.0.2
+2024-02-21T15:12:21.846Z - info: Using extension authorization@4.0.0
+2024-02-21T15:12:21.848Z - info: Using extension browser-client@4.0.0
+2024-02-21T15:12:21.849Z - info: Using extension chrome-pdf@4.0.0
+2024-02-21T15:12:21.851Z - info: Using extension docx@4.1.1
+2024-02-21T15:12:21.852Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-21T15:12:21.971Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-21T15:12:21.971Z - info: Using extension pptx@4.1.0
+2024-02-21T15:12:21.972Z - info: Using extension scheduling@4.0.0
+2024-02-21T15:12:21.989Z - info: Using extension scripts@4.0.0
+2024-02-21T15:12:21.989Z - info: Using extension static-pdf@4.0.0
+2024-02-21T15:12:21.990Z - info: Using extension studio@4.0.2
+2024-02-21T15:12:22.035Z - info: Using extension xlsx@4.0.2
+2024-02-21T15:12:22.036Z - info: Using extension public-templates@4.0.0
+2024-02-21T15:12:22.037Z - info: Using extension sample-template@4.0.0
+2024-02-21T15:12:22.038Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-21T15:12:22.039Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-21T15:12:22.039Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-21T15:12:22.039Z - info: Using fs provider for template store.
+2024-02-21T15:12:22.042Z - info: fs store is persisting using fs for /home/ruby/workspace/tibuTicket/jsreports/data
+2024-02-21T15:12:22.049Z - info: fs store is loading data
+2024-02-21T15:12:22.067Z - info: fs store is initialized successfully
+2024-02-21T15:12:22.077Z - info: Creating default express app.
+2024-02-21T15:12:22.086Z - info: jsreport server successfully started on http port: 5488
+2024-02-21T15:12:22.086Z - info: Verifying license key free
+2024-02-21T15:12:22.087Z - info: Using free license
+2024-02-21T15:12:22.089Z - info: Initializing worker threads
+2024-02-21T15:12:22.180Z - info: 2 worker threads initialized in 91ms
+2024-02-21T15:12:22.180Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-21T15:12:22.182Z - info: reporter initialized
+2024-02-21T15:12:25.834Z - info: Render request 1 queued for execution and waiting for available worker rootId=y5ne1rwevrhzecu, id=y5ne1rwevrhzecu
+2024-02-21T15:12:25.853Z - info: Starting rendering request 1 rootId=y5ne1rwevrhzecu, id=y5ne1rwevrhzecu
+2024-02-21T15:12:25.853Z - info: Rendering template { name: TemplateCalc, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=y5ne1rwevrhzecu, id=y5ne1rwevrhzecu
+2024-02-21T15:12:27.215Z - info: Rendering request 1 finished in 1382 ms rootId=y5ne1rwevrhzecu, id=y5ne1rwevrhzecu
+2024-02-21T15:12:35.925Z - info: Render request 2 queued for execution and waiting for available worker rootId=f8d4st3t8urhqc5, id=f8d4st3t8urhqc5
+2024-02-21T15:12:35.935Z - info: Starting rendering request 2 rootId=f8d4st3t8urhqc5, id=f8d4st3t8urhqc5
+2024-02-21T15:12:35.935Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=f8d4st3t8urhqc5, id=f8d4st3t8urhqc5
+2024-02-21T15:12:36.650Z - info: Rendering request 2 finished in 724 ms rootId=f8d4st3t8urhqc5, id=f8d4st3t8urhqc5
+2024-02-21T15:12:40.100Z - info: Render request 3 queued for execution and waiting for available worker rootId=1hs3tmo7yhbos7t, id=1hs3tmo7yhbos7t
+2024-02-21T15:12:40.107Z - info: Starting rendering request 3 rootId=1hs3tmo7yhbos7t, id=1hs3tmo7yhbos7t
+2024-02-21T15:12:40.107Z - info: Rendering template { name: TemplateGraphic, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=1hs3tmo7yhbos7t, id=1hs3tmo7yhbos7t
+2024-02-21T15:12:40.187Z - info: Rendering request 3 finished in 87 ms rootId=1hs3tmo7yhbos7t, id=1hs3tmo7yhbos7t
+2024-02-21T15:17:47.184Z - info: Render request 4 queued for execution and waiting for available worker rootId=3m96ad908x66lw0, id=3m96ad908x66lw0
+2024-02-21T15:17:47.190Z - info: Starting rendering request 4 rootId=3m96ad908x66lw0, id=3m96ad908x66lw0
+2024-02-21T15:17:47.190Z - info: Rendering template { name: TemplateList, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=3m96ad908x66lw0, id=3m96ad908x66lw0
+2024-02-21T15:17:47.260Z - info: Rendering request 4 finished in 76 ms rootId=3m96ad908x66lw0, id=3m96ad908x66lw0

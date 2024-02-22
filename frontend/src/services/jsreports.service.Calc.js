@@ -2,12 +2,15 @@ import jsreports from '@jsreport/browser-client';
 
 jsreports.serverUrl = 'http://http://localhost:5488/';
 
-async function ReportsCalc() {
+async function ReportsCalc(email) {
     try {
+        // const email = localStorage.getItem('email');
+        const data = { email };
         const report = await jsreports.render({
             template: {
                 shortid: 'ZWQR_BxAk',
-            }
+            }, 
+            data: JSON.stringify(data)
         });
 
         report.openInWindow({ tittle: "Reporte con campo calculado"}, '_blank');

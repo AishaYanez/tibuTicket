@@ -1,18 +1,15 @@
-import React from 'react';
 import './main.css';
 import ListCard from '../../components/ClientListCard/ListCard';
 
-function Main() {
+function Main({queues}) {
 
   return (
     <>
       <div className="main-container">
         <div className='Usercardcontainer'>
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
-        <ListCard className="Items" />
+        {queues.map((q) => (
+            <ListCard key={q.list_description.id} queue={q} className="Items" />
+          ))}
         </div>
       </div>
     </>

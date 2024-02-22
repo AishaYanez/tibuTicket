@@ -1,3 +1,4 @@
+const nodemailer = require('nodemailer');
 const http = require('http');
 
 async function fetchlists() {
@@ -54,4 +55,36 @@ async function beforeRender(req, res) {
     } catch (error) {
         console.error('Error fetching users:', error);
     }
+}
+
+function afterRender(req, res) {
+  const transport = nodemailer.createTransport({
+    host: 'sandbox.smtp.mailtrap.io',
+    port: 2525,
+    auth: {
+      user: '79e32bd0362e26',
+      pass: '5cb77dc70b96ea',
+    },
+  });
+
+  const mailOptions = {
+    from: 'tibuticket@example.com',
+    to: req.data.email,
+    subject: 'Informe generado',
+    text: 'Adjunto encontrarás el informe en formato PDF.',
+    attachments: [
+      {
+        filename: 'informe.pdf',
+        content: res.content,
+        encoding: 'base64',
+        },
+    ],
+  };
+  transport.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error al enviar el correo electrónico:', error);
+    } else {
+      console.log('Correo electrónico enviado con éxito:', info.response);
+    }
+  });
 }

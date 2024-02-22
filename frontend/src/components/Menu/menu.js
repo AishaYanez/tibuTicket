@@ -25,6 +25,7 @@ function Main() {
     const logoutActions = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('user_image');
+        localStorage.removeItem('email');
         localStorage.removeItem('lastLoginTime');
         nav('/');
     };
@@ -37,7 +38,8 @@ function Main() {
         ).catch(err => {
             const mess =  err.response ? err.response.data.message : err.message;
             message.error(mess);
-            logoutActions();
+            err.response && logoutActions();
+            
         })
     }
 
@@ -48,7 +50,7 @@ function Main() {
         }).catch(err => {
             const mess =  err.response ? err.response.data.message : err.message;
             message.error(mess);
-            logoutActions();
+            err.response && logoutActions();
         });
 
     }
@@ -78,18 +80,18 @@ function Main() {
                 break;
 
             case "4":
-                ReportsViews();
+                ReportsViews(localStorage.getItem('email'));
                 break;
                 
             case "5":
-                ReportsUsers();
+                ReportsUsers(localStorage.getItem('email'));
                 break;
             
             case "6":
-                ReportsGraphic();
+                ReportsGraphic(localStorage.getItem('email'));
                 break;
             case "7":
-                ReportsCalc();
+                ReportsCalc(localStorage.getItem('email'));
                 break;
             default:
         }
