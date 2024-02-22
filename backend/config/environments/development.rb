@@ -1,5 +1,8 @@
 require "active_support/core_ext/integer/time"
 Rails.application.configure do
+  config.action_cable.url = "ws://localhost:4000/cable"
+  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+
   config.action_mailer.default_url_options = { host: "localhost", port: 4000 }
   config.navigational_formats = []
 

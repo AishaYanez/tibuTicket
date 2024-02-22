@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  list_name: "Grocery List"
+  list_name: "List1"
   list_current_number: 5
   list_limit_number: 10
   list_creator_id: 1
@@ -9,7 +9,7 @@ one:
   updated_at: <%= Time.now %>
 
 two:
-  list_name: "To-Do List"
+  list_name: "List2"
   list_current_number: 2
   list_limit_number: 5
   list_creator_id: 2
