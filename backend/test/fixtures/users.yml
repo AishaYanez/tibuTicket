@@ -1,7 +1,8 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
- nickname: "user1"
+  id: 1
+  nickname: "user1"
   email: "user1@example.com"
   encrypted_password: "password123"
   is_admin: false
@@ -9,6 +10,7 @@ one:
   updated_at: <%= Time.now %>
 
 two:
+  id: 2
   nickname: "user2"
   email: "user2@example.com"
   encrypted_password: "password456"

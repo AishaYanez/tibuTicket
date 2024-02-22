@@ -12,7 +12,7 @@ class List < ApplicationRecord
   end
 
   validates :list_name, presence: true
-  validates :list_current_number, presence: true, numericality: { greater_than_or_equal_to: 0 }
-  validates :list_limit_number, presence: true, numericality: { greater_than_or_equal_to: 0 }
+  validates :list_current_number, presence: true, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+  validates :list_limit_number, presence: true, numericality: { greater_than_or_equal_to: 0, only_integer: true }
   validates :list_creator_id, presence: true
 end
