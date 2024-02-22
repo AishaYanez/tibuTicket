@@ -7,26 +7,26 @@ import anime from 'animejs/lib/anime.es.js';
 import ListService from '../../services/ListService/list.service';
 import { useNavigate } from 'react-router-dom';
 
-function Main() {
+function Main({queues}) {
   const nav = useNavigate();
   const [imageUploaded, setImageUploaded] = useState(false);
   const [imageFile, setImageFile] = useState();
   const [buttonPressed, setButtonPressed] = useState(false);
-  const [queues, setQueues] = useState([]);
   const [newQueue, setNewQueue] = useState({ name: "" });
   const [formVisible, setFormVisible] = useState(false);
+  // const [queues, setQueues] = useState([]);
 
-  async function fetchQueues() {
-    try {
-      const fetchedQueues = (await ListService.getLists()).data;
-      setQueues(fetchedQueues);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  // async function fetchQueues() {
+  //   try {
+  //     const fetchedQueues = (await ListService.getLists()).data;
+  //     setQueues(fetchedQueues);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
   useEffect(() => {
-    fetchQueues();
+    
   }, []);
 
   const handleMouseDown = () => {
@@ -94,7 +94,7 @@ function Main() {
     ListService.createList(formattedQueue()).then(r => {
       message.success(r.data.status.message);
     }).catch(err => {
-      const mess = err. response ? err.response.data.status.message : err.message;
+      const mess = err.response ? err.response.data.status.message : err.message;
       message.error(mess);
     }) : logoutActions();
     setFormVisible(!formVisible)
@@ -123,8 +123,8 @@ function Main() {
         }
 
         <div className='Admincardcontainer'>
-          {queues.map((q) => (
-            <AdminListCard key={q.list_description.id} queue={q} fetchQueues={fetchQueues} className="Items" />
+          {queues && queues.map((q) => (
+            <AdminListCard key={q.list_description.id} queue={q} className="Items" />
           ))}
         </div>
 
