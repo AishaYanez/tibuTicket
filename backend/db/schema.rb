@@ -55,7 +55,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_07_154019) do
   create_table "users", force: :cascade do |t|
     t.string "nickname", null: false
     t.boolean "is_admin", null: false
-    t.json "suscriptor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
