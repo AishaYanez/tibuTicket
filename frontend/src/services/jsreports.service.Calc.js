@@ -3,7 +3,6 @@ jsreports.serverUrl = 'http://http://localhost:5488/';
 
 async function ReportsCalc(email) {
     try {
-        // const email = localStorage.getItem('email');
         const data = { email };
         const report = await jsreports.render({
             template: {

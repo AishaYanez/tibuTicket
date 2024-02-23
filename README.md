@@ -93,6 +93,12 @@
 * Color contrast: Using dark text on a light background to improve readability.
 ![Use Case Diagram](/readme_assets/interface.png)
 
+* Large and easily visible text, to facilitate comprehension and usage of the application for people with vision impairments.
+![Use Case Diagram](/readme_assets/interface.png)
+
+* When the main image fails to load, it automatically displays a local alternative, ensuring that users always have visual content.
+![Use Case Diagram](/readme_assets/interface.png)
+
 These practices have been incorporated to make the website more accessible and provide a positive experience for all users.
 ## Technological Stack:
 
