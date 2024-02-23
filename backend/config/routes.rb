@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :lists
       namespace :users do
-        resources :users
+        resources :users, only: [:index]
       end
     end
   end
