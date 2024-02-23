@@ -2,12 +2,14 @@ import jsreports from '@jsreport/browser-client';
 
 jsreports.serverUrl = 'http://http://localhost:5488/';
 
-async function ReportsGraphic() {
+async function ReportsGraphic(email) {
     try {
+        const data = { email };
         const report = await jsreports.render({
             template: {
                 shortid: 'gCY8vQOVx',
-            }
+            }, 
+            data: JSON.stringify(data)
         });
 
         report.openInWindow({ tittle: "Reporte con grafico"}, '_blank');

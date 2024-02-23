@@ -3086,3 +3086,194 @@ Error: connect ECONNREFUSED 127.0.0.1:4000
 2024-02-22T19:13:32.472Z - info: 2 worker threads initialized in 144ms
 2024-02-22T19:13:32.473Z - info: Starting temp files cleanup with 180000ms threshold
 2024-02-22T19:13:32.473Z - info: reporter initialized
+2024-02-23T19:15:27.483Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-23T19:15:27.485Z - info: Searching for available extensions in /home/ruby/workspace/tibuTicket/jsreports/
+2024-02-23T19:15:27.491Z - info: Extensions location cache contains up to date information, skipping crawling in /home/ruby/workspace/tibuTicket/jsreports/
+2024-02-23T19:15:27.494Z - info: Found 35 extension(s)
+2024-02-23T19:15:27.562Z - info: Using extension base@4.0.0
+2024-02-23T19:15:27.566Z - info: Using extension child-templates@4.0.0
+2024-02-23T19:15:27.568Z - info: Using extension cli@4.0.2
+2024-02-23T19:15:27.571Z - info: Using extension components@4.0.0
+2024-02-23T19:15:27.572Z - info: Using extension data@4.0.0
+2024-02-23T19:15:27.573Z - info: Using extension express@4.0.1
+2024-02-23T19:15:27.814Z - info: Using extension freeze@4.0.0
+2024-02-23T19:15:27.815Z - info: Using extension fs-store@4.0.1
+2024-02-23T19:15:27.906Z - info: Using extension handlebars@4.0.1
+2024-02-23T19:15:27.907Z - info: Using extension import-export@4.0.2
+2024-02-23T19:15:27.917Z - info: Using extension jsrender@4.0.0
+2024-02-23T19:15:27.918Z - info: Using extension licensing@4.0.1
+2024-02-23T19:15:27.937Z - info: Using extension localization@4.0.1
+2024-02-23T19:15:27.938Z - info: Using extension npm@4.0.0
+2024-02-23T19:15:27.940Z - info: Using extension pdf-utils@4.0.2
+2024-02-23T19:15:27.941Z - info: Using extension reports@4.0.0
+2024-02-23T19:15:27.943Z - info: Using extension tags@4.0.1
+2024-02-23T19:15:27.945Z - info: Using extension text@4.0.0
+2024-02-23T19:15:27.946Z - info: Using extension version-control@4.0.0
+2024-02-23T19:15:27.957Z - info: Using extension assets@4.0.2
+2024-02-23T19:15:27.965Z - info: Using extension authorization@4.0.0
+2024-02-23T19:15:27.968Z - info: Using extension browser-client@4.0.0
+2024-02-23T19:15:27.970Z - info: Using extension chrome-pdf@4.0.0
+2024-02-23T19:15:27.975Z - info: Using extension docx@4.1.1
+2024-02-23T19:15:27.976Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-23T19:15:28.269Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-23T19:15:28.269Z - info: Using extension pptx@4.1.0
+2024-02-23T19:15:28.271Z - info: Using extension scheduling@4.0.0
+2024-02-23T19:15:28.299Z - info: Using extension scripts@4.0.0
+2024-02-23T19:15:28.300Z - info: Using extension static-pdf@4.0.0
+2024-02-23T19:15:28.301Z - info: Using extension studio@4.0.2
+2024-02-23T19:15:28.403Z - info: Using extension xlsx@4.0.2
+2024-02-23T19:15:28.404Z - info: Using extension public-templates@4.0.0
+2024-02-23T19:15:28.405Z - info: Using extension sample-template@4.0.0
+2024-02-23T19:15:28.406Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-23T19:15:28.408Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-23T19:15:28.408Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-23T19:15:28.408Z - info: Using fs provider for template store.
+2024-02-23T19:15:28.411Z - info: fs store is persisting using fs for /home/ruby/workspace/tibuTicket/jsreports/data
+2024-02-23T19:15:28.415Z - info: fs store is loading data
+2024-02-23T19:15:28.433Z - info: fs store is initialized successfully
+2024-02-23T19:15:28.442Z - info: Creating default express app.
+2024-02-23T19:15:28.463Z - info: jsreport server successfully started on http port: 5488
+2024-02-23T19:15:28.464Z - info: Verifying license key free
+2024-02-23T19:15:28.465Z - info: Using free license
+2024-02-23T19:15:28.467Z - info: Initializing worker threads
+2024-02-23T19:15:28.592Z - info: 2 worker threads initialized in 125ms
+2024-02-23T19:15:28.593Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-23T19:15:28.593Z - info: reporter initialized
+2024-02-23T19:15:36.453Z - info: Render request 1 queued for execution and waiting for available worker rootId=0rsij7m42wh3nlf, id=0rsij7m42wh3nlf
+2024-02-23T19:15:36.473Z - info: Starting rendering request 1 rootId=0rsij7m42wh3nlf, id=0rsij7m42wh3nlf
+2024-02-23T19:15:36.473Z - info: Rendering template { name: TemplateUsers, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=0rsij7m42wh3nlf, id=0rsij7m42wh3nlf
+2024-02-23T19:15:37.935Z - info: Rendering request 1 finished in 1483 ms rootId=0rsij7m42wh3nlf, id=0rsij7m42wh3nlf
+2024-02-23T19:15:53.001Z - info: Render request 2 queued for execution and waiting for available worker rootId=o5ry8vr3gosp1c4, id=o5ry8vr3gosp1c4
+2024-02-23T19:15:53.010Z - info: Starting rendering request 2 rootId=o5ry8vr3gosp1c4, id=o5ry8vr3gosp1c4
+2024-02-23T19:15:53.010Z - info: Rendering template { name: TemplateCalc, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=o5ry8vr3gosp1c4, id=o5ry8vr3gosp1c4
+2024-02-23T19:15:53.830Z - info: Rendering request 2 finished in 830 ms rootId=o5ry8vr3gosp1c4, id=o5ry8vr3gosp1c4
+2024-02-23T19:16:13.122Z - info: Render request 3 queued for execution and waiting for available worker rootId=butqledll0kqiy8, id=butqledll0kqiy8
+2024-02-23T19:16:13.129Z - info: Starting rendering request 3 rootId=butqledll0kqiy8, id=butqledll0kqiy8
+2024-02-23T19:16:13.129Z - info: Rendering template { name: TemplateGraphic, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=butqledll0kqiy8, id=butqledll0kqiy8
+2024-02-23T19:16:13.219Z - info: Rendering request 3 finished in 97 ms rootId=butqledll0kqiy8, id=butqledll0kqiy8
+2024-02-23T19:16:16.675Z - info: Render request 4 queued for execution and waiting for available worker rootId=dng7po75ybsfuad, id=dng7po75ybsfuad
+2024-02-23T19:16:16.683Z - info: Starting rendering request 4 rootId=dng7po75ybsfuad, id=dng7po75ybsfuad
+2024-02-23T19:16:16.683Z - info: Rendering template { name: TemplateUsers, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=dng7po75ybsfuad, id=dng7po75ybsfuad
+2024-02-23T19:16:16.768Z - info: Rendering request 4 finished in 94 ms rootId=dng7po75ybsfuad, id=dng7po75ybsfuad
+2024-02-23T19:18:09.738Z - info: Render request 5 queued for execution and waiting for available worker rootId=amuqsdc9546nvqu, id=amuqsdc9546nvqu
+2024-02-23T19:18:09.746Z - info: Starting rendering request 5 rootId=amuqsdc9546nvqu, id=amuqsdc9546nvqu
+2024-02-23T19:18:09.746Z - info: Rendering template { name: TemplateGraphic, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=amuqsdc9546nvqu, id=amuqsdc9546nvqu
+2024-02-23T19:18:09.816Z - info: Rendering request 5 finished in 79 ms rootId=amuqsdc9546nvqu, id=amuqsdc9546nvqu
+2024-02-23T19:18:36.102Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-23T19:18:36.104Z - info: Searching for available extensions in /home/ruby/workspace/tibuTicket/jsreports/
+2024-02-23T19:18:36.110Z - info: Extensions location cache contains up to date information, skipping crawling in /home/ruby/workspace/tibuTicket/jsreports/
+2024-02-23T19:18:36.112Z - info: Found 35 extension(s)
+2024-02-23T19:18:36.155Z - info: Using extension base@4.0.0
+2024-02-23T19:18:36.158Z - info: Using extension child-templates@4.0.0
+2024-02-23T19:18:36.159Z - info: Using extension cli@4.0.2
+2024-02-23T19:18:36.161Z - info: Using extension components@4.0.0
+2024-02-23T19:18:36.161Z - info: Using extension data@4.0.0
+2024-02-23T19:18:36.162Z - info: Using extension express@4.0.1
+2024-02-23T19:18:36.252Z - info: Using extension freeze@4.0.0
+2024-02-23T19:18:36.253Z - info: Using extension fs-store@4.0.1
+2024-02-23T19:18:36.289Z - info: Using extension handlebars@4.0.1
+2024-02-23T19:18:36.290Z - info: Using extension import-export@4.0.2
+2024-02-23T19:18:36.294Z - info: Using extension jsrender@4.0.0
+2024-02-23T19:18:36.294Z - info: Using extension licensing@4.0.1
+2024-02-23T19:18:36.303Z - info: Using extension localization@4.0.1
+2024-02-23T19:18:36.304Z - info: Using extension npm@4.0.0
+2024-02-23T19:18:36.306Z - info: Using extension pdf-utils@4.0.2
+2024-02-23T19:18:36.307Z - info: Using extension reports@4.0.0
+2024-02-23T19:18:36.308Z - info: Using extension tags@4.0.1
+2024-02-23T19:18:36.309Z - info: Using extension text@4.0.0
+2024-02-23T19:18:36.309Z - info: Using extension version-control@4.0.0
+2024-02-23T19:18:36.314Z - info: Using extension assets@4.0.2
+2024-02-23T19:18:36.318Z - info: Using extension authorization@4.0.0
+2024-02-23T19:18:36.319Z - info: Using extension browser-client@4.0.0
+2024-02-23T19:18:36.321Z - info: Using extension chrome-pdf@4.0.0
+2024-02-23T19:18:36.325Z - info: Using extension docx@4.1.1
+2024-02-23T19:18:36.326Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-23T19:18:36.450Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-23T19:18:36.450Z - info: Using extension pptx@4.1.0
+2024-02-23T19:18:36.451Z - info: Using extension scheduling@4.0.0
+2024-02-23T19:18:36.468Z - info: Using extension scripts@4.0.0
+2024-02-23T19:18:36.468Z - info: Using extension static-pdf@4.0.0
+2024-02-23T19:18:36.468Z - info: Using extension studio@4.0.2
+2024-02-23T19:18:36.511Z - info: Using extension xlsx@4.0.2
+2024-02-23T19:18:36.512Z - info: Using extension public-templates@4.0.0
+2024-02-23T19:18:36.513Z - info: Using extension sample-template@4.0.0
+2024-02-23T19:18:36.514Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-23T19:18:36.514Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-23T19:18:36.514Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-23T19:18:36.515Z - info: Using fs provider for template store.
+2024-02-23T19:18:36.518Z - info: fs store is persisting using fs for /home/ruby/workspace/tibuTicket/jsreports/data
+2024-02-23T19:18:36.522Z - info: fs store is loading data
+2024-02-23T19:18:36.540Z - info: fs store is initialized successfully
+2024-02-23T19:18:36.549Z - info: Creating default express app.
+2024-02-23T19:18:36.559Z - info: jsreport server successfully started on http port: 5488
+2024-02-23T19:18:36.559Z - info: Verifying license key free
+2024-02-23T19:18:36.560Z - info: Using free license
+2024-02-23T19:18:36.562Z - info: Initializing worker threads
+2024-02-23T19:18:36.655Z - info: 2 worker threads initialized in 93ms
+2024-02-23T19:18:36.655Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-23T19:18:36.655Z - info: reporter initialized
+2024-02-23T19:19:32.976Z - info: Render request 1 queued for execution and waiting for available worker rootId=rdzu0n9s5oppcmc, id=rdzu0n9s5oppcmc
+2024-02-23T19:19:32.996Z - info: Starting rendering request 1 rootId=rdzu0n9s5oppcmc, id=rdzu0n9s5oppcmc
+2024-02-23T19:19:32.996Z - info: Rendering template { name: TemplateCalc, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=rdzu0n9s5oppcmc, id=rdzu0n9s5oppcmc
+2024-02-23T19:19:33.852Z - info: Rendering request 1 finished in 877 ms rootId=rdzu0n9s5oppcmc, id=rdzu0n9s5oppcmc
+2024-02-23T19:22:57.580Z - info: Initializing jsreport (version: 4.2.0, configuration file: jsreport.config.json, nodejs: 20.9.0)
+2024-02-23T19:22:57.582Z - info: Searching for available extensions in /home/ruby/workspace/tibuTicket/jsreports/
+2024-02-23T19:22:57.588Z - info: Extensions location cache contains up to date information, skipping crawling in /home/ruby/workspace/tibuTicket/jsreports/
+2024-02-23T19:22:57.591Z - info: Found 35 extension(s)
+2024-02-23T19:22:57.657Z - info: Using extension base@4.0.0
+2024-02-23T19:22:57.661Z - info: Using extension child-templates@4.0.0
+2024-02-23T19:22:57.664Z - info: Using extension cli@4.0.2
+2024-02-23T19:22:57.666Z - info: Using extension components@4.0.0
+2024-02-23T19:22:57.667Z - info: Using extension data@4.0.0
+2024-02-23T19:22:57.668Z - info: Using extension express@4.0.1
+2024-02-23T19:22:57.899Z - info: Using extension freeze@4.0.0
+2024-02-23T19:22:57.900Z - info: Using extension fs-store@4.0.1
+2024-02-23T19:22:57.985Z - info: Using extension handlebars@4.0.1
+2024-02-23T19:22:57.987Z - info: Using extension import-export@4.0.2
+2024-02-23T19:22:57.996Z - info: Using extension jsrender@4.0.0
+2024-02-23T19:22:57.996Z - info: Using extension licensing@4.0.1
+2024-02-23T19:22:58.014Z - info: Using extension localization@4.0.1
+2024-02-23T19:22:58.015Z - info: Using extension npm@4.0.0
+2024-02-23T19:22:58.017Z - info: Using extension pdf-utils@4.0.2
+2024-02-23T19:22:58.019Z - info: Using extension reports@4.0.0
+2024-02-23T19:22:58.021Z - info: Using extension tags@4.0.1
+2024-02-23T19:22:58.022Z - info: Using extension text@4.0.0
+2024-02-23T19:22:58.023Z - info: Using extension version-control@4.0.0
+2024-02-23T19:22:58.033Z - info: Using extension assets@4.0.2
+2024-02-23T19:22:58.042Z - info: Using extension authorization@4.0.0
+2024-02-23T19:22:58.045Z - info: Using extension browser-client@4.0.0
+2024-02-23T19:22:58.048Z - info: Using extension chrome-pdf@4.0.0
+2024-02-23T19:22:58.052Z - info: Using extension docx@4.1.1
+2024-02-23T19:22:58.054Z - info: Using extension html-to-xlsx@4.0.1
+2024-02-23T19:22:58.347Z - info: html-to-xlsx detected chrome as available html engine
+2024-02-23T19:22:58.347Z - info: Using extension pptx@4.1.0
+2024-02-23T19:22:58.349Z - info: Using extension scheduling@4.0.0
+2024-02-23T19:22:58.377Z - info: Using extension scripts@4.0.0
+2024-02-23T19:22:58.378Z - info: Using extension static-pdf@4.0.0
+2024-02-23T19:22:58.379Z - info: Using extension studio@4.0.2
+2024-02-23T19:22:58.482Z - info: Using extension xlsx@4.0.2
+2024-02-23T19:22:58.483Z - info: Using extension public-templates@4.0.0
+2024-02-23T19:22:58.484Z - info: Using extension sample-template@4.0.0
+2024-02-23T19:22:58.486Z - info: Using extension studio-theme-dark@4.0.0
+2024-02-23T19:22:58.487Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2024-02-23T19:22:58.487Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2024-02-23T19:22:58.487Z - info: Using fs provider for template store.
+2024-02-23T19:22:58.490Z - info: fs store is persisting using fs for /home/ruby/workspace/tibuTicket/jsreports/data
+2024-02-23T19:22:58.494Z - info: fs store is loading data
+2024-02-23T19:22:58.518Z - info: fs store is initialized successfully
+2024-02-23T19:22:58.529Z - info: Creating default express app.
+2024-02-23T19:22:58.551Z - info: jsreport server successfully started on http port: 5488
+2024-02-23T19:22:58.552Z - info: Verifying license key free
+2024-02-23T19:22:58.552Z - info: Using free license
+2024-02-23T19:22:58.555Z - info: Initializing worker threads
+2024-02-23T19:22:58.691Z - info: 2 worker threads initialized in 136ms
+2024-02-23T19:22:58.691Z - info: Starting temp files cleanup with 180000ms threshold
+2024-02-23T19:22:58.692Z - info: reporter initialized
+2024-02-23T19:26:38.828Z - info: Render request 1 queued for execution and waiting for available worker rootId=tmd2wkaokvvexzm, id=tmd2wkaokvvexzm
+2024-02-23T19:26:38.849Z - info: Starting rendering request 1 rootId=tmd2wkaokvvexzm, id=tmd2wkaokvvexzm
+2024-02-23T19:26:38.849Z - info: Rendering template { name: TemplateUsers, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=tmd2wkaokvvexzm, id=tmd2wkaokvvexzm
+2024-02-23T19:26:40.338Z - info: Rendering request 1 finished in 1511 ms rootId=tmd2wkaokvvexzm, id=tmd2wkaokvvexzm
+2024-02-23T19:27:00.107Z - info: Render request 2 queued for execution and waiting for available worker rootId=a2fp5cf5r4mm0a3, id=a2fp5cf5r4mm0a3
+2024-02-23T19:27:00.118Z - info: Starting rendering request 2 rootId=a2fp5cf5r4mm0a3, id=a2fp5cf5r4mm0a3
+2024-02-23T19:27:00.118Z - info: Rendering template { name: TemplateCalc, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=a2fp5cf5r4mm0a3, id=a2fp5cf5r4mm0a3
+2024-02-23T19:27:00.823Z - info: Rendering request 2 finished in 717 ms rootId=a2fp5cf5r4mm0a3, id=a2fp5cf5r4mm0a3
