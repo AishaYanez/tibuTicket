@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   put "api/v1/lists/:id/decreaseNumber", to: "api/v1/lists#decreaseNumber"
 
   get "api/v1/current_user", to: "api/v1/users/current_user#index"
+  get 'webpush/vapid_public_key', to: 'webpush#vapid_public_key'
+  post '/notifications', to: 'notifications#create'
+  post '/push', to: 'notifications#push'
 
   devise_for :users, path: "", path_names: {
                        sign_in: "api/v1/login",

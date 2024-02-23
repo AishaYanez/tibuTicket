@@ -82,6 +82,9 @@ function Authpage() {
     };
   }, [isSignIn]);
 
+
+
+
   return (
     <div className="prin-container">
       <div className='auth-container'>

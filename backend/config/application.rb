@@ -12,12 +12,12 @@ require "rails/all"
 # end
 
 # Code snippet to show keys in console (anytime you run rails s)
-require "webpush"
-vapid_key = Webpush.generate_key
-puts "****** VAPID_PUBLIC_KEY *******"
-puts vapid_key.public_key
-puts "****** VAPID_PRIVATE_KEY *******"
-puts vapid_key.private_key
+# require "webpush"
+# vapid_key = Webpush.generate_key
+# puts "****** VAPID_PUBLIC_KEY *******"
+# puts vapid_key.public_key
+# puts "****** VAPID_PRIVATE_KEY *******"
+# puts vapid_key.private_key
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

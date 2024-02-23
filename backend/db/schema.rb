@@ -55,6 +55,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_07_154019) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "webpush_notifications", force: :cascade do |t|
+    t.string "endpoint"
+    t.string "auth_key"
+    t.string "p256dh_key"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "lists", "users", column: "list_creator_id"
