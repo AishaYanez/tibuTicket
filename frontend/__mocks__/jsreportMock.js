@@ -1,0 +1,3 @@
+// jsreportMock.js
+
+module.exports = {};

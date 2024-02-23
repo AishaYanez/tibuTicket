@@ -1,0 +1,23 @@
+2024-02-20T17:27:43.786Z - error: Report render failed
+(because) fetch is not defined
+ReferenceError: fetch is not defined
+    at fetchlists (sandbox.js:10:22)
+    at Object.beforeRender (sandbox.js:3:26)
+    at executionFn (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:67:35)
+    at sandbox.js:29:18
+    at async run (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/createSandbox.js:137:16)
+    at async WorkerReporter.runInSandbox [as _runInSandbox] (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/worker/sandbox/runInSandbox.js:195:14)
+    at async executeScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/executeScript.js:122:12)
+    at async Scripts._runScript (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:140:30)
+    at async Scripts.handleBeforeRender (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-scripts/lib/worker.js:64:7)
+    at async ListenerCollection.fire (/home/miguel/workspace/tibuTicket/jsreports/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21) rootId=yvzi9ou47q6p9m9, id=yvzi9ou47q6p9m9
+2024-02-20T17:47:27.637Z - error: Report render failed
+(because) connect ECONNREFUSED 127.0.0.1:4000
+Error: connect ECONNREFUSED 127.0.0.1:4000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16) rootId=ghihxow0faeaqgq, id=ghihxow0faeaqgq
+2024-02-21T09:02:04.773Z - error: Report render failed
+(because) connect ECONNREFUSED 127.0.0.1:4000
+Error: connect ECONNREFUSED 127.0.0.1:4000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16) rootId=t4yxbs51bj31esf, id=t4yxbs51bj31esf
+2024-02-21T09:02:04.884Z - error: Error during processing request at http://localhost:5488/api/report, details: connect ECONNREFUSED 127.0.0.1:4000, stack: Error: connect ECONNREFUSED 127.0.0.1:4000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1595:16)

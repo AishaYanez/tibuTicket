@@ -5,9 +5,9 @@ Devise.setup do |config|
       ["POST", %r{^/login$}],
     ]
     jwt.revocation_requests = [
-      ["DELETE", %r{^/logout$}],
+      ["DELETE", %r{^/login$}],
     ]
-    jwt.expiration_time = 30.minutes.to_i
+    jwt.expiration_time = 60.minutes.to_i
   end
   config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <style> {{asset "styles.css" "utf-8"}} </style>
+</head>
+
+<body>
+    <h1>Listas</h1>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Número de tickets</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each lists}}
+                <tr>
+                    <td>{{ list_description.list_name }}</td>
+                    <td>{{ list_description.list_limit_number }}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

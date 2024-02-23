@@ -15,4 +15,8 @@ class User < ApplicationRecord
     self.is_admin = User.count.zero? if is_admin.nil?
     self.is_admin = true if is_admin.nil?
   end
+
+  validates :nickname, presence: true
+  validates :email, presence: true, uniqueness: true
+  validates :encrypted_password, presence: true
 end

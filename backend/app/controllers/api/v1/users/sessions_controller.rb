@@ -19,7 +19,7 @@ class Api::V1::Users::SessionsController < Devise::SessionsController
   def respond_with(resource, _opts = {})
     if request.method == "POST" && resource.persisted?
       render json: {
-               status: { code: 200, message: "Logged in sucessfully." },
+               status: { code: 200, message: "Inicio de sesión realizado" },
                data: {
                  user_description: UserSerializer.new(resource).serializable_hash[:data][:attributes],
                  user_image: UserImageSerializer.new(resource).user_image,
@@ -27,7 +27,7 @@ class Api::V1::Users::SessionsController < Devise::SessionsController
              }, status: :ok
     else
       render json: {
-        status: { code: 422, message: "User doesn't exist. #{resource.errors.full_messages.to_sentence}" },
+        status: { code: 422, message: "Email o contraseña incorrectos" },
       }, status: :unprocessable_entity
     end
   end
@@ -36,33 +36,13 @@ class Api::V1::Users::SessionsController < Devise::SessionsController
     if current_user
       render json: {
         status: 200,
-        message: "logged out successfully",
+        message: "Cierre de sesión realizado correctamente",
       }, status: :ok
     else
       render json: {
         status: 401,
-        message: "Couldn't find an active session.",
+        message: "Inicia sesión para realizar está acción",
       }, status: :unauthorized
     end
   end
 end
-z
-# def respond_with(resource, _opts = {})
-#   if request.method == "POST" && resource.persisted?
-#     render json: {
-#       status: { code: 200, message: "Signed up sucessfully." },
-#       data: {
-#         user: UserSerializer.new(resource).serializable_hash[:data][:attributes],
-#         user_image: UserImageSerializer.new(resource).user_image,
-#       },
-#     }, status: :ok
-#   elsif request.method == "DELETE"
-#     render json: {
-#       status: { code: 200, message: "Account deleted successfully." },
-#     }, status: :ok
-#   else
-#     render json: {
-#       status: { code: 422, message: "User couldn't be created successfully. #{resource.errors.full_messages.to_sentence}" },
-#     }, status: :unprocessable_entity
-#   end
-# end

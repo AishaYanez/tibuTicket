@@ -1,0 +1,22 @@
+{
+    "name": "TemplateGraphic",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "shortid": "gCY8vQOVx",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1708457286149
+    },
+    "modificationDate": {
+        "$$date": 1708503614581
+    },
+    "_id": "GTj97fUvgmR028yn",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "6v8QPG_9N3"
+        }
+    ]
+}

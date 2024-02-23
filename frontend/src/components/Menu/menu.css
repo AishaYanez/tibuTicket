@@ -2,19 +2,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #EEEDE9;
+    background-color: #E6DED3;
     height: 100px;
+    z-index: 1;
 }
 
-.avatar {
+.menu-container .avatar {
     width: 50%;
     padding: 15px;
 }
 
 .menuItem {
-    margin-right: 30px;
-    margin-top: 20px;
+    width: 30%;
     border-radius: 8px;
-    width: 50;
-    height: 50px;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.iconMenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.ListForm {
+    justify-content: center;
 }
