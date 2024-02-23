@@ -26,7 +26,6 @@ function App() {
   const ws = new WebSocket("ws://localhost:4000/cable");
 
   ws.onopen = () => {
-    // console.log('Connected to websocket server');
 
     ws.send(
       JSON.stringify({

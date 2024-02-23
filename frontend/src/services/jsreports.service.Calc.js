@@ -1,5 +1,4 @@
 import jsreports from '@jsreport/browser-client';
-
 jsreports.serverUrl = 'http://http://localhost:5488/';
 
 async function ReportsCalc(email) {
