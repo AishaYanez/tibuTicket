@@ -35,3 +35,6 @@
 
 # Ignore personal database config
 /config/application.yml
+/config/master.key
+
+/config/master.key

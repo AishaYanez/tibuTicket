@@ -1,7 +1,8 @@
 require "active_support/core_ext/integer/time"
-
-# Rails.application.routes.default_url_options[:host] = "localhost:4000"
 Rails.application.configure do
+  config.action_cable.url = "ws://localhost:4000/cable"
+  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+
   config.action_mailer.default_url_options = { host: "localhost", port: 4000 }
   config.navigational_formats = []
 
@@ -16,8 +17,6 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
-  # Enable/disable caching. By default caching is disabled.
-  # Run rails dev:cache to toggle caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?
     config.cache_store = :memory_store
     config.public_file_server.headers = {
@@ -67,3 +66,5 @@ Rails.application.configure do
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
 end
+
+Rails.application.routes.default_url_options[:host] = "localhost:4000"

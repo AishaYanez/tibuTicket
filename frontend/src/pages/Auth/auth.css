@@ -1,0 +1,60 @@
+.auth-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+
+.form-container {
+min-height: 80vh;
+}
+
+.svg{
+  z-index: 100;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.back-container{
+  position: relative;
+  z-index: 100;
+  border: 1px black;
+  height: 20vh;
+}
+
+.form{
+  margin-left: 15%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.changeButton{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+Button {
+  fill: #BBC0BA;
+}
+
+@media screen and (min-width: 600px) {
+.changeButton {
+  left: 45%;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+.changeButton {
+  left: 47%;
+}
+}

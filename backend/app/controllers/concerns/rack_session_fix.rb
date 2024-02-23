@@ -6,6 +6,10 @@ module RackSessionFix
     def enabled?
       false
     end
+
+    def destroy
+      clear
+    end
   end
 
   included do

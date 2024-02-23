@@ -1,28 +1,20 @@
 require "test_helper"
 
-class CurrentUserControllerTest < ActionDispatch::IntegrationTest
-  test "should get indexrails" do
-    get current_user_indexrails_url
-    assert_response :success
+class Api::V1::Users::CurrentUserControllerTest < ActionDispatch::IntegrationTest
+  def setup
+    @user = users(:one)
+    @auth_headers = { "Authorization" => "Bearer #{generate_token(@user)}" }
   end
 
-  test "should get g" do
-    get current_user_g_url
-    assert_response :success
+  test "should get user data" do
+    get api_v1_current_user_path, headers: @auth_headers, as: :json
+    assert_response :unauthorized
   end
 
-  test "should get controller" do
-    get current_user_controller_url
-    assert_response :success
-  end
+  private
 
-  test "should get current_user" do
-    get current_user_current_user_url
-    assert_response :success
-  end
-
-  test "should get index" do
-    get current_user_index_url
-    assert_response :success
+  def generate_token(user)
+    payload = { user_id: user.id }
+    JWT.encode(payload, Rails.application.secret_key_base)
   end
 end

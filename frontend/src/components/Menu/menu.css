@@ -1,0 +1,32 @@
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E6DED3;
+    height: 100px;
+    z-index: 1;
+}
+
+.menu-container .avatar {
+    width: 50%;
+    padding: 15px;
+}
+
+.menuItem {
+    width: 30%;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.iconMenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.ListForm {
+    justify-content: center;
+}
