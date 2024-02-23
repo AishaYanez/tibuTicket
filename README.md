@@ -226,16 +226,16 @@ This repository contains a project with a Ruby on Rails backend and a React fron
     ```
   - Execute this command
     ```
-    npm test -- --coverage
+  npm test -- --coverage --watchAll
     ```
   ### BackEnd
-  - To activate the frontend test you need to go to the backend and execute this command:
+  - To activate the backend test you need to go to the backend and execute this command:
     ```
     cd backend 
     ```
   - Execute this command
     ```
-    command for backend
+    rails test
     ```
 ## User Requirements
 
