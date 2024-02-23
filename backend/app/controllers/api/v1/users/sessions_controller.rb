@@ -46,7 +46,7 @@ class Api::V1::Users::SessionsController < Devise::SessionsController
     end
   end
 end
-
+z
 # def respond_with(resource, _opts = {})
 #   if request.method == "POST" && resource.persisted?
 #     render json: {

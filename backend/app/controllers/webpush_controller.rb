@@ -3,4 +3,3 @@ class WebpushController < ApplicationController
       render json: { vapid_public_key: Rails.application.credentials.dig(:webpush, :public_key) }
     end
   end
-  

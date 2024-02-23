@@ -13,7 +13,7 @@ function Authpage() {
   };
 
   useEffect(() => {
-    // Animaciones
+
     anime({
       targets: '.triangles',
       translateY: isSignIn ? 0 : 285,
