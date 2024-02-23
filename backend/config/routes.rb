@@ -10,7 +10,13 @@ Rails.application.routes.draw do
   get 'webpush/vapid_public_key', to: 'webpush#vapid_public_key'
   post '/notifications', to: 'notifications#create'
   post '/push', to: 'notifications#push'
-
+  post '/send_notification', to: 'notifications#send_notification'
+  post '/send_command_to_rails_console', to: 'console_commands#send_to_rails_console'
+  resources :notifications do
+    collection do
+      get :send_test_notification
+    end
+  end
   devise_for :users, path: "", path_names: {
                        sign_in: "api/v1/login",
                        sign_out: "api/v1/login",
