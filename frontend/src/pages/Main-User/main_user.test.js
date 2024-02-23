@@ -35,7 +35,7 @@ describe('MainUser component', () => {
   test('renders without crashing', () => {
     render(
       <MemoryRouter>
-        <MainUser />
+        <MainUser queues={queues} />
       </MemoryRouter>
     );
   });
