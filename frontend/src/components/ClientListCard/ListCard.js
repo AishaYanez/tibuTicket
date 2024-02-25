@@ -12,7 +12,8 @@ function ListCard({ queue }) {
 
   // eslint-disable-next-line
   const getNumber = () => {
-    const number = localStorage.getItem(queue.list_description.list_name);
+    const number = localStorage.getItem(`${queue.list_description.list_name}:${queue.list_description.id}`);
+    console.log(number);
     if (queue.list_description.list_current_number < number) {
       setYourNumber(number);
     } else {
@@ -23,6 +24,7 @@ function ListCard({ queue }) {
   };
 
   useEffect(() => {
+    console.log(yourNumber);
     getNumber();
   }, [getNumber]);
 
@@ -32,7 +34,7 @@ function ListCard({ queue }) {
   };
 
   const actionsTicket = (ticket) => {
-    localStorage.setItem(ticket[0], ticket[1])
+    localStorage.setItem(`${ticket[0]}:${queue.list_description.id}`, ticket[1])
     message.success(`Tu número es el ${ticket[1]} en la cola ${ticket[0]}`)
     getNumber();
   }

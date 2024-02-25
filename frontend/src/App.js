@@ -13,6 +13,9 @@ function App() {
   async function fetchQueues() {
     try {
       const fetchedQueues = (await ListService.getLists()).data;
+
+      fetchedQueues.sort((a, b) => a.list_description.id - b.list_description.id)
+
       setQueues(fetchedQueues);
     } catch (err) {
       console.error(err);
@@ -21,28 +24,34 @@ function App() {
 
   useEffect(() => {
     fetchQueues();
-  }, []);
 
-  const ws = new WebSocket("ws://localhost:4000/cable");
+    const ws = new WebSocket("ws://localhost:4000/cable");
 
-  ws.onopen = () => {
-
-    ws.send(
-      JSON.stringify({
-        command: "subscribe",
-        identifier: JSON.stringify({
-          channel: "ListChannel"
+    ws.onopen = () => {
+      console.log('WebSocket connection established');
+      ws.send(
+        JSON.stringify({
+          command: "subscribe",
+          identifier: JSON.stringify({
+            channel: "ListChannel"
+          })
         })
-      })
-    );
-  };
+      );
+    };
 
-  ws.onmessage = (event) => {
-    const message = JSON.parse(event.data).message ? JSON.parse(event.data).message.type : JSON.parse(event.data);
-    if (message === 'broadcast') {
-      fetchQueues();
-    }
-  };
+    ws.onmessage = (event) => {
+      console.log('WebSocket message received');
+      const message = JSON.parse(event.data).message ? JSON.parse(event.data).message.type : JSON.parse(event.data);
+      if (message === 'broadcast') {
+        fetchQueues();
+      }
+    };
+
+    return () => {
+      ws.close();
+    };
+
+  }, []);
 
     return (
       <BrowserRouter>
