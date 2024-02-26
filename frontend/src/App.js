@@ -8,7 +8,7 @@ import ListService from './services/ListService/list.service.js';
 
 function App() {
   const [queues, setQueues] = useState([]);
-  
+  const ws = new WebSocket("ws://localhost:4000/cable");
 
   async function fetchQueues() {
     try {
@@ -24,8 +24,6 @@ function App() {
 
   useEffect(() => {
     fetchQueues();
-
-    const ws = new WebSocket("ws://localhost:4000/cable");
 
     ws.onopen = () => {
       console.log('WebSocket connection established');
@@ -48,21 +46,22 @@ function App() {
     };
 
     return () => {
-      ws.close();
+      if (ws.readyState === WebSocket.OPEN) {
+        ws.close();
+      }
     };
-
   }, []);
 
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Authpage />} />
-          <Route path='/AdminPage' element={<AdminMainPage queues={queues}/>} />
-          <Route path='/UserPage' element={<UserMainPage queues={queues}/>} />
-          <Route path='/ClientPage' element={<ClientMainPage queues={queues}/>} />
-        </Routes>
-      </BrowserRouter>
-    );
-  }
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Authpage />} />
+        <Route path='/AdminPage' element={<AdminMainPage queues={queues} />} />
+        <Route path='/UserPage' element={<UserMainPage queues={queues} />} />
+        <Route path='/ClientPage' element={<ClientMainPage queues={queues} />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-  export default App;
+export default App;
